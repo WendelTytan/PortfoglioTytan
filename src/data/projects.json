@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "titulo": "Projeto 1",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "foto": "./src/images/ima1.jpg",
+      "siteprojeto": "https://www.google.com.br",
+      "competencies": [
+        "React",
+        "Node.js"
+      ]
+    },
+    {
+      "titulo": "Projeto 2",
+      "descricao": "aaaaaaaaaaaaiiiiiiiiiiiiii",
+      "foto": "./src/images/ima3.gif",
+      "siteprojeto": "www.yahoo.com.br",
+      "competencies": [
+        "TypeScript",
+        "React.js"
+      ]
+    }
+  ]
+}

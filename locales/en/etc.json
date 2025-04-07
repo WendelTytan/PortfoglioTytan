@@ -1,0 +1,43 @@
+{
+  "texto": [
+    {
+      "placeholder": "Buscar projetos...",
+      "inicio": "Início",
+      "sobre": "Sobre",
+      "formacao": "Formação",
+      "experiencia": "Experiencia",
+      "cursos": "Cursos",
+      "projetos": "Projetos",
+      "mais": "Mais Sobre",
+      "ouprojetos": "Outros Projetos",
+      "contato": "Contato",
+      "sobre_1": "Sobre",
+      "sobre_2": "Mim",
+      "form_1": "Minha",
+      "form_2": "Formação",
+      "exp_1": "Minha",
+      "exp_2": "Experiência",
+      "cur_1": "Meus",
+      "cur_2": "Cursos",
+      "projetos_1": "Meus",
+      "projetos_2": "Projetos",
+      "mais_1": "Mais Sobre",
+      "mais_2": "Mim",
+      "ouprojetos_1": "Meus Outros",
+      "ouprojetos_2": "Projetos",
+      "contato_1": "Entre em",
+      "contato_2": "Contato"
+    }
+  ],
+  "comp": [
+    {
+      "contagem": "Contagem de Competências:"
+    }
+  ],
+  "resum": [
+    {
+      "resumo": "Resumo dos Tipos de Cursos:",
+      "res_cur": "curso(s)"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "experience": [
+    {
+      "funcao": "Desenvolvedor Full Stack",
+      "empresa": "Empresa XYZ",
+      "inicio": 2021,
+      "fim": "Presente",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "funcao": "Desenvolvedor Front-end",
+      "empresa": "Empresa ABC",
+      "inicio": 2019,
+      "fim": 2021,
+      "descricao": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+  ]
+}

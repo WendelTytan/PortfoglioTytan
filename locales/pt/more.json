@@ -1,0 +1,19 @@
+{
+  "more": [
+    {
+      "mais_1": "Hobbies",
+      "mais_2": "Música",
+      "linspotify": "https://open.spotify.com/embed/playlist/seu-id-da-playlist",
+      "soundcloud": "Soundcloud",
+      "linsoundcloud": "https://soundcloud.com/seu-usuario",
+      "hobbies": [
+        "Futebol",
+        "Xadrez"
+      ],
+      "links": {
+        "Futebol": "www.futebol.com",
+        "Xadrez": "www.xadrez.com"
+      }
+    }
+  ]
+}

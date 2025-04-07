@@ -1,0 +1,44 @@
+{
+  "experience": [
+    {
+      "id": 1,
+      "funcao": "Assistente de Coordenação de TI e Mídias Sociais",
+      "empresa": "Município de nossa senhora do socorro",
+      "inicio": 2024,
+      "fim": 2025,
+      "descricao": "Servidor público municipal em contrato temporário, atuando como Assistente de Coordenação do setor de TI e Mídias Sociais. Responsável pela manutenção da infraestrutura de TI, segurança da informação e suporte técnico, assegurando a continuidade dos serviços digitais. Também gerencia mídias sociais e estratégias de comunicação digital até a transição para a nova gestão."
+    },
+    {
+      "id": 2,
+      "funcao": "Monitor de laboratório de informática",
+      "empresa": "IFS - Instituto Federal de Sergipe",
+      "inicio": 2019,
+      "fim": 2019,
+      "descricao": "Serviço como Monitor Temporário em Lógica de Programação"
+    },
+    {
+      "id": 3,
+      "funcao": "Telemarketing",
+      "empresa": "AlmavivA do Brasil",
+      "inicio": 2016,
+      "fim": 2018,
+      "descricao": "Atendimento ao Cliente via telemarketing, com suporte técnico e vendas"
+    },
+    {
+      "id": 4,
+      "funcao": "Vendedor",
+      "empresa": "InfoMC Tecnologia",
+      "inicio": 2015,
+      "fim": 2015,
+      "descricao": "Contario Temporário para vendedor em Geral, com atendimento por telefone, redes sociais, pregão eletrônico, orçamento e compra de equipamentos e atendimento ao cliente"
+    },
+    {
+      "id": 5,
+      "funcao": "Operador de Vídeo-Monitor",
+      "empresa": "Central 24 Horas",
+      "inicio": 2010,
+      "fim": 2012,
+      "descricao": "Trabalho com função para a secretária de segurança publica com o objetivo de monitoramento das ruas com direção objetiva identificar e impedir crimes "
+    }
+  ]
+}

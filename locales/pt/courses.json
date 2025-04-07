@@ -1,0 +1,2079 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "nome": "Arquiteturas Escaláveis com Java na AWS",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "horasdesc": "Carga Horária: ",
+      "horas": "2h",
+      "tipo": "Palestra",
+      "competencies": [
+        "Java",
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Banco de Dados SQL e NoSQL Para Desenvolvedores Backend",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "horasdesc": "Carga Horária: ",
+      "horas": "5h",
+      "tipo": "Curso",
+      "competencies": [
+        "NoSQL",
+        "SQL",
+        "Banco de dados"
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Abstraindo um Bootcamp Usando Orientacao a Objetos em Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "horasdesc": "Carga Horária: ",
+      "horas": "2h",
+      "tipo": "Projeto",
+      "competencies": [
+        "Java"
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Adicionando Seguranca a uma API REST com Spring Security",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "horasdesc": "Carga Horária: ",
+      "horas": "2h",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "API REST",
+        "Spring Security",
+        "Java"
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Ambiente de Desenvolvimento Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "horasdesc": "Carga Horária: ",
+      "horas": "1h",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Java"
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Aprendendo a Sintaxe Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "horasdesc": "Carga Horária: ",
+      "horas": "5h",
+      "tipo": "Curso",
+      "competencies": [
+        "Java"
+      ]
+    },
+    {
+      "id": 7,
+      "nome": "Modernize Infrastructure and Applications with Google Cloud",
+      "instituicao": "Google",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "Google Cloud Platform"
+      ]
+    },
+    {
+      "id": 8,
+      "nome": "Bem vindo ao seu Bootcamp de Java com a Claro",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "horasdesc": "Carga Horária: ",
+      "horas": "1h",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Java"
+      ]
+    },
+    {
+      "id": 9,
+      "nome": "Claro Java com Spring Boot",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "horasdesc": "Carga Horária: ",
+      "horas": "75h",
+      "tipo": "Formação",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "Spring Data",
+        "Spring Framework",
+        "PostgreSQL",
+        "MySQL",
+        "NoSQL",
+        "POO",
+        "Padrões de design",
+        "UML",
+        "API REST",
+        "Swagger",
+        "Maven",
+        "MongoDB",
+        "Banco de Dados",
+        "Junit",
+        "Git",
+        "Github"
+      ]
+    },
+    {
+      "id": 10,
+      "nome": "Scaling with Google Cloud Operations",
+      "instituicao": "Google",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "Google Cloud Platform"
+      ]
+    },
+    {
+      "id": 11,
+      "nome": "Trust and Security with Google Cloud",
+      "instituicao": "Google",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Computação em nuvem",
+        "Aplicativos em nuvem",
+        "Segurança de nuvem",
+        "Armazenamento em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "Google Cloud Platform"
+      ]
+    },
+    {
+      "id": 12,
+      "nome": "Aprender a aprender: técnicas para seu autodesenvolvimento",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "AutoDesenvolvimento",
+        "Psicologia"
+      ]
+    },
+    {
+      "id": 13,
+      "nome": "Comandos DML: manipulação de dados com MySQL",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Curso",
+      "competencies": [
+        "MySQL",
+        "Manipulação de dados"
+      ]
+    },
+    {
+      "id": 14,
+      "nome": "Digital Transformation with Google Cloud",
+      "instituicao": "Google",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "Google Cloud Platform",
+        "IaaS",
+        "PaaS",
+        "SaaS"
+      ]
+    },
+    {
+      "id": 15,
+      "nome": "Exploring Data Transformation with Google Cloud",
+      "instituicao": "Google",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computacao em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governanca em nuvem",
+        "Seguranca de nuvem",
+        "IaaS",
+        "PaaS (Plataforma como servico)",
+        "SaaS",
+        "Google Cloud Platform (GCP)"
+      ]
+    },
+    {
+      "id": 16,
+      "nome": "Innovating with Google Cloud Artificial Intelligence",
+      "instituicao": "Google",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computacao em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governanca em nuvem",
+        "Seguranca de nuvem",
+        "IaaS",
+        "PaaS (Plataforma como servico)",
+        "SaaS",
+        "Inteligencia artificial"
+      ]
+    },
+    {
+      "id": 17,
+      "nome": "PHP com Laravel",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 18,
+      "nome": "Conhecendo Collections Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Curso",
+      "competencies": [
+        "Java",
+        "Collections"
+      ]
+    },
+    {
+      "id": 19,
+      "nome": "Contribuindo em um Projeto Open Source no GitHub",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Projeto",
+      "competencies": [
+        "GitHub"
+      ]
+    },
+    {
+      "id": 20,
+      "nome": "Criando Aplicações de IA com Agentes Autônomos",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Palestra",
+      "competencies": [
+        "Inteligência artificial",
+        "Agentes de IA"
+      ]
+    },
+    {
+      "id": 21,
+      "nome": "Criando um Banco Digital com Java e Orientacao a Objetos",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Projeto",
+      "competencies": [
+        "Java",
+        "Programacao orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 22,
+      "nome": "Criando Um Pequeno Sistema Para Validacao de Processo Seletivo",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Projeto",
+      "competencies": [
+        "Java"
+      ]
+    },
+    {
+      "id": 23,
+      "nome": "Criando uma API REST Documentada com Spring Web e Swagger",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "API REST",
+        "Spring Framework",
+        "Swagger API"
+      ]
+    },
+    {
+      "id": 24,
+      "nome": "Debugging Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Java"
+      ]
+    },
+    {
+      "id": 25,
+      "nome": "Endpoint Security",
+      "instituicao": "Cisco",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Seguranca de rede",
+        "Seguranca de nuvem"
+      ]
+    },
+    {
+      "id": 26,
+      "nome": "Desafios de Codigo: Aperfeicoe Sua Logica e Pensamento Computacional",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Desafio",
+        "Lógica deProgramação"
+      ]
+    },
+    {
+      "id": 27,
+      "nome": "Desafios de Projetos: Crie Um Portfólio Vencedor",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Git",
+        "GitHub",
+        "Desafio",
+        "Lógica deProgramação"
+      ]
+    },
+    {
+      "id": 28,
+      "nome": "Consultas SQL: avançando no SQL com MySQL",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "14h",
+      "tipo": "Curso",
+      "competencies": [
+        "MySQL",
+        "SQL"
+      ]
+    },
+    {
+      "id": 29,
+      "nome": "Desenvolvendo APIs e Microsserviços na Claro",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Palestra",
+      "competencies": [
+        "API de Web Services",
+        "Microsserviços"
+      ]
+    },
+    {
+      "id": 30,
+      "nome": "Desenvolvendo Testes Utilizando Mockito",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Mockito",
+        "Java"
+      ]
+    },
+    {
+      "id": 31,
+      "nome": "Design Patterns com Java: Dos Clássicos (GoF) ao Spring Framework",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Projeto",
+      "competencies": [
+        "Padrões de design",
+        "Java",
+        "Spring Framework"
+      ]
+    },
+    {
+      "id": 32,
+      "nome": "Estruturas de Repeticao em Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Java"
+      ]
+    },
+    {
+      "id": 33,
+      "nome": "Fundamentos da Programacao Orientada a Objetos com Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Programacao orientada a objetos (POO)",
+        "Java"
+      ]
+    },
+    {
+      "id": 34,
+      "nome": "Ganhando Produtividade com Stream API",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Mini-Curso",
+      "competencies": [
+        "Java"
+      ]
+    },
+    {
+      "id": 35,
+      "nome": "Desenvolvimento de carreira: a demanda do mercado",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Curso",
+      "competencies": [
+        "AutoDesenvolvimento",
+        "Psicologia"
+      ]
+    },
+    {
+      "id": 36,
+      "nome": "Ganhando Produtividade no Java com Spring Framework",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "14h",
+        "Curso",
+        "Java",
+        "Spring Framework"
+      ]
+    },
+    {
+      "id": 37,
+      "nome": "Gerenciamento de Dependencias e Build em Java com Maven",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "2h",
+        "Mini-Curso",
+        "Maven",
+        "Java"
+      ]
+    },
+    {
+      "id": 38,
+      "nome": "Introducao a Banco de Dados Relacionais (SQL)",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "3h",
+        "Mini-Curso",
+        "SQL",
+        "Banco de dados"
+      ]
+    },
+    {
+      "id": 39,
+      "nome": "Introdução à Plataforma Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "1h",
+        "Mini-Curso",
+        "Java"
+      ]
+    },
+    {
+      "id": 40,
+      "nome": "Introducao a Spring Framework com Spring Boot",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "3h",
+        "Mini-Curso",
+        "Spring Framework",
+        "Spring Boot",
+        "Java"
+      ]
+    },
+    {
+      "id": 41,
+      "nome": "Introducao a Testes de Software",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "1h",
+        "Mini-Curso",
+        "Java"
+      ]
+    },
+    {
+      "id": 42,
+      "nome": "Introdução ao Ambiente Java e Projetos Colaborativos",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "9h",
+        "Curso",
+        "Java",
+        "Git"
+      ]
+    },
+    {
+      "id": 43,
+      "nome": "Introducao ao MongoDB e Bancos de Dados NoSQL",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "3h",
+        "Mini-Curso",
+        "MongoDB",
+        "Banco de dados",
+        "NoSQL"
+      ]
+    },
+    {
+      "id": 44,
+      "nome": "Introdução e Estruturas Condicionais com Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "1h",
+        "Mini-Curso",
+        "Java"
+      ]
+    },
+    {
+      "id": 45,
+      "nome": "Java e Tratamento de Exceções",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "1h",
+        "Mini-Curso",
+        "Java"
+      ]
+    },
+    {
+      "id": 46,
+      "nome": "Go + React",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "Curso",
+        "-"
+      ]
+    },
+    {
+      "id": 47,
+      "nome": "Live de Lançamento: Coding The Future Claro  Java com Spring Boot",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "2h",
+        "Palestra",
+        "Java",
+        "Spring Boot"
+      ]
+    },
+    {
+      "id": 48,
+      "nome": "Modelando o iPhone com UML: Funcoes de Musicas, Chamadas e Internet",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "2h",
+        "Projeto",
+        "UML (Linguagem de modelagem unificada)",
+        "Ferramentas UML"
+      ]
+    },
+    {
+      "id": 49,
+      "nome": "O Mundo Devops na Claro",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "2h",
+        "Projeto",
+        "DevOps"
+      ]
+    },
+    {
+      "id": 50,
+      "nome": "Pilares da Programação Orientada a Objetos em Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "2h",
+        "Mini-Curso",
+        "Programação orientada a objetos (POO)",
+        "Java"
+      ]
+    },
+    {
+      "id": 51,
+      "nome": "Programacao Orientada a Objetos com Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "18h",
+        "Curso",
+        "Programacao orientada a objetos (POO)",
+        "Java"
+      ]
+    },
+    {
+      "id": 52,
+      "nome": "Publicando Sua API REST na Nuvem Usando Spring Boot 3, Java 17 e Railway",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "3h",
+        "Projeto",
+        "API REST",
+        "Computação em nuvem",
+        "Spring Boot",
+        "Java"
+      ]
+    },
+    {
+      "id": 53,
+      "nome": "Simulando Uma Conta Bancaria Através Do Terminal/Console",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "1h",
+        "Projeto",
+        "Java"
+      ]
+    },
+    {
+      "id": 54,
+      "nome": "Sintaxe Basica com Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "13h",
+        "Curso",
+        "Java"
+      ]
+    },
+    {
+      "id": 55,
+      "nome": "Testes e Gerenciamento de Dependencias em Projetos Java",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "8h",
+        "Curso",
+        "Java"
+      ]
+    },
+    {
+      "id": 56,
+      "nome": "Desenvolvimento de carreira: como alcançar a posição desejada",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "AutoDesenvolvimento"
+      ]
+    },
+    {
+      "id": 57,
+      "nome": "Empreendedorismo: da ideia ao plano de negócios",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "Planejamento empresarial",
+        "Empreendedorismo"
+      ]
+    },
+    {
+      "id": 58,
+      "nome": "Testes Unitarios Com JUnit",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "2h",
+        "Mini-Curso",
+        "JUnit",
+        "Java"
+      ]
+    },
+    {
+      "id": 59,
+      "nome": "NLW Journey  Csharp",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "C#",
+        "-"
+      ]
+    },
+    {
+      "id": 60,
+      "nome": "NLW Journey  DevOps",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "DevOps",
+        "-"
+      ]
+    },
+    {
+      "id": 61,
+      "nome": "NLW Journey  Fullstack",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Fullstack",
+        "-"
+      ]
+    },
+    {
+      "id": 62,
+      "nome": "NLW Journey  GoLang",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "GoLang",
+        "-"
+      ]
+    },
+    {
+      "id": 63,
+      "nome": "NLW Journey  IA",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Inteligência Artificial",
+        "-"
+      ]
+    },
+    {
+      "id": 64,
+      "nome": "NLW Journey  Java",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Java",
+        "-"
+      ]
+    },
+    {
+      "id": 65,
+      "nome": "NLW Journey  Nodejs",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Node.js",
+        "-"
+      ]
+    },
+    {
+      "id": 66,
+      "nome": "NLW Journey  Python",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "Python",
+        "-"
+      ]
+    },
+    {
+      "id": 67,
+      "nome": "NLW Journey  React Native",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "React Native",
+        "-"
+      ]
+    },
+    {
+      "id": 68,
+      "nome": "NLW Journey  Reactjs",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "tipo": "Curso",
+      "competencies": [
+        "React.js",
+        "-"
+      ]
+    },
+    {
+      "id": 69,
+      "nome": "Foco: trazendo mais resultados para o dia a dia",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Curso",
+      "competencies": [
+        "AutoDesenvolvimento"
+      ]
+    },
+    {
+      "id": 70,
+      "nome": "Formação Aprenda a programar em Java com Orientação a Objetos",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "39h",
+      "tipo": "Formação",
+      "competencies": [
+        "Java",
+        "Programação orientada a objetos (POO)",
+        "Padrões de design",
+        "API de Web Services"
+      ]
+    },
+    {
+      "id": 71,
+      "nome": "Formação Desenvolvimento Pessoal T6  ONE",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "38h",
+      "tipo": "Formação",
+      "competencies": [
+        "AutoDesenvolvimento",
+        "Psicologia"
+      ]
+    },
+    {
+      "id": 72,
+      "nome": "Formação Empreendedorismo, Agilidade e Protagonismo na Carreira T6  ONE",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "54h",
+      "tipo": "Formação",
+      "competencies": [
+        "AutoDesenvolvimento",
+        "Psicologia",
+        "Empreendedorismo"
+      ]
+    },
+    {
+      "id": 73,
+      "nome": "Formação Iniciante em Programação T6  ONE",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "54h",
+      "tipo": "Formação",
+      "competencies": [
+        "Git",
+        "GitHub",
+        "HTML",
+        "CSS",
+        "JS"
+      ]
+    },
+    {
+      "id": 74,
+      "nome": "Formação Java e Orientação a Objetos T6  ONE",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "49h",
+      "tipo": "Formação",
+      "competencies": [
+        "Java",
+        "Padrões de design",
+        "API de Web Services",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 75,
+      "nome": "Versionamento de Código com Git e GitHub",
+      "instituicao": "DIO",
+      "ano": 2024,
+      "descricao": "Bootcamp - Coding The Future - Claro - Java com Spring Boot",
+      "tipo": "Carga Horária: ",
+      "competencies": [
+        "2h",
+        "Mini-Curso",
+        "Git",
+        "GitHub"
+      ]
+    },
+    {
+      "id": 76,
+      "nome": "Build a Secure Google Cloud Network Skill Badge",
+      "instituicao": "Google",
+      "ano": 2024,
+      "competencies": [
+        "Armazenamento em nuvem",
+        "Aplicativos em nuvem",
+        "Computação em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "Desenvolvimento em nuvem",
+        "Google Cloud Platform (GCP)",
+        "IaaS",
+        "PaaS (Plataforma como serviço)",
+        "SaaS"
+      ]
+    },
+    {
+      "id": 77,
+      "nome": "Formação Java e Spring Boot",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "34h",
+      "tipo": "Formação",
+      "competencies": [
+        "Programação orientada a objetos (POO)",
+        "Spring Boot",
+        "Spring Data",
+        "Spring Framework",
+        "JPA (Java Persistence API)",
+        "JSON Web Token (JWT)",
+        "Java"
+      ]
+    },
+    {
+      "id": 78,
+      "nome": "Formação Java e Spring Framework T6 ONE",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "108h",
+      "tipo": "Formação",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "Spring Data",
+        "Spring Framework",
+        "JPA (Java Persistence API)",
+        "API REST",
+        "API de Web Services",
+        "Programação orientada a objetos (POO)",
+        "Apache Maven",
+        "Padrões de design",
+        "HTML",
+        "CSS",
+        "Banco de dados",
+        "PostgreSQL",
+        "MySQL",
+        "SQL",
+        "JSON",
+        "JSON Web Token (JWT)"
+      ]
+    },
+    {
+      "id": 79,
+      "nome": "Formação Java Web: crie aplicações usando Spring Boot",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "40h",
+      "tipo": "Formação",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "Spring Data",
+        "Spring Framework",
+        "JPA (Java Persistence API)",
+        "API de Web Services",
+        "Programação orientada a objetos (POO)",
+        "Apache Maven"
+      ]
+    },
+    {
+      "id": 80,
+      "nome": "Prepare Data for ML APIs on Google Cloud Skill Badge",
+      "instituicao": "Google",
+      "ano": 2024,
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "Desenvolvimento em nuvem",
+        "Google Cloud Platform (GCP)",
+        "IaaS",
+        "PaaS (Plataforma como serviço)",
+        "SaaS"
+      ]
+    },
+    {
+      "id": 81,
+      "nome": "Set Up an App Dev Environment on Google Cloud Skill Badge",
+      "instituicao": "Google",
+      "ano": 2024,
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Segurança de nuvem",
+        "Governança em nuvem",
+        "Google Cloud Platform (GCP)",
+        "IaaS",
+        "PaaS (Plataforma como serviço)",
+        "SaaS"
+      ]
+    },
+    {
+      "id": 82,
+      "nome": "Google Cloud Computing Foundations: Cloud Computing Fundamentals",
+      "instituicao": "Google",
+      "ano": 2024,
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "Google Cloud Platform (GCP)",
+        "IaaS",
+        "PaaS (Plataforma como serviço)",
+        "SaaS"
+      ]
+    },
+    {
+      "id": 83,
+      "nome": "Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud",
+      "instituicao": "Google",
+      "ano": 2024,
+      "competencies": [
+        "Google Cloud AutoML",
+        "Google Cloud Dataflow",
+        "Google Cloud Platform (GCP)",
+        "Inteligência artificial",
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem"
+      ]
+    },
+    {
+      "id": 84,
+      "nome": "Google Cloud Computing Foundations: Infrastructure in Google Cloud",
+      "instituicao": "Google",
+      "ano": 2024,
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "Google Cloud Platform (GCP)",
+        "IaaS",
+        "PaaS (Plataforma como serviço)",
+        "SaaS"
+      ]
+    },
+    {
+      "id": 85,
+      "nome": "Google Cloud Computing Foundations: Networking & Security in Google Cloud",
+      "instituicao": "Google",
+      "ano": 2024,
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "Desenvolvimento em nuvem",
+        "IaaS",
+        "PaaS (Plataforma como serviço)",
+        "SaaS",
+        "Google Cloud Platform (GCP)"
+      ]
+    },
+    {
+      "id": 86,
+      "nome": "Formação Minha carreira",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "32h",
+      "tipo": "Formação",
+      "competencies": [
+        "AutoDesenvolvimento",
+        "Psicologia"
+      ]
+    },
+    {
+      "id": 87,
+      "nome": "Formação Minha Carreira",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "40h",
+      "tipo": "Formação",
+      "competencies": [
+        "AutoDesenvolvimento",
+        "Psicologia"
+      ]
+    },
+    {
+      "id": 88,
+      "nome": "Implement Load Balancing on Compute Engine Skill Badge",
+      "instituicao": "Google",
+      "ano": 2024,
+      "competencies": [
+        "Balanceamento de carga de rede",
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "Google Cloud Platform (GCP)",
+        "IaaS",
+        "PaaS (Plataforma como serviço)"
+      ]
+    },
+    {
+      "id": 89,
+      "nome": "Inteligência Artificial: eleve sua produtividade e acelere sua carreira",
+      "instituicao": "Escola Conquer",
+      "ano": 2024,
+      "competencies": [
+        "Inteligência artificial",
+        "-"
+      ]
+    },
+    {
+      "id": 90,
+      "nome": "Gestão Ágil: explorando conceitos da agilidade",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "Gestão ágil de projetos"
+      ]
+    },
+    {
+      "id": 91,
+      "nome": "Jornada Python",
+      "instituicao": "Hashtag Treinamentos",
+      "ano": 2024,
+      "competencies": [
+        "Python",
+        "-"
+      ]
+    },
+    {
+      "id": 92,
+      "nome": "Semana do Programador 7x Outsystems",
+      "instituicao": "Academia RafaOutSystems",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 93,
+      "nome": "Git e GitHub: compartilhando e colaborando em projetos",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "GitHub",
+        "Git"
+      ]
+    },
+    {
+      "id": 94,
+      "nome": "Hábitos: da produtividade às metas pessoais",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "AutoDesenvolvimento"
+      ]
+    },
+    {
+      "id": 95,
+      "nome": "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "HTML",
+        "CSS",
+        "JS"
+      ]
+    },
+    {
+      "id": 96,
+      "nome": "HTML e CSS: cabeçalho, footer e variáveis CSS",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "6h",
+      "tipo": "Curso",
+      "competencies": [
+        "HTML",
+        "CSS",
+        "JS"
+      ]
+    },
+    {
+      "id": 97,
+      "nome": "HTML e CSS: Classes, posicionamento e Flexbox",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "HTML",
+        "CSS",
+        "JS"
+      ]
+    },
+    {
+      "id": 98,
+      "nome": "HTML e CSS: trabalhando com responsividade e publicação de projetos",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "6h",
+      "tipo": "Curso",
+      "competencies": [
+        "HTML",
+        "CSS",
+        "JS"
+      ]
+    },
+    {
+      "id": 99,
+      "nome": "Imersao Dev com Google Gemini",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Imersão Alura",
+      "horasdesc": "Carga horária:",
+      "horas": "4h",
+      "tipo": "Palestra",
+      "competencies": [
+        "Google Gemini"
+      ]
+    },
+    {
+      "id": 100,
+      "nome": "Imersão Inteligência Artificial 2ª Edição",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Imersão Alura",
+      "horasdesc": "Carga horária:",
+      "horas": "6h",
+      "tipo": "Palestra",
+      "competencies": [
+        "Inteligência artificial"
+      ]
+    },
+    {
+      "id": 101,
+      "nome": "Imersão Python: Do Excel à Análise de Dados",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Imersão Alura",
+      "horasdesc": "Carga horária:",
+      "horas": "5h",
+      "tipo": "Palestra",
+      "competencies": [
+        "Python",
+        "Microsoft Excel",
+        "Análise de dados",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 102,
+      "nome": "Java: aplicando a Orientação a Objetos",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Curso",
+      "competencies": [
+        "Java",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 103,
+      "nome": "NLW Unite  Csharp",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 104,
+      "nome": "NLW Unite  DevOps",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 105,
+      "nome": "NLW Unite  Fullstack",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 106,
+      "nome": "NLW Unite  Java",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 107,
+      "nome": "NLW Unite  Nodejs",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 108,
+      "nome": "NLW Unite  Python",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 109,
+      "nome": "NLW Unite  React Native",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 110,
+      "nome": "NLW Unite  Reactjs",
+      "instituicao": "Rocketseat",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 111,
+      "nome": "Oracle Cloud Infrastructure 2023 AI Certified Foundations Associate",
+      "instituicao": "Oracle",
+      "ano": 2024,
+      "competencies": [
+        "Oracle Cloud Infrastructure",
+        "Inteligência Artificial",
+        "-"
+      ]
+    },
+    {
+      "id": 112,
+      "nome": "Power BI Week",
+      "instituicao": "Xperiun",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 113,
+      "nome": "Java: consumindo API, gravando arquivos e lidando com erros",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Curso",
+      "competencies": [
+        "Java",
+        "API de Web Services",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 114,
+      "nome": "Tech: Escalar na Nuvem AWS",
+      "instituicao": "TIDWIT",
+      "ano": 2024,
+      "competencies": [
+        "Aplicativos em nuvem",
+        "Armazenamento em nuvem",
+        "Computação em nuvem",
+        "Desenvolvimento em nuvem",
+        "Governança em nuvem",
+        "Segurança de nuvem",
+        "Amazon Web Services"
+      ]
+    },
+    {
+      "id": 115,
+      "nome": "Java: criando a sua primeira aplicação",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "Java",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 116,
+      "nome": "Java: criando sua primeira API e conectando ao front",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Curso",
+      "competencies": [
+        "API de Web Services",
+        "Java",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 117,
+      "nome": "Java: persistência de dados e consultas com Spring Data JPA",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "16h",
+      "tipo": "Curso",
+      "competencies": [
+        "Spring Boot",
+        "Spring Framework",
+        "Java",
+        "JPA (Java Persistence API)",
+        "PostgreSQL",
+        "Spring Data",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 118,
+      "nome": "Java: trabalhando com lambdas, streams e Spring Framework",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "14h",
+      "tipo": "Curso",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "Spring Framework",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 119,
+      "nome": "Semana do Python na prática",
+      "instituicao": "Empowerdata",
+      "ano": 2024,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 120,
+      "nome": "Java: trabalhando com listas e coleções de dados",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "Java",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 121,
+      "nome": "LinkedIn: como fazer o seu perfil trabalhar para você",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "4h",
+      "tipo": "Curso",
+      "competencies": [
+        "LinkedIn"
+      ]
+    },
+    {
+      "id": 122,
+      "nome": "Lógica de programação: explore funções e listas",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "6h",
+      "tipo": "Curso",
+      "competencies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "id": 123,
+      "nome": "Lógica de programação: mergulhe em programação com JavaScript",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "6h",
+      "tipo": "Curso",
+      "competencies": [
+        "JavaScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "id": 124,
+      "nome": "Praticando Java: Challenge conversor de moedas",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Projeto",
+      "competencies": [
+        "Java",
+        "API de Web Services",
+        "Padrões de design",
+        "POO"
+      ]
+    },
+    {
+      "id": 125,
+      "nome": "Praticando Spring Boot: Challenge LiterAlura",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "15h",
+      "tipo": "Projeto",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "CSS",
+        "HTML",
+        "GitHub",
+        "JavaScript",
+        "JPA",
+        "PostgreSQL",
+        "Spring Framework",
+        "POO",
+        "Padrões de design"
+      ]
+    },
+    {
+      "id": 126,
+      "nome": "Praticando Spring Framework: Challenge Fórum Hub",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "20h",
+      "tipo": "Projeto",
+      "competencies": [
+        "JavaScript",
+        "HTML",
+        "Java",
+        "CSS",
+        "JPA",
+        "Spring Boot",
+        "PostgreSQL",
+        "Apache Maven",
+        "Spring Framework",
+        "POO",
+        "Padrões de design"
+      ]
+    },
+    {
+      "id": 127,
+      "nome": "Programa Oracle Next Education F2 T6 Backend",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "303h",
+      "tipo": "Formação",
+      "competencies": [
+        "Oracle Cloud Infrastructure",
+        "Java",
+        "Spring Boot",
+        "Spring Data",
+        "Spring Framework",
+        "JPA",
+        "API REST",
+        "API de Web Services",
+        "POO",
+        "Apache Maven",
+        "Padrões de design"
+      ]
+    },
+    {
+      "id": 128,
+      "nome": "Propósito profissional: seja protagonista da sua carreira",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "AutoDesenvolvimento"
+      ]
+    },
+    {
+      "id": 129,
+      "nome": "Spring Boot 3: aplique boas práticas e proteja uma API Rest",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "12h",
+      "tipo": "Curso",
+      "competencies": [
+        "API de Web Services",
+        "Spring Boot",
+        "Java",
+        "API REST",
+        "Spring Framework",
+        "POO",
+        "Padrões de design"
+      ]
+    },
+    {
+      "id": 130,
+      "nome": "Spring Boot 3: desenvolva uma API Rest em Java",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Curso",
+      "competencies": [
+        "API de Web Services",
+        "Java",
+        "Spring Boot",
+        "API REST",
+        "Spring Framework",
+        "POO"
+      ]
+    },
+    {
+      "id": 131,
+      "nome": "Spring Boot 3: documente, teste e prepare uma API para o deploy",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "10h",
+      "tipo": "Curso",
+      "competencies": [
+        "Java",
+        "API de Web Services",
+        "API REST",
+        "Spring Boot",
+        "JPA (Java Persistence API)",
+        "Spring Framework",
+        "Programação orientada a objetos (POO)"
+      ]
+    },
+    {
+      "id": 132,
+      "nome": "SQL com MySQL: manipule e consulte dados",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "12h",
+      "tipo": "Curso",
+      "competencies": [
+        "MySQL",
+        "SQL"
+      ]
+    },
+    {
+      "id": 133,
+      "nome": "Transição de carreira: um guia para a área da tecnologia",
+      "instituicao": "Alura",
+      "ano": 2024,
+      "descricao": "Programa Oracle Next Education F2 T6 Backend",
+      "horasdesc": "Carga horária:",
+      "horas": "8h",
+      "tipo": "Curso",
+      "competencies": [
+        "AutoDesenvolvimento"
+      ]
+    },
+    {
+      "id": 134,
+      "nome": "Oracle Cloud Infrastructure Certified Foundations Associate",
+      "instituicao": "Oracle",
+      "ano": 2023,
+      "horas": "Oracle Cloud Infrastructure",
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 135,
+      "nome": "Produtividade Inteligente",
+      "instituicao": "Escola Conquer",
+      "ano": 2023,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 136,
+      "nome": "Programador FullStack",
+      "instituicao": "Senac Sergipe",
+      "ano": 2023,
+      "horas": "JavaScript",
+      "tipo": "HTML",
+      "competencies": [
+        "Banco de dados",
+        "Node.js",
+        "CSS",
+        "MySQL",
+        "API de Web Services"
+      ]
+    },
+    {
+      "id": 137,
+      "nome": "Participação na SNCT",
+      "instituicao": "Semana Nacional de Tecnologia",
+      "ano": "IFS  Instituto Federal de Sergipe",
+      "horasdesc": "Verificação emitida em nov de 2019",
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 138,
+      "nome": "Oficina de Cordel",
+      "instituicao": "IFS  Instituto Federal de Sergipe",
+      "ano": 2019,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 139,
+      "nome": "Reciclagem de lixo eletrônico",
+      "instituicao": "IFS  Instituto Federal de Sergipe",
+      "ano": 2019,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 140,
+      "nome": "Mini curso, Apresentação de projetos com Arduino",
+      "instituicao": "IFS  Instituto Federal de Sergipe",
+      "ano": 2019,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 141,
+      "nome": "Mini curso, scadabr com utilização de Arduino",
+      "instituicao": "IFS  Instituto Federal de Sergipe",
+      "ano": 2019,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 142,
+      "nome": "Participação no Arduino Day 2019",
+      "instituicao": "IFS  Instituto Federal de Sergipe",
+      "ano": 2019,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 143,
+      "nome": "Atendimento Em Call Center",
+      "instituicao": "Instituto Crescer",
+      "ano": 2016,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 144,
+      "nome": "Operador de Computadores",
+      "instituicao": "Serviço Nacional de Aprendizagem Industrial",
+      "ano": 2015,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 145,
+      "nome": "Oratória",
+      "instituicao": "Senac Sergipe",
+      "ano": 2014,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 146,
+      "nome": "Capacitação de Supervisores",
+      "instituicao": "CIOSP/ SSPSE / Central 24 horas",
+      "ano": 2012,
+      "horasdesc": "Gestão e Supervisão Operacional",
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 147,
+      "nome": "Auxiliar Administrativo",
+      "instituicao": "Brasil Qualificação Profissional",
+      "ano": 2010,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 148,
+      "nome": "Recepcionista de Hotéis e Pousadas",
+      "instituicao": "Brasil Qualificação Profissional",
+      "ano": 2010,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 149,
+      "nome": "Word & Excel Avançados",
+      "instituicao": "Senac Sergipe",
+      "ano": 2010,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 150,
+      "nome": "Auxiliar de Montagem e Manutenção de Computadores",
+      "instituicao": "Senac Sergipe",
+      "ano": 2009,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 151,
+      "nome": "Informática Básica",
+      "instituicao": "Centro de Democratização à Informática",
+      "ano": 2005,
+      "competencies": [
+        "-"
+      ]
+    },
+    {
+      "id": 152,
+      "nome": "Desenvolvimento de Jogos",
+      "instituicao": "Danki Code",
+      "ano": 2005,
+      "horas": "C#",
+      "tipo": "Java",
+      "competencies": [
+        "Desenvolvimento de jogos eletrônicos",
+        "Programação de jogos eletrônicos",
+        "Jogos casuais",
+        "Unity",
+        "C++",
+        "Design de jogos",
+        "Jogos",
+        "Jogos sociais"
+      ]
+    }
+  ]
+}

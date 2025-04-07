@@ -1,0 +1,16 @@
+{
+  "about": [
+    {
+      "foto": "./src/images/ima2.jpg",
+      "alt": "Wendel Tytan",
+      "p1": "Estudante de Ciência da Computação com formação técnica em Manutenção e Suporte em Informática, apaixonado por tecnologia e desenvolvimento de soluções inteligentes. Possuo conhecimentos em montagem e manutenção de computadores, redes, sistemas operacionais e suporte técnico. Atuo também como programador, com experiência em linguagens como JavaScript, Python e HTML/CSS, além de noções em bancos de dados e desenvolvimento web. Busco constantemente aprimorar minhas habilidades e estou sempre aberto a novos desafios, com foco em crescimento profissional e contribuição em projetos inovadores na área de TI.",
+      "p2": "Entusiasta de Tecnologia da Informação e Manutenção em computadores, conhecimento em cabeamento estruturado, Rede de computadores e cftv, Programação, assim como conhecimentos e projetos em Arduino",
+      "competencies": [
+        "React",
+        "TypeScript",
+        "Node.js",
+        "Tailwind"
+      ]
+    }
+  ]
+}

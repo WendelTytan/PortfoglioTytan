@@ -1,0 +1,160 @@
+{
+  "courses": [
+    {
+      "nome": "en Web Development Bootcamp",
+      "instituicao": "Udemy",
+      "ano": 2023,
+      "descricao": "Curso completo de desenvolvimento web, incluindo HTML, CSS, JavaScript e Node.js",
+      "horasdesc": "Carga horária:",
+      "horas": "-",
+      "tipo": "-",
+      "competencies": [
+        "-",
+        "-",
+        "-",
+        "-",
+        "-",
+        "-"
+      ]
+    },
+    {
+      "nome": "React Masterclass",
+      "instituicao": "Rocketseat",
+      "ano": 2022,
+      "descricao": "Curso avançado de React, incluindo hooks, context API e performance",
+      "horasdesc": "Carga horária:",
+      "horas": 40,
+      "tipo": "Mini-Curso",
+      "competencies": [
+      ]
+    },
+    {
+      "nome": "Python para Data Science",
+      "instituicao": "DataCamp",
+      "ano": 2023,
+      "descricao": "Fundamentos de Python aplicados à análise de dados e machine learning",
+      "horasdesc": "Carga horária:",
+      "horas": 45,
+      "tipo": "Evento",
+      "competencies": [
+        "-",
+        "Pandas",
+        "NumPy",
+        "Scikit-learn",
+        "Matplotlib"
+      ]
+    },
+    {
+      "nome": "AWS Cloud Practitioner",
+      "instituicao": "Amazon",
+      "ano": 2023,
+      "descricao": "Certificação oficial AWS com foco em serviços cloud fundamentais",
+      "horasdesc": "Carga horária:",
+      "horas": 30,
+      "tipo": "Palestra",
+      "competencies": [
+        "AWS",
+        "Cloud",
+        "DevOps",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "nome": "UI/UX Design Fundamentals",
+      "instituicao": "Google",
+      "ano": 2022,
+      "descricao": "Princípios de design de interface e experiência do usuário",
+      "horasdesc": "Carga horária:",
+      "horas": 35,
+      "tipo": "Formacao",
+      "competencies": [
+        "Figma",
+        "UI Design",
+        "UX Research",
+        "Prototyping",
+        "Wireframing"
+      ]
+    },
+    {
+      "nome": "Mobile Development with Flutter",
+      "instituicao": "Flutter Academy",
+      "ano": 2023,
+      "descricao": "Desenvolvimento de aplicativos móveis multiplataforma",
+      "horasdesc": "Carga horária:",
+      "horas": 50,
+      "tipo": "Curso",
+      "competencies": [
+        "Flutter",
+        "Dart",
+        "Mobile Design",
+        "State Management",
+        "Firebase"
+      ]
+    },
+    {
+      "nome": "Advanced JavaScript Patterns",
+      "instituicao": "Frontend Masters",
+      "ano": 2023,
+      "descricao": "Padrões avançados de JavaScript e boas práticas",
+      "horasdesc": "Carga horária:",
+      "horas": 25,
+      "tipo": "Badges",
+      "competencies": [
+        "JavaScript",
+        "Design Patterns",
+        "Clean Code",
+        "Testing",
+        "TypeScript"
+      ]
+    },
+    {
+      "nome": "Blockchain Development",
+      "instituicao": "Web3 Foundation",
+      "ano": 2023,
+      "descricao": "Desenvolvimento de aplicações descentralizadas",
+      "horasdesc": "Carga horária:",
+      "horas": 40,
+      "tipo": "Capacitacao",
+      "competencies": [
+        "Solidity",
+        "Web3.js",
+        "Smart Contracts",
+        "Ethereum",
+        "DApps"
+      ]
+    },
+    {
+      "nome": "Machine Learning Specialization",
+      "instituicao": "Stanford Online",
+      "ano": 2022,
+      "descricao": "Especialização completa em machine learning e IA",
+      "horasdesc": "Carga horária:",
+      "horas": 80,
+      "tipo": "Certificado",
+      "competencies": [
+        "Python",
+        "TensorFlow",
+        "Neural Networks",
+        "Deep Learning",
+        "Computer Vision"
+      ]
+    },
+    {
+      "nome": "DevOps Engineering",
+      "instituicao": "Linux Foundation",
+      "ano": 2023,
+      "descricao": "Práticas modernas de DevOps e CI/CD",
+      "horasdesc": "Carga horária:",
+      "horas": 55,
+      "tipo": "PTPlaceholder3",
+      "competencies": [
+        "Jenkins",
+        "GitLab CI",
+        "Ansible",
+        "Terraform",
+        "Monitoring"
+      ]
+    }
+  ]
+}

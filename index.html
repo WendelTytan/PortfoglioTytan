@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wendel Tytan</title>
+    <link rel="icon" href="./src/images/favicon.png" type="image/x-icon">
+
+    <meta name="description" content="Curriculo & Portfólio Tytan moderno e vibrante feito com Tailwind e JavaScript.">
+    <meta name="keywords" content="curriculo, portfólio, web design, Tailwind CSS, desenvolvedor web">
+    <meta name="author" content="Wendel Tytan"/>
+
+    <meta property="og:title" content="Meu Site Incrível - Portfólio Moderno">
+    <meta property="og:description" content="Veja meu curriculo e portfólio estiloso e vibrante!">
+    <meta property="og:image" content="https://seusite.com/imagem-preview.jpg">
+    <meta property="og:url" content="https://seusite.com">
+    <meta property="og:type" content="Curriculo">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@latest/i18nextHttpBackend.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@latest/i18nextBrowserLanguageDetector.min.js"></script>
+    <link rel="stylesheet" href="src/styles/main.css">
+  </head>
+  <body>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu fixed top-4 left-[0.938rem] z-50 p-2 rounded-lg 
+                  cor-prin">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="4" x2="20" y1="12" y2="12"/>
+        <line x1="4" x2="20" y1="6" y2="6"/>
+        <line x1="4" x2="20" y1="18" y2="18"/>
+      </svg>
+    </button>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="sidebar fixed h-full 
+                cor-prin z-40
+                flex flex-col justify-between transition-all duration-300 ease-in-out overflow-hidden group">
+      <div class="side_bar flex flex-col"> <!-- w-16 hover:w-48  space-y-4 hover:w-50 quando passa do 48 dá erro-->
+        <a href="#home" class="sidebar-item sidebar-icons texto-light" data-section="home"> <!--flex items-center space-x-4 px-4 py-2 group-hover:justify-start transition-all duration-300-->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <span id="id-do-inicio" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Início
+          </span>
+        </a>
+        <a href="#about" class="sidebar-item sidebar-icons texto-light" data-section="about">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 16v-4"/><path d="M12 8h.01"/>
+          </svg>
+          <span id="id-do-sobre" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Sobre
+          </span>
+        </a>
+        <a href="#formation" class="sidebar-item sidebar-icons texto-light" data-section="formation">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+          </svg>
+          <span id="id-do-form" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Formação
+          </span>
+        </a>
+        <a href="#experience" class="sidebar-item sidebar-icons texto-light" data-section="experience">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+          <span id="id-do-exp" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Experiência
+          </span>
+        </a>
+        <a href="#courses" class="sidebar-item sidebar-icons texto-light" data-section="courses">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+          </svg>
+          <span id="id-do-cur" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Cursos
+          </span>
+        </a>
+        <a href="#projects" class="sidebar-item sidebar-icons texto-light" data-section="projects">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+          </svg>
+          <span id="id-do-proj" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Projetos
+          </span>
+        </a>
+        <a href="#more-about" class="sidebar-item sidebar-icons texto-light" data-section="more-about">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+          </svg>          
+          <span id="id-do-mais" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Mais Sobre
+          </span>
+        </a>
+        <a href="#tabletop-projects" class="sidebar-item sidebar-icons texto-light" data-section="tabletop-projects">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" class="icon" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
+          </svg>
+          <span id="id-do-other" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Outros Projetos
+          </span>
+        </a>
+        <a href="#contact" class="sidebar-item sidebar-icons texto-light" data-section="contact">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="20" height="16" x="2" y="4" rx="2"/>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+          </svg>
+          <span id="id-do-contact" class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Contato
+          </span>
+        </a>
+      </div>
+
+      <div class="p-4 mt-auto flex flex-col items-center gap-3">
+        <a class="escuro-outro sidebar-item border-r-2 border outro-theme texto-light rounded-lg px-2 py-1">
+          <button id="themeToggle" class="p-2 rounded-lg outro-theme transition-colors">
+            <svg id="sunIcon" class="icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            <svg id="moonIcon" class="icon light:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+        </a>
+    
+        <!-- <label id="idioma" for="language-selector">🌍 Idioma:</label> -->
+        <div class="custom-select">
+          <!-- <a class="sidebar-item border border-gray-300 dark:border-gray-700 rounded-lg escuro-theme claro-theme"> -->
+            <select id="language-selector" class="sidebar-item border-r-2 texto-light border rounded-lg cor-prin escuro-cont escuro-outro outro-theme bd-idioma">
+              <option value="pt">PT</option>
+              <option value="en">EN</option>
+            </select>
+            
+          <!-- </a> -->
+        </div>
+      </div>
+      
+      
+      
+    </nav>
+
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+    <!-- Main Content with padding for sidebar -->
+    <div class="pl-[4.5rem] md:pl-[4.5rem]">
+
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!--  -->
+
+      <!-- Hero Section -->
+      <section id="home" class="min-h-screen flex items-center justify-center 
+                                hero">
+      <div class="container mx-auto px-6 py-20 text-center">
+        <div class="hero_hero">
+          <!-- <div class="animate-fade-in"> -->
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 escuro-p1 claro-p1">
+              Olá, eu sou <span class="escuro-p2 claro-p2">Wendel Vinicius Santana Passos</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 escuro-title claro-title">
+              Desenvolvedor Full Stack
+            </p>
+            <div class="flex justify-center space-x-6">
+              <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" class="transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="mailto:seu-email@exemplo.com" class="transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="py-20 
+                                cor-prin">
+      <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center escuro-p1 claro-p1">
+            Sobre <span class="escuro-p2 claro-p2">Mim</span>
+          </h2>
+          <div class="about_about">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+              <div class="animate-slide-in">
+                <img
+                  src="./src/images/ima2.jpg"
+                  alt="Wendel Tytan"
+                  class="rounded-lg shadow-xl w-full max-w-md mx-auto"
+                />
+              </div>
+              <div class="space-y-6 animate-slide-in">
+                <p class="escuro-p1 claro-p1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                </p>
+                <p class="escuro-p1 claro-p1">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                  <span class="px-4 py-2 rounded-full escuro-p1 claro-p1 fundo-suave">React</span>
+                  <span class="px-4 py-2 rounded-full escuro-p1 claro-p1 fundo-suave">TypeScript</span>
+                  <span class="px-4 py-2 rounded-full escuro-p1 claro-p1 fundo-suave">Node.js</span>
+                  <span class="px-4 py-2 rounded-full escuro-p1 claro-p1 fundo-suave">Tailwind</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- Formation Section -->
+      <section id="formation" class="py-20 
+                                    cor-prin">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center escuro-p1 claro-p1">
+            Minha <span class=" escuro-p2 claro-p2">Formação</span>
+          </h2>
+          <div class="space-y-8">
+            <div class="p-6 rounded-lg">
+              <h3 class="text-xl font-semibold escuro-p2 claro-p2">Universiotário</h3>
+              <p class="escuro-title claro-title">Teste • 2025 - Presente</p>
+              <p class="mt-4 escuro-p1 claro-p1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="p-6 rounded-lg">
+              <h3 class="text-xl font-semibold escuro-p2 claro-p2">Eca ele estuda</h3>
+              <p class="escuro-title claro-title">Empresa ABC • 2019 - 2021</p>
+              <p class="mt-4 escuro-p1 claro-p1">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="py-20 
+                                      cor-prin">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Minha <span class="">Experiência</span>
+          </h2>
+          <div class="space-y-8">
+            <div class="p-6 rounded-lg">
+              <h3 class="text-xl font-semibold">Desenvolvedor Full Stack</h3>
+              <p class="">Empresa XYZ • 2021 - Presente</p>
+              <p class="mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+            <div class="p-6 rounded-lg">
+              <h3 class="text-xl font-semibold ">Desenvolvedor Front-end</h3>
+              <p class="">Empresa ABC • 2019 - 2021</p>
+              <p class="mt-4">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses Section -->
+      <section id="courses" class="py-20 
+                                  cor-prin">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Meus <span class="">Cursos</span>
+          </h2>
+          <div class="grid">
+            <!-- Courses will be loaded here by JavaScript -->
+            <div class="resum_resum">
+            </div>
+          </div> <!-- teste -->
+          <div class="cont_comp">
+            <div class="inline-block px-6 py-3 rounded-lg">
+              <p class="text-lg mb-2">Contagem de Competências:</p>
+              <div class="flex flex-wrap justify-center gap-2">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-20 
+                                    cor-prin">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Meus <span class="">Projetos</span>
+          </h2>
+          
+          <!-- Search Bar -->
+          <div id="pesquisa" class="max-w-md mx-auto mb-8">
+            <div class="relative">
+              <input 
+                type="text" 
+                id="project-search"
+                placeholder="Buscar projetos..."
+                class="w-full px-4 py-2 rounded-lg border
+                cor-prin"
+              >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-search absolute left-3 top-1/2 transform -translate-y-1/2 "><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8" id="projects-grid">
+            <div class="rounded-lg overflow-hidden">
+              <img src="./src/images/ima1.jpg" alt="Projeto 1" class="card-image object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold">Projeto 1</h3>
+                <p class="mt-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <span class="px-3 py-1 rounded-full text-sm">React</span>
+                  <span class="px-3 py-1 rounded-full text-sm">Node.js</span>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg overflow-hidden">
+              <img src="./src/images/ima3.gif" alt="Projeto 2" class="card-image object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold">Projeto 2</h3>
+                <p class="mt-2">
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <span class="px-3 py-1 rounded-full text-sm">TypeScript</span>
+                  <span class="px-3 py-1 rounded-full text-sm">Next.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- More About Me Section -->
+      <section id="more-about" class="py-20 
+                                      cor-prin">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Mais Sobre <span class="">Mim</span>
+          </h2>
+          <div class="more_about">
+            <div class="grid md:grid-cols-2 gap-8 mx-auto">
+              <div class="p-6 rounded-lg">
+                <div class="flex items-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                  <h3 class="text-xl font-semibold">Hobbies</h3>
+                </div>
+                <ul class="space-y-2">
+                  <li>• Fotografia</li>
+                  <li>• Leitura</li>
+                  <li>• Viagens</li>
+                </ul>
+              </div>
+              <div class="p-6 rounded-lg">
+                <div class="flex items-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon mr-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+                  <h3 class="text-xl font-semibold">Música</h3>
+                </div>
+                <div class="space-y-4">
+                  <iframe src="https://open.spotify.com/embed/playlist/seu-id-da-playlist" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" class="rounded-lg"></iframe>
+                  <a href="https://soundcloud.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="inline-flex items-center transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M17 22v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="12" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    SoundCloud
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tabletop Projects Section -->
+      <section id="tabletop-projects" class="py-20 
+                                              cor-prin">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Meus Outros <span class="">Projetos</span>
+          </h2>
+          <div class="grid md:grid-cols-2 gap-8" id="tabletop-grid">
+            <div class="project-card rounded-lg overflow-hidden">
+              <img src="/placeholder.svg" alt="Projeto Tabletop 1" class="card-image object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold">RPG Project 1</h3>
+                <p class="mt-2">
+                  Descrição do seu projeto de RPG ou jogo de tabuleiro.
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <span class="px-3 py-1 rounded-full text-sm">RPG</span>
+                  <span class="px-3 py-1 rounded-full text-sm">Storytelling</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card rounded-lg overflow-hidden">
+              <img src="/placeholder.svg" alt="Projeto Tabletop 2" class="card-image object-cover" />
+              <div class="p-6">
+                <h3 class="text-xl font-semibold">Board Game Project</h3>
+                <p class="mt-2">
+                  Descrição do seu projeto de board game.
+                </p>
+                <div class="mt-4 flex gap-2">
+                  <span class="px-3 py-1 rounded-full text-sm">Board Game</span>
+                  <span class="px-3 py-1 rounded-full text-sm">Strategy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-12 
+                                cor-prin">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+          Entre em <span class="">Contato</span>
+        </h2>
+        <div class="footer_contact">
+          <div class="flex justify-center space-x-8">
+            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-footer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <span class="sr-only">GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" class="transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-footer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <span class="sr-only">LinkedIn</span>
+            </a>
+            <a href="mailto:seu-email@exemplo.com" class="transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon-footer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span class="sr-only">Email</span>
+            </a>
+          </div>
+          <div class="text-center text-sm mt-4">
+            &copy; <span id=""></span> Todos os direitos reservados.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="./src/js/main.js" type="module"></script>
+  </body>
+</html>

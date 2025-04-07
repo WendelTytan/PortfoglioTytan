@@ -1,0 +1,12 @@
+{
+  "hero": [
+    {
+      "part1": "Olá, eu sou ",
+      "nome": "Wendel Vinicius Santana Passos",
+      "titulo": "Desenvolvedor Full Stack",
+      "lingit": "https://github.com/seu-usuario",
+      "linln": "https://www.linkedin.com/in/wendel-vinicius-25939b181/",
+      "lininsta": "mailto:seu-email@exemplo.com"
+    }
+  ]
+}

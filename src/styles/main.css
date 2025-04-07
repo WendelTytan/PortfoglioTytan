@@ -7,7 +7,6 @@
   /* Paleta 1 - Tons suaves e vibrantes */
 
     --Amarelo_Claro: #FFF9C4;
-    --ai: #ffcc11;
     --Amarelo_Neve: #FFFDE7;
     --Amarelo_Solar: #FFEE58;
     --Amarelo_Padrão: #FFEB3B;
@@ -935,12 +934,73 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   display: none;
   border: 1px solid var(--destaque-light-cl);
   border-right-width: 2px;
+
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* Vidro */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.mobile-menu::before {
+  /* content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: url('../images/estralas-amalero.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+  
+  pointer-events: none; */
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url('../images/estralas-amalero9.png');
+  background-size: cover;
+  background-position: center;
+  
+  /* Em vez de opacity, usa um RGBA */
+  background-color: rgba(255, 255, 255, 0.1); 
+  
+  z-index: -1; /* Joga a imagem para trás */
 }
 
 .dark .mobile-menu {
   /* display: none; */
   border: 1px solid var(--destaque-light-es);
   border-right-width: 2px;
+
+  background: rgba(255, 255, 255, 0.1); /* Vidro */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.dark .mobile-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url('../images/estralas-roro0.png');
+  background-size: cover;
+  background-position: center;
+  
+  /* Em vez de opacity, usa um RGBA */
+  background-color: rgba(255, 255, 255, 0.1); 
+  
+  z-index: -1; /* Joga a imagem para trás */
 }
 
 /* max-width: 480px

@@ -777,7 +777,7 @@ body {
     /* linear-gradient(to right, rgb(199, 199, 96), rgb(204, 204, 98)), */
     /* linear-gradient(to right, rgb(255, 214, 100), rgb(250, 248, 159)), */
     /* fundo sólido */
-    url('../images/final9.png');
+    url('/src/images/final9.png');
   /*b 9*/
   /* imagem */
   background-blend-mode: multiply;
@@ -808,7 +808,7 @@ body {
     /* linear-gradient(to right, var(--fundo-suave-es), var(--fundo-suave-es)), */
     linear-gradient(to right, var(--fundo-high-es), var(--fundo-high-es)),
     /* fundo sólido */
-    url('../images/roro2.png');
+    url('/src/images/roro2.png');
   /* imagem */
   background-blend-mode: overlay;
   /* multi no escuro fica escuro demais

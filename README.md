@@ -22,6 +22,7 @@ Além de estudar e programar, também curto explorar projetos criativos, aprende
 
 📎 Conecte-se comigo no LinkedIn:
 👉 https://www.linkedin.com/in/wendel-vinicius-25939b181/
+
 🇺🇸 Hello, world!
 
 My name is Wendel Vinicius Santana Passos, but you can call me Tytan 🧠💻

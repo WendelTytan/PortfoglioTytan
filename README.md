@@ -1,69 +1,48 @@
-# Welcome to your Lovable project
+🇧🇷 Olá, mundo!
 
-## Project info
+Me chamo Wendel Vinicius Santana Passos, mas pode me chamar de Tytan 🧠💻
+Sou um estudante de Ciência da Programação que adora transformar ideias malucas em códigos funcionais.
 
-**URL**: https://lovable.dev/projects/40976653-430b-4143-ae07-7ee1d06c2d98
+Gosto de Java, Python e tô sempre explorando novas ferramentas e estilos.
+Esse site aqui é o meu portfólio pessoal, feito 100% na unha com HTML, JavaScript e estilizado com Tailwind CSS — porque se é pra deixar bonito, que seja com agilidade e praticidade 😎
 
-## How can I edit this code?
+Além de estudar e programar, também curto explorar projetos criativos, aprender com a comunidade dev 😅
+🔧 Tecnologias que usei aqui:
 
-There are several ways of editing your application.
+    HTML5 (bonitinho e semântico)
 
-**Use Lovable**
+    Tailwind CSS (rápido, responsivo e na medida)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/40976653-430b-4143-ae07-7ee1d06c2d98) and start prompting.
+    JavaScript (pra dar vida à parada)
 
-Changes made via Lovable will be committed automatically to this repo.
+    Git e GitHub (porque versionar é viver)
 
-**Use your preferred IDE**
+🌐 Você pode acessar o site aqui:
+👉 https://wendeltytan.github.io/PortfoglioTytan/
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+📎 Conecte-se comigo no LinkedIn:
+👉 https://www.linkedin.com/in/wendel-vinicius-25939b181/
+🇺🇸 Hello, world!
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+My name is Wendel Vinicius Santana Passos, but you can call me Tytan 🧠💻
+I'm a Programming Science student who loves turning crazy ideas into working code.
 
-Follow these steps:
+I'm into Java, Python, and always exploring new tools and design styles.
+This website is my personal portfolio, built from scratch using HTML, JavaScript, and styled with Tailwind CSS — because fast, clean and responsive is the way to go 😎
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Besides coding and studying, I enjoy working on creative projects, learning with the dev community 😅
+🔧 Tech stack used here:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+    HTML5 (clean and semantic)
 
-# Step 3: Install the necessary dependencies.
-npm i
+    Tailwind CSS (fast, responsive and fun to use)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+    JavaScript (to bring life to the page)
 
-**Edit a file directly in GitHub**
+    Git & GitHub (because version control is life)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+🌐 Check out the website:
+👉 https://wendeltytan.github.io/PortfoglioTytan/
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/40976653-430b-4143-ae07-7ee1d06c2d98) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+📎 Connect with me on LinkedIn:
+👉 https://www.linkedin.com/in/wendel-vinicius-25939b181/

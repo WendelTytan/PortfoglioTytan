@@ -1640,7 +1640,7 @@ body {
     /* linear-gradient(to right, rgb(199, 199, 96), rgb(204, 204, 98)), */
     /* linear-gradient(to right, rgb(255, 214, 100), rgb(250, 248, 159)), */
     /* fundo sólido */
-    url('../../images/final9.png');
+    url('../images/final9.png');
   /*b 9*/
   /* imagem */
   background-blend-mode: multiply;
@@ -1671,7 +1671,7 @@ body {
     /* linear-gradient(to right, var(--fundo-suave-es), var(--fundo-suave-es)), */
     linear-gradient(to right, var(--fundo-high-es), var(--fundo-high-es)),
     /* fundo sólido */
-    url('../../images/roro2.png');
+    url('../images/roro2.png');
   /* imagem */
   background-blend-mode: overlay;
   /* multi no escuro fica escuro demais
@@ -1700,7 +1700,7 @@ body {
 /* } */
 
 .dark .dasdfa2 {
-  background-image: url('../../images/roro.png');
+  background-image: url('../images/roro.png');
   /* Imagem de fundo */
   background-color: #6A1B9A;
   /* Cor de fundo sólido */
@@ -2291,7 +2291,7 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../images/estralas-amalero9.png');
+  background: url('../images/estralas-amalero9.png');
   background-size: cover;
   background-position: center;
   /* Em vez de opacity, usa um RGBA */
@@ -2316,7 +2316,7 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../images/estralas-roro0.png');
+  background: url('../images/estralas-roro0.png');
   background-size: cover;
   background-position: center;
   /* Em vez de opacity, usa um RGBA */
@@ -2413,7 +2413,7 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../images/estralas-amalero9.png');
+  background: url('../images/estralas-amalero9.png');
   background-size: cover;
   background-position: center;
   /* Em vez de opacity, usa um RGBA */
@@ -2440,7 +2440,7 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../images/estralas-roro0.png');
+  background: url('../images/estralas-roro0.png');
   background-size: cover;
   background-position: center;
   /* Em vez de opacity, usa um RGBA */

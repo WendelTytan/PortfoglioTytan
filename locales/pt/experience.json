@@ -1,14 +1,6 @@
 {
   "experience": [
     {
-      "id": 1,
-      "funcao": "Assistente de Coordenação de TI e Mídias Sociais",
-      "empresa": "Município de nossa senhora do socorro",
-      "inicio": 2024,
-      "fim": 2025,
-      "descricao": "Servidor público municipal em contrato temporário, atuando como Assistente de Coordenação do setor de TI e Mídias Sociais. Responsável pela manutenção da infraestrutura de TI, segurança da informação e suporte técnico, assegurando a continuidade dos serviços digitais. Também gerencia mídias sociais e estratégias de comunicação digital até a transição para a nova gestão."
-    },
-    {
       "id": 2,
       "funcao": "Monitor de laboratório de informática",
       "empresa": "IFS - Instituto Federal de Sergipe",

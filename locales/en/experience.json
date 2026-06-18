@@ -2,43 +2,39 @@
   "experience": [
     {
       "id": 1,
-      "funcao": "DIRIGENTE DO SERVICO PUBLICO MUNICIPAL",
-      "empresa": "MUNICIPIO DE NOSSA SENHORA DO SOCORRO",
-      "inicio": 2024,
-      "fim": 2025,
-      "descricao": "Servidor público municipal em contrato temporário, atuando como dirigente do setor de TI e Mídias Sociais. Responsável pela manutenção da infraestrutura de TI, segurança da informação e suporte técnico, assegurando a continuidade dos serviços digitais. Também gerencia mídias sociais e estratégias de comunicação digital até a transição para a nova gestão."
-    },
-    {
-      "id": 2,
-      "funcao": "Monitor de laboratório de informática",
+      "funcao": "Computer lab monitor",
       "empresa": "IFS - Instituto Federal de Sergipe",
       "inicio": 2019,
       "fim": 2019,
-      "descricao": "Serviço como Monitor Temporário em Lógica de ProgramaçãoMonitor em Lógica de Programação"
+      "descricao": "Acting as an academic monitor in the discipline of Programming Logic, assisting students in the development of logical reasoning and in the resolution of practical exercises in programming language. Responsible for providing technical and pedagogical support in a laboratory environment, clarifying conceptual and practical doubts about algorithms, flowcharts and control structures, in addition to collaborating with the teacher in the organization of activities and monitoring the progress of students.",
+      "media": []
     },
     {
-      "id": 3,
+      "id": 2,
       "funcao": "Telemarketing",
       "empresa": "AlmavivA do Brasil",
       "inicio": 2016,
       "fim": 2018,
-      "descricao": "Atendimento ao Cliente via telemarketing, com suporte técnico e vendas"
+      "descricao": "Customer service via telephone, focusing on technical support for internet services, including identification and resolution of connection problems, configuration of modems and routers, as well as basic support for telephone and TV services. Responsible for providing a clear, agile and efficient service, following technical procedures and quality standards of the company. Performance focused on customer satisfaction and the solution of demands in an empathetic and assertive way.",
+      "media": []
     },
     {
-      "id": 4,
-      "funcao": "Vendedor",
+      "id": 3,
+      "funcao": "Seller",
       "empresa": "InfoMC Tecnologia",
       "inicio": 2015,
       "fim": 2015,
-      "descricao": "Contario Temporário para vendedor em Geral, com atendimento por telefone, redes sociais, pregão eletrônico, orçamento e compra de equipamentos e atendimento ao cliente"
+      "descricao": "Temporary work in a technology and computer store, with customer service in person and also via telephone, social networks and digital platforms. Responsible for sales of equipment and peripherals, budgeting, participation in electronic auctions, quotations and purchase processes. Provision of basic technical support, product guidance, point of sale organization and after-sales follow-up. Focus on agile, consultative and customer satisfaction-oriented service.",
+      "media": []
     },
     {
-      "id": 5,
-      "funcao": "Operador de Vídeo-Monitor",
+      "id": 4,
+      "funcao": "Video Monitor Operator",
       "empresa": "Central 24 Horas",
       "inicio": 2010,
       "fim": 2012,
-      "descricao": "Trabalho com função para a secretária de segurança publica com o objetivo de monitoramento das ruas com direção objetiva identificar e impedir crimes "
+      "descricao": "Responsible for monitoring images in real time through video surveillance systems, focusing on the prevention and identification of suspicious activities or criminal practices on public roads. Strategic action in support of security forces, contributing to quick and effective decision-making. Work carried out with continuous attention, registration of relevant occurrences and direct communication with operational teams to prevent crimes and promote public safety.",
+      "media": []
     }
   ]
 }

@@ -1,24 +1,26 @@
 {
   "projects": [
     {
-      "nome": "en RPG Project 1",
-      "foto": "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9",
-      "descricao": "Um sistema de RPG original com mecânicas inovadoras de narrativa colaborativa.",
+      "nome": "RPG Project 1",
+      "foto": "./src/images/tableThumb/ima4.jpg",
+      "descricao": "An original RPG system with innovative collaborative storytelling mechanics.",
       "siteprojeto": "www.google.com.br",
       "competencies": [
         "RPG",
         "Storytelling"
-      ]
+      ],
+      "media": []
     },
     {
       "nome": "Board Game Project",
-      "foto": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
-      "descricao": "Um jogo de tabuleiro estratégico com elementos de construção de deck.",
+      "foto": "./src/images/tableThumb/ima5.jpg",
+      "descricao": "A strategic board game with deck-building elements.",
       "siteprojeto": "www.yahoo.com.br",
       "competencies": [
         "Board Game",
         "Strategy"
-      ]
+      ],
+      "media": []
     }
   ]
 }

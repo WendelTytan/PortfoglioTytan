@@ -6,15 +6,15 @@
     fallbackLng: "pt",
     debug: true,
     backend: {
-        loadPath: "locales/{{lng}}/{{ns}}.json" //"/locales/{{lng}}/{{ns}}.json" 
+        loadPath: "/locales/{{lng}}/{{ns}}.json" //"/locales/{{lng}}/{{ns}}.json" 
                                                 // tirei a primeira barra
     },
     ns: [
         "about","contact","courses","experience",
         "formations","hero","more", "etc",
-        "projects","tabletop-projects"
+        "projects","tabletop-projects", "badges"
     ],
-    defaultNS: "formations"
+    defaultNS: "contact"
 });
 
 export default i18next;

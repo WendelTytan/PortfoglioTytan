@@ -1,43 +1,57 @@
 {
   "texto": [
     {
-      "placeholder": "Buscar projetos...",
-      "inicio": "Início",
-      "sobre": "Sobre",
-      "formacao": "Formação",
-      "experiencia": "Experiencia",
-      "cursos": "Cursos",
-      "projetos": "Projetos",
-      "mais": "Mais Sobre",
-      "ouprojetos": "Outros Projetos",
-      "contato": "Contato",
-      "sobre_1": "Sobre",
-      "sobre_2": "Mim",
-      "form_1": "Minha",
-      "form_2": "Formação",
-      "exp_1": "Minha",
-      "exp_2": "Experiência",
-      "cur_1": "Meus",
-      "cur_2": "Cursos",
-      "projetos_1": "Meus",
-      "projetos_2": "Projetos",
-      "mais_1": "Mais Sobre",
-      "mais_2": "Mim",
-      "ouprojetos_1": "Meus Outros",
-      "ouprojetos_2": "Projetos",
-      "contato_1": "Entre em",
-      "contato_2": "Contato"
+      "placeholderprojetos": "Search for projects...",
+      "placeholdercursos": "Search courses...",
+      "selectall": "Select All",
+      "clearall": "Clear Selection",
+      "filter_type": "Filter by Type",
+      "filter_comp": "Filter by Competence",
+      "filter_int": "Institution",
+      "person_filter": "Custom Filters",
+      "abrir_filtros": "Open filter panel",
+      "inicio": "Home",
+      "sobre": "About",
+      "formacao": "Education",
+      "experiencia": "Experience",
+      "cursos": "Courses",
+      "projetos": "Projects",
+      "mais": "More About",
+      "ouprojetos": "Other Projects",
+      "contato": "Contact Now",
+      "sobre_1": "About",
+      "sobre_2": "Me",
+      "form_1": "My",
+      "form_2": "Education",
+      "exp_1": "My",
+      "exp_2": "Experience",
+      "cur_1": "My",
+      "cur_2": "Courses",
+      "projetos_1": "My",
+      "projetos_2": "Projects",
+      "mais_1": "More About",
+      "mais_2": "Me",
+      "ouprojetos_1": "My Others",
+      "ouprojetos_2": "Projects",
+      "contato_1": "Get in",
+      "contato_2": "Contact Now",
+      "techProjects": "Technologies Used",
+      "linkProject": "Project Links",
+      "badges": "Certifications & Badges",
+      "media": []
     }
   ],
   "comp": [
     {
-      "contagem": "Contagem de Competências:"
+      "contagem": "Skills Count:",
+      "media": []
     }
   ],
   "resum": [
     {
-      "resumo": "Resumo dos Tipos de Cursos:",
-      "res_cur": "curso(s)"
+      "resumo": "Summary of Course Types:",
+      "res_cur": "Course(s)",
+      "media": []
     }
   ]
 }

@@ -1,0 +1,72 @@
+{
+  "teste": [
+    {
+      "titulo": "Project 1",
+      "numero": 1,
+      "descricao": "A modern and responsive website developed in HTML, CSS with Tailwind and JavaScript with Swiper and I18Next, to present my projects, skills and professional trajectory in a dynamic and attractive way. The design combines vibrant colors with a clear and uncluttered structure, providing a unique and straightforward visual experience. Designed to highlight my work, my journey and about me, with the option of translation and change of theme. (You're in it at the moment).",
+      "siteprojeto": "www.github.com/WendelTytan/PortfoglioTytan",
+      "foto": "./src/images/projectThumb/projeto_portfoglio.png",
+      "competencies": [
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "JavaScript",
+        "Swiper",
+        "I18Next"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "img1.jpg",
+          "alt": "Detail image 1",
+          "titulo": "Test Title 1",
+          "descricao": "Test Description 1"
+        },
+        {
+          "type": "image",
+          "src": "img2.jpg",
+          "alt": "Detail image 2",
+          "titulo": "Test Title 2",
+          "descricao": "Test Description 2"
+        },
+        {
+          "type": "gif",
+          "src": "gif1.gif",
+          "alt": "Animated gif",
+          "titulo": "Test Title 3",
+          "descricao": "Test Description 3"
+        }
+      ]
+    },
+    {
+      "titulo": "Project 2",
+      "numero": 2,
+      "descricao": "REST API developed with Spring Boot as part of the Digital Innovation One (DIO) bootcamp, aimed at managing people in a registration system. The project follows good architectural practices and uses tools such as JPA, Hibernate and H2 Database for data persistence. Includes testing with JUnit and integration with Swagger for automatic API documentation.",
+      "siteprojeto": "www.github.com/WendelTytan/DIO_API",
+      "foto": "./src/images/projectThumb/dio_api.png",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "JPA",
+        "Hibernate",
+        "H2 Database",
+        "Persistencia de dados",
+        "Junit",
+        "Swagger",
+        "API",
+        "API Rest",
+        "Lombok",
+        "Maven"
+      ],
+      "media": [
+        {
+          "type": "video",
+          "src": "video1.mp4",
+          "alt": "Project video",
+          "titulo": "Test Title 1 of 2",
+          "descricao": "Test Description 1 of 2"
+        }
+      ]
+    }
+  ]
+}

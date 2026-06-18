@@ -558,36 +558,6 @@ video {
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 .sr-only {
   position: absolute;
   width: 1px;
@@ -614,10 +584,6 @@ video {
 
 .left-3 {
   left: 0.75rem;
-}
-
-.left-\[0\.938rem\] {
-  left: 0.938rem;
 }
 
 .top-1\/2 {
@@ -1582,6 +1548,8 @@ video {
   --fundo-high2-es: #221133;
   /* Fundo secundário, roxo escuro levemente azulado */
   --fundo-light-es: #301B47;
+  /* fundo rocxo escuro */
+  --fundo-1-high-cl: #290942;
   /* Fundo leve, roxo ameixa */
   --fundo-suave-es: #7a37df;
   /* Fundo suave, roxo médio mais quente */
@@ -1722,6 +1690,11 @@ body {
   height: 1.25em;
 }
 
+.icon-filter {
+  width: 1.25em;
+  height: 1.25em;
+}
+
 .icon-footer {
   width: 2em;
   height: 2em;
@@ -1790,7 +1763,7 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
 .dark .sidebar-item.active {
   background-color: var(--texto-suave-es);
   border-left: 0.35rem solid var(--destaque-light-es);
-  color: var(--glow-es);
+  color: var(--scroll-es-1);
   /* text-white */
 }
 
@@ -1801,10 +1774,12 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
 
 .sidebar-item:hover {
   background-color: var(--sobre-high-cl);
+  color: var(--texto-light-cl);
 }
 
 .dark .sidebar-item:hover {
-  background-color: var(--sobre-high-es);
+  background-color: var(--destaque-light-es);
+  color: var(--texto-light-es);
 }
 
 .outro-theme {
@@ -1864,7 +1839,11 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   -webkit-backdrop-filter: blur(10px);
   padding: 1rem;
   border-radius: 12px;
-  color: white;
+}
+
+.about_comp {
+  justify-content: center;
+  align-items: center;
 }
 
 .dark .hero {
@@ -1982,6 +1961,90 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   outline: none;
 }
 
+#course-search::-moz-placeholder {
+  color: var(--texto-suave-cl);
+}
+
+#course-search::placeholder {
+  color: var(--texto-suave-cl);
+}
+
+#course-search:focus {
+  border-color: var(--destaque-light-cl);
+  outline: none;
+}
+
+.dark #course-search::-moz-placeholder {
+  color: var(--texto-suave-es);
+}
+
+.dark #course-search::placeholder {
+  color: var(--texto-suave-es);
+}
+
+.dark #course-search:focus {
+  border-color: var(--destaque-light-es);
+  outline: none;
+}
+
+/*  */
+/*  */
+/*  */
+/*  Caixa dos filtros do #cursos */
+.filter-group {
+  background-color: var(--fundo-light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 250px;
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.dark .filter-group {
+  background-color: var(--fundo-light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  min-width: 250px;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 1rem;
+  border-radius: 12px;
+  color: white;
+}
+
+.filter-checkbox {
+  accent-color: var(--texto-high);
+}
+
+#clear-filters {
+  transition: all 0.3s ease;
+}
+
+#clear-filters:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#select-all-filters, #clear-filters {
+  transition: all 0.3s ease;
+  margin: 0 0.5rem;
+}
+
+#select-all-filters:hover, #clear-filters:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*  */
+/*  */
+/*  */
+
 .dynamic-text {
   color: var(--fundo-light-cl);
 }
@@ -2010,6 +2073,26 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--glow-es);
+  /* Laranja neon */
+  /* background-color: #E65840; */
+}
+
+.inverseGlow {
+  border-width: 1px;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--glow-es);
+  /* Laranja neon */
+  /* background-color: #E65840; */
+}
+
+.dark .inverseGlow {
+  border-width: 1px;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: var(--glow-cl);
   /* Laranja neon */
   /* background-color: #E65840; */
 }
@@ -2170,15 +2253,35 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   overflow-x: auto;
   padding: 1rem;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
-  /* max-height: 800px; */
-  scrollbar-width: thin;
-  scrollbar-color: var(--scroll-cl-1) var(--scroll-cl-2);
 }
 
-.dark #courses .grid {
-  scrollbar-color: var(--scroll-es-1) var(--scroll-es-2);
+#courses.courses-endpoint .grid {
+  display: grid;
+  /* grid-auto-flow: column; */
+  /*  */
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); /* 3 colunas (ajuste o 300px conforme necessário) */
+  grid-auto-rows: auto;
+  /*  */
+  /* grid-template-rows: repeat(2, minmax(15rem, 1fr));
+  grid-auto-rows: minmax(20rem, auto); */
+  /* margin: 1rem; */
+  /* gap: 9rem; */
+  /* gap: 2rem; */
+  /*  */
+  /* row-gap: 9rem; */
+  /* com a fonte muito grande */
+  gap: 1rem;
+  /*  */
+  max-height: none; /* Remove a altura fixa */
+  width: 100%;
+  overflow-y: auto; /* Scroll vertical se necessário */
+  padding: 1rem;
+}
+
+.cursos_resum {
+  display: grid;
+  place-items: center;  /* Centraliza nos dois eixos */
+  min-height: 0.898rem;
 }
 
 #courses .grid > .card {
@@ -2187,36 +2290,6 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   min-width: 22rem;
   min-height: 23rem;
   transition: transform 0.3s ease;
-}
-
-#courses .grid::-webkit-scrollbar {
-  height: 0.5rem;
-}
-
-#courses .grid::-webkit-scrollbar-track {
-  background: var(--fundo-light-cl);
-  border-radius: 4px;
-}
-
-.dark #courses .grid::-webkit-scrollbar-track {
-  background: var(--fundo-light-es);
-}
-
-#courses .grid::-webkit-scrollbar-thumb {
-  background: var(--texto-suave-cl);
-  border-radius: 4px;
-}
-
-.dark #courses .grid::-webkit-scrollbar-thumb {
-  background: var(--texto-suave-es);
-}
-
-#courses .grid::-webkit-scrollbar-thumb:hover {
-  background: var(--texto-high-cl);
-}
-
-.dark #courses .grid::-webkit-scrollbar-thumb:hover {
-  background: var(--texto-high-es);
 }
 
 /*usando metodo multi classe*/
@@ -2391,6 +2464,8 @@ vou deixar aqui caso eu precise e vou utilizar outro metodo de pintura */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   overflow: hidden;
+
+  left: 0.938rem;
 }
 
 .mobile-menu::before {
@@ -2455,45 +2530,282 @@ max-width: 1024px
 max-width: 1280px
 min-width: 1440px */
 
-@media (max-width: 480px) {
-  .sidebar-item {
-    padding: 1rem;
-    padding-top: 0.8rem;
-    padding-bottom:0.8rem;
-  }
-
-  .mobile-menu {
-    display: block;
-  }
-
-  .sidebar {
-    transform: translateX(-100%);
-    position: fixed;
-    height: 100vh;
-    z-index: 50;
-    transition: transform 0.3s ease;
-    padding-top: 2.188rem;
-  }
-
-  .sidebar.open {
-    transform: translateX(0);
-    width: 15rem;
-  }
-
-  .sidebar.open .sidebar-item span {
-    opacity: 1;
-  }
+.badge-section {
+  width: 100%;
+  /* max-width: 900px; */
+  margin: 100px auto 60px;
+  position: relative;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+.swiper-slide {
+  background: white;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: blur(3px);
+  opacity: 0.5;
+  scale: 0.95;
+
+  overflow: hidden; /* <-- Adicione isto */
+  position: relative; /* Certifique-se disso também */
+}
+
+.swiper-slide-active {
+  position: relative;
+  z-index: 2;
+  filter: none;
+  opacity: 1;
+  scale: 1;
+}
+
+.swiper-slide-active::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff6600, #00ff2a, #ff6600);
+  background-size: 200% 200%;
+  animation: gradient-border 6s linear infinite;
+  z-index: -1;
+  filter: blur(5px);
+  opacity: 0.5;
+}
+
+.dark .swiper-slide-active::before {
+  background: linear-gradient(135deg, #ff00ff , #6f00ff, #ff00ff);
+}
+
+@keyframes gradient-border {
+0%   { background-position: 0% 50%; }
+50%  { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 25rem;
+}
+
+.texto-swiper {
+  padding: 0.5rem;
+}
+
+lastfm-tracks {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  width: 270px;
+  height: 461px;
+}
+
+#PST {
+  width: 100%; /* ocupa toda a largura da div pai */
+}
+
+#PST img {
+  width: 100%;  /* ocupa toda a largura disponível */
+  height: 11.25rem;
+  display: block; /* evita espaços extras abaixo da imagem */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.pstdiv {
+  width: 100%;  /* ocupa toda a largura disponível */
+}
+
+#playlist-spotify {
+  width: 100%;  /* ocupa toda a largura disponível */
+  height: 11.25rem;
+  display: block; /* evita espaços extras abaixo da imagem */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.spotify-embed {
+  width: 100%;
+  height: 9.5rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.spotify-container {
+  background-color: rgb(31,31,31); /* Cor acima e abaixo */
+  padding: 14px 0;            /* 14px em cima e embaixo */
+  border-radius: 12px;        /* Bordas arredondadas externas */
+}
+
+.spotify-container iframe {
+  border-radius: 12px;        /* Bordas arredondadas do iframe */
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-list li {
+  display: flex;
+  align-items: center; /* CENTRALIZA VERTICALMENTE */
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-list .bullet {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.sites-ico {
+  /* filter: invert(1); */
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.5rem;
+
+  filter: 
+  drop-shadow(1px 0 rgb(67, 64, 97)) 
+  drop-shadow(-1px 0 rgb(67, 64, 97)) 
+  drop-shadow(0 1px rgb(67, 64, 97)) 
+  drop-shadow(0 -1px rgb(67, 64, 97));
+}
+
+.dark .sites-ico {
+  filter: 
+  drop-shadow(1px 0 rgb(255, 249, 97)) 
+  drop-shadow(-1px 0 rgb(255, 249, 97)) 
+  drop-shadow(0 1px rgb(255, 249, 97)) 
+  drop-shadow(0 -1px rgb(255, 249, 97));
+}
+/*  */
+/*  */
+#customize-list{
+  float:left;
+  margin-left:20px;
+  list-style:none;
+}
+
+#gr_updates_widget{
+  border-radius: 5px;
+  border:solid #683205 10px;
+  -webkit-box-shadow: 0px 0px 4px 1px #595959,
+  inset 0px 0px 0px 1px #7D730B;
+  -moz-box-shadow: 0px 0px 4px 1px #595959,
+  inset 0px 0px 0px 1px #7D730B;
+  box-shadow: 0px 0px 4px 1px #595959,
+  inset 0px 0px 0px 1px #7D730B;
+  padding: 0.938rem;
+  background-color: white;
+  /* width:345px; */
+  height: 770px;
+}
+
+.background_iframe {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.gr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#the_iframe {
+  display: block;
+  height: 100%;
+}
+
+.recent-played {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+}
+
+#tracks {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* .icon-filter {
+  right: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+} */
+
+.badges-ico .badges-img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 413px) {
   /* html {
     font-size: 105%; 
   } */
 
+  /* #sidebar {
+    height: 800px;
+  } */
+
+  .grid-info {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .grid-info .tags {
+    /* display: flex; */
+    justify-content: center;
+  }
+
+  .project-details {
+    display: flex;
+    justify-content: center;
+  }
+
+  .media-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .divProjeto {
+    padding-left: 0;
+  }
+
+  .modal {
+    padding: 0;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 91%;
+  }
+
+  #courses .grid > .card {
+    min-width: 14rem;
+  }
+
+  .sidebar .bottom_side {
+    margin-top: 0px;
+  }
+
+  body .sidebar {
+    justify-content: center;
+  }
+
   .sidebar-item {
     /* padding: 1.4rem; */
     padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
+    /* padding-bottom: 1.4rem; */
   }
 
   .sidebar-icons {
@@ -2521,21 +2833,462 @@ min-width: 1440px */
   .sidebar.open .sidebar-item span {
     opacity: 1;
   }
+
+  .cursos_resum {
+    min-height: 16.25rem;
+  }
+
+  .padding_box {
+    /* padding-left: 1.5rem; */
+    padding-right: 1.5rem;
+  }
+
+  #courses .grid {
+    padding-left: 0;
+  }
+
+  #gr_updates_widget {
+    height: 530px;
+  }
+
+  .recent-played {
+    width: 12.9rem;
+  }
+  
+  /*  */
+  .courses-endpoint-big .container {
+    padding-left: 0;
+    padding-right: 1rem;
+    /* padding-right: 0rem; */
+  }
+
+  /* #courses.courses-endpoint #pesquisa {
+    padding-right: 1rem;
+  } */
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+/* 
+  #courses.courses-endpoint .grid > .card {
+    min-width: 0;
+  } */
+
+  #courses.courses-endpoint p {
+    position: static;
+  }
+
+  #select-all-filters {
+    margin-bottom: 1rem;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+  /*  */
 }
 
-@media (min-width: 769px) and (max-width: 1024) {
+@media (min-width: 414px) and (max-width: 479px) {
+  /* html {
+    font-size: 105%; 
+  } */
+
+  #sidebar {
+    height: 800px;
+  }
+
+  #courses .grid > .card {
+    min-width: 18rem;
+  }
+
+  .sidebar .bottom_side {
+    margin-top: 0px;
+  }
+
+  .sidebar-item {
+    /* padding: 1.4rem; */
+    padding-top: 1.4rem;
+    /* padding-bottom: 1.4rem; */
+  }
+
+  .sidebar-icons {
+    padding-left: 1.156rem;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    height: 100vh;
+    z-index: 50;
+    transition: transform 0.3s ease;
+    padding-top: 2.188rem;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+    width: 15rem;
+  }
+
+  .sidebar.open .sidebar-item span {
+    opacity: 1;
+  }
+
+  .cursos_resum {
+    min-height: 16.25rem;
+  }
+
+  .padding_box {
+    /* padding-left: 1.5rem; */
+    padding-right: 1.5rem;
+  }
+
+  #courses .grid {
+    padding-left: 0;
+  }
+
+  #gr_updates_widget {
+    height: 530px;
+  }
+
+  .recent-played {
+    width: 16.9rem;
+  }
+
+  .courses-endpoint-big .container {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  .courses-endpoint-sidebar .sidebar-item {
+    padding: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom:0.8rem;
+  }
+
+  .filters-container .filter-group {
+    min-width: 0;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* #courses.courses-endpoint .grid > .card {
+    min-width: 0;
+  } */
+
+  .grid-info {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .grid-info .tags {
+    /* display: flex; */
+    justify-content: center;
+  }
+
+  .project-details {
+    display: flex;
+    justify-content: center;
+  }
+
+  .media-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .divProjeto {
+    padding-left: 0;
+  }
+
+  /* .modal-media-container.youtube {
+    margin-top: 10rem;
+  } */
+
+  /* https://prnt.sc/Dh9IHSYIoCxp
+      tenho que ver qual me agrada mais, não sei, ambos estão bom */
+
+  .modal-media-container.youtube {
+    padding-top: 82%;
+  }
+
+  .modal {
+    padding: 1rem;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 80%;
+  }
+
+  .badge-item {
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  /* html {
+    font-size: 105%; 
+  } */
+
+  .sidebar-item {
+    /* padding: 1.4rem; */
+    padding-top: 1.4rem;
+    /* padding-bottom: 1.4rem; */
+  }
+
+  .sidebar-icons {
+    padding-left: 1.156rem;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    height: 100vh;
+    z-index: 50;
+    transition: transform 0.3s ease;
+    padding-top: 2.188rem;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+    width: 15rem;
+  }
+
+  .sidebar.open .sidebar-item span {
+    opacity: 1;
+  }
+
+  .cursos_resum {
+    min-height: 16.25rem;
+  }
+
+  .padding_box {
+    /* padding-left: 1.5rem; */
+    padding-right: 1.5rem;
+  }
+
+  #courses .grid {
+    padding-left: 0;
+  }
+
+  #gr_updates_widget {
+    height: 692px;
+  }
+
+  .recent-played {
+    width: 21rem;
+  }
+  
+  .courses-endpoint-big .container {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  .courses-endpoint-sidebar .sidebar-item {
+    padding: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom:0.8rem;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* #courses.courses-endpoint .grid > .card {
+    min-width: 0;
+  } */
+
+  .media-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .divProjeto {
+    padding-left: 0;
+  }
+
+  .modal {
+    padding: 1rem;
+  }
+
+  /* .modal-media-container.youtube {
+    margin-top: 10rem;
+  } */
+
+  .modal-media-container.youtube {
+    padding-top: 81%;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 68%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:pl-\[4\.5rem\] {
+    padding-left: 4.5rem;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
   /* html {
     font-size: 110%; 
   } */
 
   .sidebar-item {
-    padding: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom:0.5rem;
+    /* padding: 1rem; */
+    padding-left: 1.2rem;
+    padding-top: 0.8rem;
+    padding-bottom:0.8rem;
+  }
+
+  body .padding_box {
+    max-width: 640px;
+  }
+
+  .cursos_resum {
+    min-height: 16.25rem;
+  }
+
+  #gr_updates_widget {
+    height: 750px;
+  }
+
+  .courses-endpoint-big .container {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* #courses.courses-endpoint .grid > .card {
+    min-width: 0;
+  } */
+
+  /* #course-search {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-search {
+    margin-left: 4rem;
+  }
+
+  .icon-filter {
+    right: 4rem;
+  } */
+
+  .media-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .divProjeto {
+    padding-left: 0;
+  }
+
+  /* .modal-media-container.youtube {
+    margin-top: 10rem;
+  } */
+
+  .modal-media-container.youtube {
+    padding-top: 90%;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 68%;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
   /* html {
     font-size: 115%; 
   } */
@@ -2546,9 +3299,170 @@ min-width: 1440px */
     padding-top: 0.8rem;
     padding-bottom:0.8rem;
   }
+
+  .cursos_resum {
+    min-height: 16.875rem;
+  }
+
+  .padding_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #gr_updates_widget {
+    height: 800px;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  .filters-container{
+    width: 55.5rem;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* #courses.courses-endpoint .grid > .card {
+    min-width: 0;
+  } */
+
+  .courses-endpoint .cursos_resum {
+    min-height: 16.25rem;
+  }
+
+  /* #course-search {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-search {
+    margin-left: 5.6rem;
+  }
+
+  .icon-filter {
+    right: 5.6rem;
+  } */
+
+  .media-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .divProjeto {
+    padding-left: 0;
+  }
+
+  .modal-media-container.youtube {
+    padding-top: 48%;
+  }
+  
+  /* .media-container:has(.youtube) {
+    width: 85vw;
+  } */
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 35%;
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .cursos_resum {
+    min-height: 16.875rem;
+  }
+
+  .padding_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  .filters-container{
+    width: 71.5rem;
+    padding-left: 1rem;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* #course-search {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-search {
+    margin-left: 7.4rem;
+  }
+
+  .icon-filter {
+    right: 7.4rem;
+  } */
+
+  .modal-media-container.youtube {
+    padding-top: 49%;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  /* para controle está usando classe grande */
+  .md\:w-32.badges-ico {
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .modal-media-container.youtube {
+    padding-top: 48%;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 32%;
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
   /* html {
     font-size: 120%; 
   } */
@@ -2561,7 +3475,473 @@ min-width: 1440px */
   /* a {
     font-size: 5vw;
   } */
+
+  .cursos_resum {
+    min-height: 15rem;
+  }
+
+  .padding_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  .filters-container{
+    width: 75.5rem;
+    padding-left: 1rem;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* #course-search {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-search {
+    margin-left: 7.8rem;
+  }
+
+  .icon-filter {
+    right: 7.8rem;
+  } */
+  /* para controle está usando classe grande */
+  .md\:w-32.badges-ico {
+    width: 13rem;
+    height: 13rem;
+  }
 }
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+  /* html {
+    font-size: 120%; 
+  } */
+
+  /* --- Layout para telas 'Padrão' e 'Verticais' (1920x1080, 1920x1600, etc) --- */
+  /* Esta regra usa max-aspect-ratio para pegar tudo até o widescreen padrão */
+  @media (max-aspect-ratio: 16/9) {
+    .modal-media-container.youtube {
+      padding-top: 65%;
+    }
+
+    .media-container:has(.instagram-post) {
+      width: 94vw;
+    }
+
+    .modal-media-container.instagram {
+      max-width: 49%;
+    }
+  }
+
+  /* --- Layout para telas 'Horizontais' (Widescreen e Ultrawide) --- */
+  /* Esta regra usa min-aspect-ratio para sobrescrever a anterior em telas mais largas que 16/9 */
+  @media (min-aspect-ratio: 16/9) {
+    .modal-media-container.youtube {
+      padding-top: 38%;
+    }
+
+    .media-container:has(.instagram-post) {
+      width: 94vw;
+    }
+
+    .modal-media-container.instagram {
+      max-width: 32%;
+    }
+  }
+
+  .sidebar-item {
+    padding: 1.4rem;
+    padding-left: 1.2rem;
+  }
+
+  /* a {
+    font-size: 5vw;
+  } */
+
+  .cursos_resum {
+    min-height: 15rem;
+  }
+
+  .padding_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  .filters-container{
+    width: 92rem;
+    padding-left: 1rem;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* #course-search {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-search {
+    margin-left: 9.5rem;
+  }
+
+  .icon-filter {
+    right: 9.5rem;
+  } */
+  /* para controle está usando classe grande */
+  .md\:w-32.badges-ico {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 2999px) {
+  html {
+    font-size: 140%; 
+  }
+
+  body .padding_box {
+    max-width: 100rem;
+  }
+
+  .sidebar-item {
+    padding: 1.4rem;
+    padding-left: 1.2rem;
+  }
+
+  #gr_updates_widget {
+    height: 35rem;
+  }
+
+  .cursos_resum {
+    min-height: 15rem;
+  }
+
+  .padding_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #courses .grid > .card {
+    min-width: 22rem;
+  }
+    
+  .courses-endpoint-big .container {
+    max-width: 100rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* a {
+    font-size: 5vw;
+  } */
+
+  /* #course-search {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-search {
+    margin-left: 9.8rem;
+  }
+
+  .icon-filter {
+    right: 9.8rem;
+  } */
+
+  .instagram-image {
+    padding-top: 2rem;
+  }
+
+  .modal-media-container.youtube {
+    padding-top: 50%;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 37%;
+  }
+  
+  /* para controle está usando classe grande */
+  .md\:w-32.badges-ico {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  /* .badges-img.max-w-full.max-h-full {
+    width: 100%;
+    height: 100%;
+  } */
+}
+
+@media (min-width: 3000px) and (max-width: 3839px) {
+  html {
+    font-size: 160%; 
+  }
+
+  body .padding_box {
+    max-width: 100rem;
+  }
+
+  .sidebar-item {
+    padding: 1.4rem;
+    padding-left: 1.2rem;
+  }
+
+  #gr_updates_widget {
+    height: 36.8rem;
+  }
+
+  .cursos_resum {
+    min-height: 15rem;
+  }
+
+  .padding_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #courses .grid > .card {
+    min-width: 22rem;
+  }
+  
+  .courses-endpoint-big .container {
+    max-width: 100rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* a {
+    font-size: 5vw;
+  } */
+
+  /* #course-search {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-search {
+    margin-left: 9.8rem;
+  }
+
+  .icon-filter {
+    right: 9.8rem;
+  } */
+
+  .instagram-image {
+    padding-bottom: 1.7rem;
+  }
+
+  .modal-media-container.youtube {
+    padding-top: 52%;
+  }
+
+  .instagram-image {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 40%;
+  }
+
+  .md\:w-32.badges-ico {
+    width: 14rem;
+    height: 14rem;
+  }
+}
+
+@media screen and (min-width: 3840px) and (aspect-ratio: 12/5) {
+  .modal-media-container.youtube {
+    padding-top: 33%;
+    /* max-width: 90%; */
+  }
+
+  .instagram-image {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 24%;
+  }
+}
+
+@media (min-width: 3840px) and (min-height: 2000px) {
+  .instagram-image {
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .modal-media-container.youtube {
+    padding-top: 45%;
+    max-width: 90%;
+  }
+
+  .media-container:has(.instagram-post) {
+    width: 94vw;
+  }
+
+  .modal-media-container.instagram {
+    max-width: 34%;
+  }
+}
+
+@media (min-width: 3840px) {
+  html {
+    font-size: 180%; 
+  }
+
+  body .padding_box {
+    max-width: 100rem;
+  }
+
+  .sidebar-item {
+    padding: 1.4rem;
+    padding-left: 1.2rem;
+  }
+
+  #gr_updates_widget {
+    height: 35rem;
+  }
+
+  .cursos_resum {
+    min-height: 15rem;
+  }
+
+  .padding_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  #courses .grid > .card {
+    min-width: 22rem;
+  }
+
+  .courses-endpoint-big .container {
+    max-width: 120rem;
+  }
+
+  .courses-endpoint-big .text-center{
+    margin-bottom: 1rem;
+  }
+
+  #courses.courses-endpoint .grid {
+    grid-template-columns: repeat(10, 1fr); 
+    padding-right: 0;
+    grid-auto-flow: row;
+  }
+
+  .filters-container.container {
+    padding-right: 0rem;
+  }
+
+  /* a {
+    font-size: 5vw;
+  } */
+
+  /* #course-search {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-search {
+    margin-left: 9.8rem;
+  }
+
+  .icon-filter {
+    right: 9.8rem;
+  } */
+
+  .md\:w-32.badges-ico {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+
+ /* html {
+    font-size: 300%; 
+  }
+
+  .sidebar-item {
+    padding: 1.4rem;
+    padding-left: 1.2rem;
+  } */
+
+  /* a {
+    font-size: 5vw;
+  } */
+
+  /* .cursos_resum {
+    min-height: 15rem;
+  }
+
+  .padding_box {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  } */
 
 /*  */
 
@@ -2621,6 +4001,14 @@ min-width: 1440px */
   /* .mobile-menu {
     display: block;
   } */
+}
+
+/* width */
+@media (min-height: 800px) and (min-height: 1440px) {
+  .sidebar-item {
+    padding: 1.3rem;
+    padding-left: 1.2rem;
+  }
 }
 
 /* @media (max-height: 1024px) {
@@ -2759,35 +4147,983 @@ min-width: 1440px */
   opacity: 1;
 }
 
-@media (min-width: 768px) {
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:pl-\[4\.5rem\] {
-    padding-left: 4.5rem;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
+/* Botão estilizado */
+/* Div oculta */
+.caixa_oculta {
+  padding-top: 1rem;
+  /* background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
 }
 
-@media (prefers-color-scheme: dark) {
-  .dark\:border-gray-700 {
-    --tw-border-opacity: 1;
-    border-color: rgb(55 65 81 / var(--tw-border-opacity, 1));
-  }
+#divOculta {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
 }
 
+.dark #divOculta {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.oculta {
+  display: none;
+  /* padding: 40px; */
+  /* background-color: #e9ecef; */
+  /* border-top: 3px solid #007bff; */
+  position: relative;
+  /* margin-left: 1.5rem;
+  margin-right: 1.5rem; */
+}
+
+.oculta.ativa {
+  display: block;
+}
+
+.outroCor {
+  background-color: var(--fundo-light-es);
+  color: var(--texto-high-es);
+}
+
+.dark .outroCor {
+  background-color: var(--fundo-light-cl);
+  color: var(--texto-high-cl);
+}
+
+/* Botão de fechar como X flutuante */
+.fechar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* #media-modal {
+  display: none;           
+  position: fixed;         
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.85); 
+  z-index: 9999;           
+  justify-content: center; 
+  align-items: center;     
+  overflow: auto;
+}
+
+#media-modal .media-container img,
+#media-modal .media-container video {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+} */
+
+
+/*
+ * Project Info Section
+ */
+.project-info-section {
+  padding-top: 3rem;
+}
+
+.project-info-section .info-content {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-info-section h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-info-section .container {
+  margin: auto;
+}
+
+.project-info-section p {
+  padding: 0 1rem 0 1rem;
+}
+
+.grid-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.grid-info h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+/*
+ * Media Gallery Section
+ */
+
+.media-gallery-section .container {
+  max-width: 100%;
+}
+
+/* .media-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+} */
+
+.portfolio-card {
+  --radius: 0.5rem;
+  --shadow-soft: 0 2px 8px -2px rgba(34, 47, 62, 0.08);
+
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content-info {
+  flex: 1;
+  min-height: 0px; /* ajuste conforme desejar */
+}
+
+.portfolio-card:hover {
+  --shadow-strong: 0 8px 32px -8px rgba(34, 47, 62, 0.18);
+  
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-strong);
+}
+
+.portfolio-card img,
+.portfolio-card video {
+  --radius: 0.75rem;
+
+    width: 100%;
+    height: 100%;
+    /* height: 16rem; */
+    /* tá comentado pois com a mudança em uni-card fica melhor maior */
+    object-fit: cover;
+    /* border-radius: var(--radius); */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card img:hover,
+.portfolio-card video:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-card .relative {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card .overlay {
+  --radius: 0.75rem;
+
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    /* border-radius: var(--radius); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-card .relative:hover .overlay {
+    opacity: 1;
+}
+
+/* .overlay svg {
+  stroke: currentColor;
+  filter: drop-shadow(0 0 2px yellow);
+} */
+
+/* mudar cor e opacidade do contorno */
+/* .outline {
+  stroke: yellow;
+  opacity: 0.8;
+  stroke-width: 5;
+} */
+
+/* mudar cor da camada principal */
+/* .main {
+  stroke: red;
+} */
+
+/* inclusive usar variáveis */
+/* :root {
+  --theme-color: #06f;
+  --outline-color: #ff0;
+} */
+
+
+/*  */
+/*  */
+/*  */
+
+.outroIcon {
+  color: var(--texto-light-es);
+}
+
+.dark .outroIcon {
+  color: var(--texto-light-cl);
+}
+
+.outroIcon:hover {
+  color: var(--texto-suave-es);
+}
+
+.dark .outroIcon:hover {
+  color: var(--texto-suave-cl);
+}
+
+.icon-outline {
+  stroke: var(--texto-light-es);
+}
+
+.dark .icon-outline {
+  stroke: var(--texto-light-cl);
+}
+
+/* .icon-main {
+  stroke: var(--texto-light-es);
+} */
+
+/* .dark .icon-main {
+  stroke: var(--texto-light-cl);
+} */
+
+/* .icon-main:hover {
+  stroke: var(--destaque-light-es);
+}
+
+.icon-outline:hover {
+  stroke: var(--destaque-light-cl);
+}
+
+.dark .icon-main:hover {
+  stroke: var(--destaque-light-cl);
+}
+
+.dark .icon-outline:hover {
+  stroke: var(--destaque-light-es);
+} */
+
+/* icon-outline
+icon-main */
+
+.media-type {
+  /* --secondary: #9343ff; */
+
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  /* background-color: var(--secondary); */
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.portfolio-card .content-info {
+    padding: 1rem;
+}
+
+.portfolio-card .content-info h3 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.portfolio-card .content-info p {
+  font-size: 0.875rem;
+}
+
+/*
+ * Modal
+ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-container {
+  flex-grow: 1;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  max-height: 80vh;
+  margin-bottom: 1rem;
+}
+
+/* Seleciona qualquer .media-container que tenha um .instagram-post em qualquer lugar dentro dele */
+.media-container:has(.instagram-post) {
+  width: 80vw;
+}
+
+.media-container .youtube {
+  max-width: 90%;
+}
+
+.modal-media-container{
+  /* aqui */
+
+    /* position: relative;
+  width: 100%;
+  padding-top: 56.25%; */
+
+  /* aqui */
+
+      /* Remover 'padding-top: 56.25%;' ou aplicá-lo condicionalmente para YT */
+    /* Para Instagram, não queremos essa proporção fixa, queremos que ele se ajuste. */
+    position: relative;
+    width: 100%;
+    height: auto; /* Deixa o height ser ditado pelo conteúdo */
+    /* Adicionar um background para o container do Instagram pode ser útil */
+    background-color: var(--fundo-light-es); /* Exemplo: um fundo claro */
+    /* padding: 15px;  */
+    /* box-sizing: border-box; */
+    overflow: auto; /* Permite rolagem se o conteúdo for maior */
+
+
+  display: flex; /* Usar flexbox para centralizar o conteúdo do modal */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     
+  /* Centraliza verticalmente */
+  /* ... outras propriedades como position: fixed, top, left, etc. */
+  padding: 20px; /* Adiciona um padding para o conteúdo não colar nas bordas */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura/altura total */
+}
+
+.modal-media-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  border: 0;
+}
+
+.media-container img,
+.media-container video,
+.media-container iframe {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+/*  */
+/*  */
+/*  */
+.modal-media-container.youtube {
+    position: relative;
+    width: 100%;
+    /* max-width: 900px;  */
+    /* Opcional: define uma largura máxima para o vídeo */
+    padding-top: 56.25%; /* Mantém a proporção 16:9 */
+    height: 0;
+}
+
+.modal-media-container.youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Container de mídia para o INSTAGRAM (responsivo, se ajusta à largura) */
+.modal-media-container.instagram {
+    /* position: relative; */
+    max-width: 30%; /* Largura ideal para posts do Instagram */
+    width: 100%;
+    height: auto;
+    padding: 15px; /* Adiciona respiro ao redor do embed */
+    background-color: var(--fundo-light);
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.instagram iframe {
+  padding-top: 5%;
+}
+
+.modal-media-container.instagram .instagram-media {
+    margin: 0 auto !important;
+    max-width: 100%;
+}
+
+.fecharModal {
+  position: fixed; /* Fica fixo na tela */
+  top: 3rem;  /* distância do topo */
+  right: 3rem; /* distância da direita */
+  background: #fff;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.modal-info {
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  max-width: 80%;
+}
+
+.modal-info h3 {
+  margin: 0;
+}
+
+.grid-info {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.divProjeto {
+  padding-left: 13rem;
+}
+
+.mediaLinks {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+/* o padding do insta tem que ser por @media */
+
+
+.media-links {
+  padding: 0;
+}
+
+.uni-card {
+  height: 30vh;
+  /* classe criada para a unificação dos cards
+  assim eles ficam com o mesmo tamanho  já que esse era o do instagram*/
+}
+
+.instagram-card {
+  display: flex;
+  flex-direction: column; /* Organiza os itens em uma coluna */
+
+  /* max-height: 30vh; 
+  display: grid;
+  place-items: center; 
+  width: 100%;
+  height: 100%; */
+
+  /* height: 30vh;  */
+  /* esse aqui é a solução mais bonita, mas não era 100% o que eu queria */
+}
+
+.instagram-image {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+#fecharBotao {
+  z-index: 2147483647;
+}
+
+/* #todo acho que é uma boa eu dar uma olhada nos scrolls e inverter, eu gostei da ideia, além de
+que tenho que modificar o fundo da cor do scroll tá muito proximo a cor, mesmo que fuja do padrão */
+
+/* #badges-mural{
+  padding: 0;
+} */
+
+/* #courses.courses-endpoint .grid.scroll-site {
+  padding: 0;
+} */
+
+.grid-Badges {
+  display: grid;
+  grid-auto-flow: row;
+  /*  */
+  /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+  /* grid-auto-rows: auto; */
+  /*  */
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(2, minmax(15rem, 1fr));
+  grid-auto-rows: auto;
+  /* margin: 6.5rem; */
+  /* gap: 9rem; */
+  /* gap: 2rem; */
+  /*  */
+  /* row-gap: 9rem; */
+  /* com a fonte muito grande */
+  gap: 1rem;
+  row-gap: 1rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  /*  */
+  overflow-x: auto;
+  padding: 1rem;
+  padding-right: 0;
+  padding-left: 0;
+  scroll-snap-type: x mandatory;
+
+  max-height: none; /* Remove a altura fixa */
+  width: 100%;
+  overflow-y: auto; /* Scroll vertical se necessário */
+}
+
+/* --- FIREFOX --- */
+.scroll-site {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-es-1) var(--scroll-cl-2);
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.dark .scroll-site {
+  scrollbar-color: var(--scroll-cl-1) var(--scroll-es-2);
+}
+
+.scroll-site:hover {
+  scrollbar-color: var(--scroll-es-1) var(--scroll-cl-2);
+}
+
+.dark .scroll-site:hover {
+  scrollbar-color: var(--scroll-cl-1) var(--scroll-es-2);
+}
+
+/* --- CHROME, EDGE, SAFARI --- */
+.scroll-site::-webkit-scrollbar {
+  width: 8px; /* Largura da barra vertical */
+}
+
+.scroll-site::-webkit-scrollbar-track {
+  background: transparent; /* Fundo invisível */
+}
+
+.scroll-site::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px; /* Deixa arredondada */
+}
+
+/* Hover no Chrome/Edge */
+.scroll-site:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.badgesTexto {
+  padding-top: 1rem;
+}
+
+
+/*swiper dos projetos*/
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  /* color: var(--texto-suave-es); */
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  /* backdrop-filter: blur(10px); */
+  /* padding: 10px 20px; */
+  cursor: pointer;
+  z-index: 1001;
+  user-select: none;
+  border-radius: 5px;
+
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  line-height: 0; 
+  padding-bottom: 4px;
+  width: 60px;
+  height: 80px;
+
+}
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+.transColors {
+  background-color: rgba(106, 27, 154, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-suave-cl); */
+    /* background-color: var(--fundo-light-es); */
+  color: var(--texto-high-es);
+}
+
+.transColors:hover{
+  background-color: rgba(156, 39, 176, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: var(--fundo-light-cl);
+}
+
+.dark .transColors {
+  background-color: rgba(240, 210, 108, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-high-es); */
+    /* background-color: var(--fundo-light-cl); */
+  color: var(--fundo-1-inv-es);
+
+  /* color: var(--fundo-light-es); */
+}
+
+.dark .transColors:hover{
+  background-color: rgba(251, 230, 21, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-light-es); */
+  color: var(--fundo-light-es);
+
+  /* color: var(--fundo-1-inv-es); */
+}
+
+.fecharCor {
+  background-color: rgba(106, 27, 154);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-suave-cl); */
+    /* background-color: var(--fundo-light-es); */
+  color: var(--texto-high-es);
+}
+
+.fecharCor:hover{
+  background-color: rgba(156, 39, 176);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: var(--fundo-light-cl);
+}
+
+.dark .fecharCor {
+  background-color: rgba(240, 210, 108);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-high-es); */
+    /* background-color: var(--fundo-light-cl); */
+  color: var(--fundo-1-inv-es);
+
+  /* color: var(--fundo-light-es); */
+}
+
+.dark .fecharCor:hover{
+  background-color: rgba(251, 230, 21);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-light-es); */
+  color: var(--fundo-light-es);
+
+  /* color: var(--fundo-1-inv-es); */
+}
+
+.invertColors {
+  background-color: rgba(240, 210, 108, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-high-es); */
+    /* background-color: var(--fundo-light-cl); */
+  color: var(--fundo-1-inv-es);
+
+  /* color: var(--fundo-light-es); */
+}
+
+.invertColors:hover{
+  background-color: rgba(251, 230, 21, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-light-es); */
+  color: var(--fundo-light-es);
+
+  /* color: var(--fundo-1-inv-es); */
+}
+
+.dark .invertColors {
+  background-color: rgba(106, 27, 154, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-suave-cl); */
+    /* background-color: var(--fundo-light-es); */
+  color: var(--texto-high-es);
+}
+
+.dark .invertColors:hover{
+  background-color: rgba(156, 39, 176, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: var(--fundo-light-cl);
+}
+
+.vitralInvert {
+  background-color: rgba(240, 210, 108, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-high-es); */
+  /* background-color: var(--fundo-light-cl); */
+  /* color: var(--fundo-1-inv-es); */
+  /* color: var(--fundo-light-es); */
+}
+
+.dark .vitralInvert {
+  background-color: rgba(106, 27, 154, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  /* color: var(--texto-suave-cl); */
+  /* background-color: var(--fundo-light-es); */
+  /* color: var(--texto-high-es); */
+}
+
+.vitralPuro {
+  background-color: rgba(240, 210, 108, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.dark .vitralPuro {
+  background-color: rgba(106, 27, 154, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.vitralEspec {
+  background-color: var(--fundo-light);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.dark .vitralEspec {
+  background-color: var(--fundo-light);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.badges-ico {
+  filter: 
+  drop-shadow(1px 0 rgb(67, 64, 97)) 
+  drop-shadow(-1px 0 rgb(67, 64, 97)) 
+  drop-shadow(0 1px rgb(67, 64, 97)) 
+  drop-shadow(0 -1px rgb(67, 64, 97));
+}
+
+.dark .badges-ico {
+  filter: 
+  drop-shadow(1px 0 rgb(255, 249, 97)) 
+  drop-shadow(-1px 0 rgb(255, 249, 97)) 
+  drop-shadow(0 1px rgb(255, 249, 97)) 
+  drop-shadow(0 -1px rgb(255, 249, 97));
+}
+
+.bordasBadges {
+  border-radius: 0.5rem;
+}
+
+.badgesPadding {
+  padding: 0.5rem;
+}
+
+.texto-vitral-high {
+  color: var(--fundo-2-inv-es);
+}
+
+.texto-vitral-light {
+  color: var(--fundo-1-high-cl);
+}
+
+.dark .texto-vitral-high {
+  color: var(--texto-high-es);
+}
+
+.dark .texto-vitral-light {
+  color: var(--fundo-light-cl);
+}
+
+
+/*  */
+/*  */
+/*  */
+
+/* Container do Link (Necessário para posicionar o tooltip) */
+.tooltip {
+  position: relative;
+  /* Se o link quebrar linha, o tooltip pode bugar, então inline-block é mais seguro */
+  display: inline-block; 
+}
+
+/* O Tooltip em si (a caixinha) */
+.tooltip::after {
+  content: attr(data-tooltip); /* Pega o texto do atributo HTML */
+  position: absolute;
+  
+  /* Posicionamento: Acima do elemento */
+  bottom: 110%; 
+  left: 50%;
+  transform: translateX(-50%) translateY(10px); /* Começa um pouco descido para animar */
+  
+  /* Visual */
+  background-color: rgba(30, 30, 30, 0.9); /* Quase preto, levemente transparente */
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap; /* Impede que o texto quebre linha */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.1); /* Borda sutil */
+  
+  /* Efeitos de transição (Animação) */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Efeito "bounce" suave */
+  z-index: 1000;
+  pointer-events: none; /* Garante que o mouse não trave no tooltip */
+}
+
+/* A setinha embaixo do tooltip (Triângulo) */
+.tooltip::before {
+  content: '';
+  position: absolute;
+  bottom: 100%; /* Cola na base do tooltip */
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  border-width: 6px;
+  border-style: solid;
+  border-color: rgba(30, 30, 30, 0.9) transparent transparent transparent; /* Triângulo apontando pra baixo */
+  
+  /* Animação junto com a caixa */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1000;
+}
+
+/* O Estado Hover (Quando passa o mouse) */
+.tooltip:hover::after,
+.tooltip:hover::before {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0); /* Sobe para a posição final */
+}
+
+/* No HTML use class="tooltip tooltip-right" */
+.tooltip-right {
+  display: contents;   /* Ou 'flex', dependendo do seu layout original */
+}
+
+.tooltip-right::after {
+  left: auto;
+  right: 0;
+  transform: translateY(10px);
+}
+.tooltip-right:hover::after {
+  transform: translateY(0);
+}
+/* E ajuste a setinha ::before proporcionalmente */
+
+.icons_footer {
+  gap: 1rem;
+}
+
+/* Container que cobre a tela toda */
+#intro-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000; /* Fundo preto escuro */
+  z-index: 9999; /* Fica por cima de absolutamente tudo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* O Vídeo */
+#video-porta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Corta as bordas se necessário, mas preenche a tela sem esticar */
+  opacity: 0; /* Começa invisível */
+  pointer-events: none; /* Para o usuário não conseguir clicar no vídeo e pausar */
+  transition: opacity 0.5s ease;
+}
+
+/* Botão estilo clássico */
+#btn-entrar {
+  z-index: 10000;
+  padding: 15px 40px;
+  background: transparent;
+  border: 2px solid #8b0000;
+  color: #8b0000;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 5px;
+  transition: all 0.3s ease;
+}
+
+#btn-entrar:hover {
+  background: #8b0000;
+  color: #fff;
+}

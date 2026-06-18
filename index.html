@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Wendel Tytan</title>
     <link rel="icon" href="./src/images/favicon.png" type="image/x-icon">
 
@@ -12,23 +13,29 @@
 
     <meta property="og:title" content="Meu Site Incrível - Portfólio Moderno">
     <meta property="og:description" content="Veja meu curriculo e portfólio estiloso e vibrante!">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9">
-    <meta property="og:url" content="https://seusite.com">
+    <meta property="og:image" content="./src/images/projectThumb/projeto_portfoglio.png">
+    <meta property="og:url" content="https://wendeltytan.github.io/PortfoglioTytan/">
     <meta property="og:type" content="Curriculo">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/i18next@latest/i18next.min.js"></script>
-    <script src="https://unpkg.com/i18next-http-backend@latest/i18nextHttpBackend.min.js"></script>
-    <script src="https://unpkg.com/i18next-browser-languagedetector@latest/i18nextBrowserLanguageDetector.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" onerror="this.onerror=null;this.href='./src/styles/libs/swiper.css'">
+
     <link rel="stylesheet" href="src/styles/output.css">
     <!-- <link rel="stylesheet" href="src/styles/main.css"> -->
+    <link rel="stylesheet" href="src/styles/tracks.css">
   </head>
   <body>
 
+  <div id="intro-overlay">
+    <button id="btn-entrar" class="blood-text">ENTER</button>
+    <video id="video-porta" src="src\images\porta.mp4" playsinline preload="auto"></video>
+  </div>
+
+  <div id="conteudo-site" style="display: none;">
+
     <!-- Mobile Menu Button -->
-    <button class="mobile-menu fixed top-4 left-[0.938rem] z-50 p-2 rounded-lg 
+    <button class="mobile-menu fixed top-4 z-50 p-2 rounded-lg 
                   cor-prin icons">
       <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <line x1="4" x2="20" y1="12" y2="12"/>
@@ -120,7 +127,7 @@
         </a>
       </div>
 
-      <div class="p-4 mt-auto flex flex-col items-center gap-3">
+      <div class="bottom_side p-4 mt-auto flex flex-col items-center gap-3">
         <a class="escuro-outro sidebar-item border-r-2 border outro-theme texto-light rounded-lg px-2 py-1">
           <button id="themeToggle" class="all-[unset] p-2 rounded-lg outro-theme transition-colors">
             <svg id="sunIcon" class="icon hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -163,7 +170,7 @@
       <!-- Hero Section -->
       <section id="home" class="min-h-screen flex items-center justify-center 
                                 hero">
-      <div class="container mx-auto px-6 py-20 text-center">
+      <div class="container mx-auto padding_box py-20 text-center">
         <div class="hero_hero">
           <!-- <div class="animate-fade-in"> -->
             <h1 class="text-4xl md:text-6xl font-bold mb-6 escuro-p1 claro-p1">
@@ -173,13 +180,13 @@
               Desenvolvedor Full Stack
             </p>
             <div class="flex justify-center space-x-6">
-              <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="transition-colors">
+              <a href="https://github.com/WendelTytan" target="_blank" rel="noopener noreferrer" class="transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
               </a>
-              <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" class="transition-colors">
+              <a href="https://www.linkedin.com/in/wendel-vinicius-25939b181/" target="_blank" rel="noopener noreferrer" class="transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
               </a>
-              <a href="mailto:seu-email@exemplo.com" class="transition-colors">
+              <a href="mailto:wendelvinicius@outlook.com.br" class="transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               </a>
             </div>
@@ -191,7 +198,7 @@
       <!-- About Section -->
       <section id="about" class="py-20 
                                 cor-prin">
-      <div class="container mx-auto px-6">
+        <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center escuro-p1 claro-p1">
             Sobre <span class="escuro-p2 claro-p2">Mim</span>
           </h2>
@@ -219,14 +226,14 @@
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
       </section>
 
       <!-- Formation Section -->
       <section id="formation" class="py-20 
                                     cor-prin">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center escuro-p1 claro-p1">
             Minha <span class=" escuro-p2 claro-p2">Formação</span>
           </h2>
@@ -252,7 +259,7 @@
       <!-- Experience Section -->
       <section id="experience" class="py-20 
                                       cor-prin">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
             Minha <span class="">Experiência</span>
           </h2>
@@ -276,83 +283,137 @@
       </section>
 
       <!-- Courses Section -->
-      <section id="courses" class="py-20 
-                                  cor-prin">
-        <div class="container mx-auto px-6">
+      <section id="courses" class="py-20 cor-prin">
+        <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
             Meus <span class="">Cursos</span>
           </h2>
-          <div class="grid">
-            <!-- Courses will be loaded here by JavaScript -->
-            <div class="resum_resum">
+          <!-- Search Bar -->
+          <div id="pesquisa" class="max-w-md mx-auto mb-8">
+            <div class="relative">
+              <input 
+                type="text" 
+                id="course-search"
+                placeholder="Buscar Cursos..."
+                class="w-full px-4 py-2 rounded-lg border cor-prin"
+              >
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon-search absolute left-3 top-1/2 transform -translate-y-1/2 "
+              >
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.3-4.3"/>
+              </svg>
             </div>
-          </div> <!-- teste -->
+          </div>
+
+          <!-- GRID -->
+          <div class="grid">
+            <!-- Courses -->
+            <div class="resum_resum"></div>
+          </div>
+
+          <!-- COMPETÊNCIAS -->
           <div class="cont_comp">
-            <div class="inline-block px-6 py-3 rounded-lg">
-              <p class="text-lg mb-2">Contagem de Competências:</p>
+            <div class="inline-block padding_box py-3 rounded-lg">
+              <p class="text-lg mb-2">
+                Contagem de Competências:
+              </p>
               <div class="flex flex-wrap justify-center gap-2">
+                <!-- conteúdo -->
+              </div>
+            </div>
+          </div>
+
+          <!-- BADGES -->
+          <div class="badge-section">
+            <div class="swiper badge-swiper">
+              <div class="swiper-wrapper" id="badge-carousel">
+                <!-- Slides -->
+              </div>
+              <!-- Navegação -->
+              <div class="nav-btn prev-btn transColors">
+                &#10094;
+              </div>
+              <div class="nav-btn next-btn transColors">
+                &#10095;
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Projects Section -->
-      <section id="projects" class="py-20 
-                                    cor-prin">
-        <div class="container mx-auto px-6">
-          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Meus <span class="">Projetos</span>
-          </h2>
-          
-          <!-- Search Bar -->
-          <div id="pesquisa" class="max-w-md mx-auto mb-8">
-            <div class="relative">
-              <input 
-                type="text" 
-                id="project-search"
-                placeholder="Buscar projetos..."
-                class="w-full px-4 py-2 rounded-lg border
-                cor-prin"
-              >
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-search absolute left-3 top-1/2 transform -translate-y-1/2 "><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <section id="projects">
+        
+      </section> <!--fundo-light glow cursor-pointer-->
+      <section class="container padding_box mx-auto caixa_oculta">
+        <div id="divOculta" class="oculta fundo-light">
+          <button id="fecharBotao" class="fechar transColors transition-colors">X</button>
+          <h2>Conteúdo revelado!</h2>
+          <p>
+            Essa div estava oculta, mas agora foi exibida ao clicar no botão.  
+            Além disso, o site rolou suavemente até aqui como se fosse um <code>#id</code>.
+          </p>
+        </div>
+        <!-- <div id="links-grid" class="links-container 
+          texto-high">
+            teste
+        </div> -->
+        <!-- <section class="media-gallery-section oculta">
+          <div class="container">
+            <div id="media-grid" class="media-grid">
             </div>
           </div>
+        </section> -->
 
-          <div class="grid md:grid-cols-2 gap-8" id="projects-grid">
-            <div class="rounded-lg overflow-hidden">
-              <img src="./src/images/ima1.jpg" alt="Projeto 1" class="card-image object-cover" />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold">Projeto 1</h3>
-                <p class="mt-2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div class="mt-4 flex gap-2">
-                  <span class="px-3 py-1 rounded-full text-sm">React</span>
-                  <span class="px-3 py-1 rounded-full text-sm">Node.js</span>
-                </div>
-              </div>
+        <!-- Modal para visualização em tela cheia -->
+        <div id="media-modal" class="modal">
+          <div class="modal-content">
+            <button id="fecharBotao" class="fecharModal transColors transition-colors">X</button>
+            
+            <div class="nav-btn prev-btn transColors" id="modal-prev">&#10094;</div>
+            <div class="nav-btn next-btn transColors" id="modal-next">&#10095;</div>
+
+            <div class="media-container">
+                <!-- Mídia (img, video, iframe) será inserida aqui -->
             </div>
-            <div class="rounded-lg overflow-hidden">
-              <img src="./src/images/ima3.gif" alt="Projeto 2" class="card-image object-cover" />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold">Projeto 2</h3>
-                <p class="mt-2">
-                  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div class="mt-4 flex gap-2">
-                  <span class="px-3 py-1 rounded-full text-sm">TypeScript</span>
-                  <span class="px-3 py-1 rounded-full text-sm">Next.js</span>
-                </div>
-              </div>
+
+            <div class="modal-info vitralInvert">
+              <h3 id="modal-title" class="texto-vitral-high"></h3>
+              <p id="modal-description" class="texto-vitral-light"></p>
             </div>
           </div>
         </div>
+
+    <!-- <div id="media-modal" class="modal" style="display: none;">
+            <div class="modal-content relative">
+              <button id="fecharBotao" class="fecharModal outroCor outro-theme transition-colors" style="z-index: 2000;">X</button>
+              
+              <div class="nav-btn prev-btn" id="modal-prev">&#10094;</div>
+              <div class="nav-btn next-btn" id="modal-next">&#10095;</div>
+
+              <div class="media-container flex justify-center items-center h-full">
+                  </div>
+
+              <div class="modal-info p-4 text-center">
+                <h3 id="modal-title" class="texto-high text-xl font-bold"></h3>
+                <p id="modal-description" class="texto-light mt-2"></p>
+              </div>
+            </div>
+          </div> -->
       </section>
 
       <!-- More About Me Section -->
       <section id="more-about" class="py-20 
                                       cor-prin">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
             Mais Sobre <span class="">Mim</span>
           </h2>
@@ -368,6 +429,7 @@
                   <li>• Leitura</li>
                   <li>• Viagens</li>
                 </ul>
+                <iframe id="the_iframe"></iframe>
               </div>
               <div class="p-6 rounded-lg">
                 <div class="flex items-center mb-4">
@@ -375,8 +437,8 @@
                   <h3 class="text-xl font-semibold">Música</h3>
                 </div>
                 <div class="space-y-4">
-                  <iframe src="https://open.spotify.com/embed/playlist/seu-id-da-playlist" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" class="rounded-lg"></iframe>
-                  <a href="https://soundcloud.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="inline-flex items-center transition-colors">
+                  <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4k3YGY?utm_source=generator&theme=0" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media" class="rounded-lg"></iframe>
+                  <a href="https://soundcloud.com/wendel-tytan" target="_blank" rel="noopener noreferrer" class="inline-flex items-center transition-colors">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M17 22v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="12" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     SoundCloud
                   </a>
@@ -390,13 +452,13 @@
       <!-- Tabletop Projects Section -->
       <section id="tabletop-projects" class="py-20 
                                               cor-prin">
-        <div class="container mx-auto px-6">
+        <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
             Meus Outros <span class="">Projetos</span>
           </h2>
           <div class="grid md:grid-cols-2 gap-8" id="tabletop-grid">
             <div class="project-card rounded-lg overflow-hidden">
-              <img src="/placeholder.svg" alt="Projeto Tabletop 1" class="card-image object-cover" />
+              <img src="./src/images/tableThumb/ima4.jpg" alt="Projeto Tabletop 1" class="card-image object-cover" />
               <div class="p-6">
                 <h3 class="text-xl font-semibold">RPG Project 1</h3>
                 <p class="mt-2">
@@ -409,7 +471,7 @@
               </div>
             </div>
             <div class="project-card rounded-lg overflow-hidden">
-              <img src="/placeholder.svg" alt="Projeto Tabletop 2" class="card-image object-cover" />
+              <img src="./src/images/tableThumb/ima5.jpg" alt="Projeto Tabletop 2" class="card-image object-cover" />
               <div class="p-6">
                 <h3 class="text-xl font-semibold">Board Game Project</h3>
                 <p class="mt-2">
@@ -429,21 +491,21 @@
     <!-- Footer -->
     <footer id="contact" class="py-12 
                                 cor-prin">
-      <div class="container mx-auto px-6">
+      <div class="container mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
           Entre em <span class="">Contato</span>
         </h2>
         <div class="footer_contact">
           <div class="flex justify-center space-x-8">
-            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" class="transition-colors">
+            <a href="https://github.com/WendelTytan" target="_blank" rel="noopener noreferrer" class="transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon-footer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
               <span class="sr-only">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" class="transition-colors">
+            <a href="https://www.linkedin.com/in/wendel-vinicius-25939b181/" target="_blank" rel="noopener noreferrer" class="transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon-footer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
               <span class="sr-only">LinkedIn</span>
             </a>
-            <a href="mailto:seu-email@exemplo.com" class="transition-colors">
+            <a href="mailto:wendelvinicius@outlook.com.br" class="transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon-footer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               <span class="sr-only">Email</span>
             </a>
@@ -453,8 +515,22 @@
           </div>
         </div>
       </div>
+      <!-- <div class="card">
+        <div id="tracks"></div>
+      </div> -->
     </footer>
+  </div>
+    
+  <!-- 1. Tenta a CDN. Se falhar, o onerror injeta o script local na mesma hora e força o navegador a esperar -->
+  <script src="https://unpkg.com/i18next/i18next.min.js" onerror="document.write('<script src=\'./src/js/libs/i18nextmin.js\'><\/script>')"></script>
+  <!-- 2. HttpBackend -->
+  <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js" onerror="document.write('<script src=\'./src/js/libs/i18nextbackend.js\'><\/script>')"></script>
+  <!-- 3. Language Detector -->
+  <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js" onerror="document.write('<script src=\'./src/js/libs/i18nextdetector.js\'><\/script>')"></script>
 
-    <script defer src="./src/js/main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" onerror="document.write('<script src=\'./src/js/libs/swiper.js\'><\/script>')"></script>
+
+  <!-- <script src="./src/js/libs/swiper.js"></script> -->
+  <script defer src="./src/js/main.js" type="module"></script>
   </body>
 </html>

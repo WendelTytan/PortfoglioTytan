@@ -1,0 +1,72 @@
+{
+  "teste": [
+    {
+      "titulo": "Projeto 1",
+      "numero": 1,
+      "descricao": "Um site moderno e responsivo desenvolvido em HTML, CSS com Tailwind e JavaScript com Swiper e I18Next, para apresentar meus projetos, habilidades e trajetória profissional de forma dinâmica e atrativa. O design combina cores vibrantes com uma estrutura clara e organizada, proporcionando uma experiência visual única e direta. Idealizado para destacar meu trabalho, minha jornada e sobre mim, com opção de tradução e mudança de tema. (Você esta nele no momento).",
+      "siteprojeto": "www.github.com/WendelTytan/PortfoglioTytan",
+      "foto": "./src/images/projectThumb/projeto_portfoglio.png",
+      "competencies": [
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "JavaScript",
+        "Swiper",
+        "I18Next"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "img1.jpg",
+          "alt": "Imagem detalhe 1",
+          "titulo": "Teste Titulo 1",
+          "descricao": "Teste Descri 1"
+        },
+        {
+          "type": "image",
+          "src": "img2.jpg",
+          "alt": "Imagem detalhe 2",
+          "titulo": "Teste Titulo 2",
+          "descricao": "Teste Descri 2"
+        },
+        {
+          "type": "gif",
+          "src": "gif1.gif",
+          "alt": "Gif animado",
+          "titulo": "Teste Titulo 3",
+          "descricao": "Teste Descri 3"
+        }
+      ]
+    },
+    {
+      "titulo": "Projeto 2",
+      "numero": 2,
+      "descricao": "API REST desenvolvida com Spring Boot como parte do bootcamp da Digital Innovation One (DIO), voltada para o gerenciamento de pessoas em um sistema de cadastro. O projeto segue boas práticas de arquitetura e utiliza ferramentas como JPA, Hibernate e H2 Database para persistência dos dados. Inclui testes com JUnit e integração com o Swagger para documentação automática da API.",
+      "siteprojeto": "www.github.com/WendelTytan/DIO_API",
+      "foto": "./src/images/projectThumb/dio_api.png",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "JPA",
+        "Hibernate",
+        "H2 Database",
+        "Persistencia de dados",
+        "Junit",
+        "Swagger",
+        "API",
+        "API Rest",
+        "Lombok",
+        "Maven"
+      ],
+      "media": [
+        {
+          "type": "video",
+          "src": "video1.mp4",
+          "alt": "Vídeo do projeto",
+          "titulo": "Teste Titulo 1 do 2",
+          "descricao": "Teste Descri 1 do 2"
+        }
+      ]
+    }
+  ]
+}

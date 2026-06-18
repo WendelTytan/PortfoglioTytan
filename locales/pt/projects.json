@@ -1,23 +1,633 @@
 {
   "projects": [
     {
-      "titulo": "Projeto 1",
-      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "siteprojeto": "www.google.com.br",
-      "foto": "./src/images/ima1.jpg",
+      "titulo": "Site Portfoglio",
+      "numero": 1,
+      "descricao": "Um site moderno e responsivo desenvolvido em HTML, CSS com Tailwind e JavaScript com Swiper e I18Next, para apresentar meus projetos, habilidades e trajetória profissional de forma dinâmica e atrativa. O design combina cores vibrantes com uma estrutura clara e organizada, proporcionando uma experiência visual única e direta. Idealizado para destacar meu trabalho, minha jornada e sobre mim, com opção de tradução e mudança de tema. (Você esta nele no momento).",
+      "siteprojeto1": "https://www.github.com/WendelTytan/PortfoglioTytan",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/projeto_portfoglio.png",
       "competencies": [
-        "React",
-        "Node.js"
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "JavaScript",
+        "Swiper",
+        "I18Next"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio.png",
+          "alt": "Imagem home",
+          "titulo": "Imagem home",
+          "descricao": "Home do site, demonstração do site separado por seções, uma das varias do site"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (1).png",
+          "alt": "Seção Cursos",
+          "titulo": "Seção dos Cursos",
+          "descricao": "Nesta seção tem um planejamento especial, ela carrega dados de um json e popula eles de forma ordenada cada um com sua tag especifica preparada para um sistema de busca"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (2).png",
+          "alt": "Seção Projetos",
+          "titulo": "Seção Projetos",
+          "descricao": "Navegação na Seção projetos, cada uma com um card expandivel proprio e com modal para fullscreen ao clicar nos conteudos para ver"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (3).png",
+          "alt": "Demonstração da Expanção em Projetos",
+          "titulo": "Expandido os Projetos",
+          "descricao": "Demonstração do que acontece ao clicar em um card de projeto, ele expande demonstrando a descrição e conteudos colocados no projeto"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (4).png",
+          "alt": "Demonstração do Filtro dos Cursos",
+          "titulo": "Parte dos Filtros",
+          "descricao": "Demonstração da Parte dos filtos personalizados para busca e filtragens dos cursos"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (5).png",
+          "alt": "Mostragem de Competências",
+          "titulo": "Mostragem de Competências",
+          "descricao": "Demonstração do sistema de contagem de competências com cores setadas"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (6).png",
+          "alt": "Swiper",
+          "titulo": "Demonstração do Swiper",
+          "descricao": "Swiper com todas as badges que obtive"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (7).png",
+          "alt": "Uso da API do LAST FM",
+          "titulo": "Uso de API",
+          "descricao": "Demonstração do uso de uma API do LAST FM com um modulo criado para popular ultimas musicas ouvidas"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (8).png",
+          "alt": "Uso de um Widget",
+          "titulo": "Uso de Widget",
+          "descricao": "Uso do Widget do GoodReads no qual devido as proprias limitações ele vem com uma moldura e pouca limitação na edição, mas com ele mostra os ultimos livros lidos registrados"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (9).png",
+          "alt": "Nav Bar",
+          "titulo": "Navbar",
+          "descricao": "Demonstração do Uso de uma Navbar com conexão com as seções e marcação de qual seção estamos"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (10).png",
+          "alt": "Mudança de Temas",
+          "titulo": "Demonstração da Mudança de Tema",
+          "descricao": "Mudança de tema dinamico, entre um tema com tons mais escuros e temas mais claros, com salvamento local"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/projeto_portfoglio (11).png",
+          "alt": "Mudança de Idioma",
+          "titulo": "Demonstração da Mudança de Idioma",
+          "descricao": "Mudança de idioma dinamicamente com salvamento local usando o i18Next"
+        }
       ]
     },
     {
-      "titulo": "Projeto 2",
-      "descricao": "aaaaaaaaaaaaiiiiiiiiiiiiii",
-      "siteprojeto": "www.yahoo.com.br",
-      "foto": "./src/images/ima3.gif",
+      "titulo": "Ip Calc",
+      "numero": 2,
+      "descricao": "Uma calculadora de redes completa para IPv4 e IPv6, desenvolvida para facilitar estudos, configuração de redes e análise de endereçamento.\n\nO projeto realiza cálculos automáticos de:\n\n    IPv4, IPv6, Máscaras de rede, CIDR, Conversão binária, Broadcast, Hosts, Network ID, Sub-redes, Compressão IPv6 (RFC 5952), Informações completas de rede",
+      "siteprojeto1": "https://github.com/WendelTytan/IPCalc",
+      "siteprojeto2": "https://ipcalc-one.vercel.app/",
+      "siteAlt1": "Repositório no GitHub",
+      "siteAlt2": "Site do Projeto",
+      "foto": "./src/images/projectThumb/IPcalc (1).png",
       "competencies": [
-        "TypeScript",
-        "React.js"
+        "Redes de Computadores",
+        "IPV4",
+        "IPV6",
+        "Cabeamento Estruturado",
+        "Infraestrutra",
+        "Html",
+        "Css3",
+        "Tailwind",
+        "Javascript"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/IPcalc (2).png",
+          "alt": "IPV6",
+          "titulo": "IPV6",
+          "descricao": "Demonstração do uso do Site na criação de IP e mascaras em binário"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/IPcalc (3).png",
+          "alt": "Sub-Redes",
+          "titulo": "Sub-Redes",
+          "descricao": "Demonstração do uso do Site para criação de sub-redes"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/IPcalc (4).png",
+          "alt": "IPV4",
+          "titulo": "IPV4",
+          "descricao": "Demonstração do Uso do site na criação de ipv4"
+        }
+      ]
+    },
+    {
+      "titulo": "Projeto Decodificador",
+      "numero": 3,
+      "descricao": "Desenvolvi uma aplicação web front-end que permite aos usuários criptografar e descriptografar mensagens de texto. Utilizando HTML, CSS e JavaScript puro, criei uma interface responsiva e implementei a lógica de manipulação de strings para as funções de codificação, além de funcionalidades de interação com o usuário, como copiar o resultado para a área de transferência.",
+      "siteprojeto1": "https://github.com/WendelTytan/Projeto-Decodificador",
+      "siteprojeto2": "https://projeto-decodificador-delta.vercel.app/",
+      "siteAlt1": "Repositório no GitHub",
+      "siteAlt2": "Site do Projeto",
+      "foto": "./src/images/projectThumb/Alura_projetodecodificador.png",
+      "competencies": [
+        "HTML5",
+        "CSS3",
+        "JS"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_projetodecodificador.png",
+          "alt": "Demonstração do Site",
+          "titulo": "Demonstração do Site",
+          "descricao": "Demosntração da Home do Site pronta para receber o texto"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_projetodecodificador1.png",
+          "alt": "Entrando Input",
+          "titulo": "Entrando Input",
+          "descricao": "Mostrando estado depois de reber entrada de dados"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_projetodecodificador2.png",
+          "alt": "Demonstração da Criptografia",
+          "titulo": "Demonstração da Criptografia",
+          "descricao": "Demonstração da Criptografia especifica do site"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_projetodecodificador3.png",
+          "alt": "Demonstração da Descriptografia",
+          "titulo": "Demonstração da Descriptografia",
+          "descricao": "Demonstração da Descriptografia de textos criptografados"
+        }
+      ]
+    },
+    {
+      "titulo": "Conversor Moedas",
+      "numero": 4,
+      "descricao": "Desenvolvi uma aplicação de console em Java que realiza conversões de moedas com taxas de câmbio em tempo real. O projeto demonstra competência no consumo de APIs REST usando o cliente HTTP nativo do Java, além do parsing de respostas JSON com a biblioteca Gson. A aplicação possui uma interface interativa que permite ao usuário selecionar as moedas de origem e destino para obter o valor convertido instantaneamente.",
+      "siteprojeto1": "https://github.com/WendelTytan/conversorMoedas",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/Alura_conversor_moedas.jpg",
+      "competencies": [
+        "Java",
+        "API",
+        "ExchangeRate-API",
+        "Gson",
+        "Json"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_conversor_moedas.jpg",
+          "alt": "Menu",
+          "titulo": "Menu",
+          "descricao": "Demonstração do menu"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_conversor_moedas_all.png",
+          "alt": "Visualização do Codigo",
+          "titulo": "Visualização do Codigo",
+          "descricao": "Visualização Geral do Codigo e organização de pastas"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_conversor_moedas_1.png",
+          "alt": "Demonstração de Uso",
+          "titulo": "Demonstração de Uso",
+          "descricao": "Demonstração de uso e retorno da API"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_conversor_moedas_2.png",
+          "alt": "Demonstração de Uso",
+          "titulo": "Demonstração de Uso",
+          "descricao": "Demonstração de uso e retorno da API"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_conversor_moedas_3.png",
+          "alt": "Demonstração de Uso",
+          "titulo": "Demonstração de Uso",
+          "descricao": "Demonstração de uso e retorno da API"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_conversor_moedas_4.png",
+          "alt": "Visualização Geral das Moedas",
+          "titulo": "Visualização Geral das Moedas",
+          "descricao": "Demonstração da visualização geral das moedas para converter"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_conversor_moedas_5.png",
+          "alt": "Demonstração do sistema de log",
+          "titulo": "Demonstração do sistema de log",
+          "descricao": "O programa possui um sistema de log com salvamento local, o qual registra todas as transações feitas"
+        },
+        {
+          "type": "video",
+          "src": "./src/images/projectThumb/Alura_conversor_moedas.webm",
+          "alt": "Demonstração do Programa",
+          "titulo": "Demonstração do Programa",
+          "descricao": "Demonstração de Execução do programa"
+        }
+      ]
+    },
+    {
+      "titulo": "IOT Controle de Ambiente por Som",
+      "numero": 5,
+      "descricao": "Desenvolvimento de um sistema de iluminação inteligente com Arduino Uno, capaz de interpretar sinais de áudio analógico via entrada P2/P3 (3.5mm) e converter frequências sonoras em efeitos de luz RGB. O projeto utiliza um algoritmo próprio no Arduino para análise e mapeamento de frequências musicais (graves, médios e agudos) em cores específicas, controlando fitas de LED RGB em tempo real.\n\nA conectividade é feita via Bluetooth (HC-05) e Wi-Fi (ESP8266), permitindo ao usuário controlar manualmente as cores, modos e intensidades através de um aplicativo Android desenvolvido no MIT App Inventor. O sistema oferece modos automáticos reativos à música e modos manuais de personalização.\n\nA solução é compacta, portátil e voltada para ambientes como festas, estúdios e uso doméstico, com foco em experiência visual sincronizada com som e fácil integração por app.",
+      "foto": "./src/images/projectThumb/audio_Converter.jpg",
+      "competencies": [
+        "Arduino",
+        "Android",
+        "Low Code"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/audio_Converter.jpg",
+          "alt": "Demonstração da Montagem do Prototipo",
+          "titulo": "Demonstração da Montagem do Prototipo",
+          "descricao": "Demonstração da Montagem do Prototipo no Arduino"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/audio_Converter_Fritizing.png",
+          "alt": "Demonstração da Montagem Esquematica",
+          "titulo": "Demonstração da Montagem Esquematica",
+          "descricao": "Demonstração da montagem no programa Fritizing"
+        },
+        {
+          "type": "gif",
+          "src": "./src/images/projectThumb/audio_Converter_roda.gif",
+          "alt": "",
+          "titulo": "",
+          "descricao": ""
+        },
+        {
+          "type": "gif",
+          "src": "./src/images/projectThumb/audio_Converter_slider.gif",
+          "alt": "",
+          "titulo": "",
+          "descricao": ""
+        },
+        {
+          "type": "gif",
+          "src": "./src/images/projectThumb/audio_Converter_input.gif",
+          "alt": "",
+          "titulo": "",
+          "descricao": ""
+        },
+        {
+          "type": "gif",
+          "src": "./src/images/projectThumb/audio_Converter_aleatorio.gif",
+          "alt": "",
+          "titulo": "",
+          "descricao": ""
+        },
+        {
+          "type": "gif",
+          "src": "./src/images/projectThumb/audio_Converter_botoes.gif",
+          "alt": "",
+          "titulo": "",
+          "descricao": ""
+        },
+        {
+          "type": "gif",
+          "src": "./src/images/projectThumb/audio_Converter_ALL.gif",
+          "alt": "",
+          "titulo": "",
+          "descricao": ""
+        },
+        {
+          "type": "video",
+          "src": "./src/images/projectThumb/audio_Converter_ALL.webm",
+          "alt": "Demonstração do Uso do APP",
+          "titulo": "Demonstração do Uso do APP",
+          "descricao": "Demonstração geral do codigo utilizando todas as funções"
+        }
+      ]
+    },
+    {
+      "titulo": "Sistema de Controle por Voz via Arduino com Wi-Fi e Bluetooth",
+      "numero": 6,
+      "descricao": "O projeto consiste em um sistema de automação baseado em Arduino integrado a um shield Wi-Fi e módulo Bluetooth, controlado por um aplicativo desenvolvido no MIT App Inventor. O aplicativo utiliza comandos de voz para enviar instruções ao Arduino, permitindo o acionamento e controle de dispositivos como mini servomotores e LEDs. A arquitetura híbrida de comunicação (Wi-Fi e Bluetooth) garante maior flexibilidade e alcance, possibilitando tanto o controle local quanto remoto. O sistema demonstra aplicações práticas em automação residencial, prototipagem e ensino de IoT, combinando interação por voz e conectividade sem fio em um ambiente de baixo custo e fácil replicação.",
+      "siteprojeto4": "https://www.tinkercad.com/things/i7szOdtEecu-controlador-de-voz-por-bluetooth",
+      "siteAlt4": "Thinkercad",
+      "foto": "./src/images/projectThumb/IOT_Arduino.png",
+      "competencies": [
+        "Arduino",
+        "Android",
+        "Low Code"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/IOT_Arduino.png",
+          "alt": "Montagem Esquematica no Thinkercad",
+          "titulo": "Montagem Esquematica no Thinkercad",
+          "descricao": "Demonstração da montagem do Prototipo no thinkercad"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/IOT_Arduino_APP.png",
+          "alt": "Demonstração do App",
+          "titulo": "Demonstração do App",
+          "descricao": "Demonstração do Uso do APP"
+        }
+      ]
+    },
+    {
+      "titulo": "API Rest Com Spring Boot",
+      "numero": 7,
+      "descricao": "API REST desenvolvida com Spring Boot como parte do bootcamp da Digital Innovation One (DIO), voltada para o gerenciamento de pessoas em um sistema de cadastro. O projeto segue boas práticas de arquitetura e utiliza ferramentas como JPA, Hibernate e H2 Database para persistência dos dados. Inclui testes com JUnit e integração com o Swagger para documentação automática da API.",
+      "siteprojeto1": "https://www.github.com/WendelTytan/DIO_API",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/dio_api.png",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "JPA",
+        "Hibernate",
+        "H2 Database",
+        "Persistencia de dados",
+        "Junit",
+        "Swagger",
+        "API",
+        "API Rest",
+        "Lombok",
+        "Maven"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_api.png",
+          "alt": "Imagem do Carregamento do Spring Boot",
+          "titulo": "Imagem do Carregamento do Spring Boot",
+          "descricao": "Tela de carramento do spring boot com visualização as pastas e organização"
+        }
+      ]
+    },
+    {
+      "titulo": "Forum Alura",
+      "numero": 8,
+      "descricao": "Desenvolvi uma API REST completa que simula um fórum de debates, utilizando o ecossistema Spring (Boot, Security, Data JPA). O projeto inclui um sistema de autenticação stateless baseado em tokens JWT, operações CRUD para gerenciamento de tópicos e respostas, e validações de dados para garantir a robustez e a segurança da aplicação, seguindo as melhores práticas de desenvolvimento back-end.",
+      "siteprojeto1": "https://github.com/WendelTytan/forumalura",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/Alura_forumalura.png",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "Spring Data JPA",
+        "Spring Security",
+        "Auth0",
+        "OpenAPI",
+        "Swagger",
+        "MySQL",
+        "Railway"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_forumalura.png",
+          "alt": "Visualização do Codigo",
+          "titulo": "Visualização do Codigo",
+          "descricao": "Demonstração da Organização do Codigo e seus DTOs"
+        }
+      ]
+    },
+    {
+      "titulo": "Busca Livros",
+      "numero": 9,
+      "descricao": "Desenvolvi uma aplicação de console interativa em Java e Spring Boot que funciona como um catálogo de livros. A aplicação consome a API pública Gutendex para buscar informações sobre livros e autores, desserializa as respostas JSON para objetos Java e utiliza o Spring Data JPA para persistir os dados em um banco de dados PostgreSQL. O menu interativo permite ao usuário realizar buscas e consultas complexas sobre os dados armazenados.",
+      "siteprojeto1": "https://github.com/WendelTytan/buscalivros",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/Alura_buscalivros.png",
+      "competencies": [
+        "Java",
+        "API",
+        "Guthemberg",
+        "API",
+        "Json"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/Alura_buscalivros.png",
+          "alt": "Visualização do Codigo",
+          "titulo": "Visualização do Codigo",
+          "descricao": "Demonstração da Organização do Codigo e sua organização"
+        }
+      ]
+    },
+    {
+      "titulo": "UML Iphone",
+      "numero": 10,
+      "descricao": "Projeto desenvolvido no bootcamp da Digital Innovation One (DIO), com foco em aplicar conceitos de modelagem UML e Programação Orientada a Objetos em Java. A proposta é simular funcionalidades básicas de um iPhone — como chamadas, reprodução de música e navegação na internet — por meio de interfaces e classes bem estruturadas.",
+      "siteprojeto1": "https://github.com/WendelTytan/DIO_UML-Iphone",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/dio_uml.png",
+      "competencies": [
+        "Mermaid",
+        "UML"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_uml.png",
+          "alt": "UML",
+          "titulo": "UML",
+          "descricao": "Demonstração do UML no modelo visualização"
+        }
+      ]
+    },
+    {
+      "titulo": "Aplicativo de Sorteio de Números Aleatórios",
+      "numero": 11,
+      "descricao": "Aplicativo desenvolvido no MIT App Inventor para gerar sorteios rápidos e confiáveis de números aleatórios, ideal para uso em eventos, jogos ou decisões imparciais. Possui interface simples e intuitiva, permitindo que o usuário defina facilmente o intervalo numérico desejado e execute o sorteio com apenas um toque. O sistema garante resultados imprevisíveis, oferecendo praticidade e eficiência em qualquer situação que exija seleção aleatória.",
+      "foto": "./src/images/projectThumb/sorteioRAND.gif",
+      "competencies": [
+        "Android",
+        "Low Code"
+      ],
+      "media": [
+        {
+          "type": "gif",
+          "src": "./src/images/projectThumb/sorteioRAND.gif",
+          "alt": "",
+          "titulo": "",
+          "descricao": ""
+        },
+        {
+          "type": "video",
+          "src": "./src/images/projectThumb/sorteioRAND.mp4",
+          "alt": "Demonstração de Uso geral do app",
+          "titulo": "Demonstração de Uso geral do app",
+          "descricao": "Execução do App para demonstração"
+        }
+      ]
+    },
+    {
+      "titulo": "Projeto de Design Patterns",
+      "numero": 12,
+      "descricao": "Implementação prática dos principais padrões de projeto (Design Patterns) do catálogo GoF (Gang of Four) utilizando Java. Desenvolvido como parte do bootcamp da Digital Innovation One (DIO), o projeto explora os padrões Criacionais, Estruturais e Comportamentais, demonstrando sua aplicação no contexto de desenvolvimento orientado a objetos.",
+      "siteprojeto1": "https://github.com/WendelTytan/DIO_GOF",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/dio_gof.png",
+      "competencies": [
+        "Java",
+        "Design Patterns",
+        "OO"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_gof.png",
+          "alt": "Imagem do Carregamento do Spring Boot",
+          "titulo": "Imagem do Carregamento do Spring Boot",
+          "descricao": "Tela de carramento do spring boot com visualização as pastas e organização"
+        }
+      ]
+    },
+    {
+      "titulo": "Projeto Orientação a Objeto",
+      "numero": 13,
+      "descricao": "Projeto desenvolvido durante o bootcamp da Digital Innovation One (DIO), com foco nos fundamentos e na prática da Programação Orientada a Objetos (POO) em Java. A aplicação demonstra conceitos como classes, abstração, encapsulamento, herança e polimorfismo, por meio de uma modelagem simples e bem estruturada.",
+      "siteprojeto1": "https://github.com/WendelTytan/DIO_JavaOO-Bootcamp",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/dio_oo.png",
+      "competencies": [
+        "Java",
+        "Design Patterns",
+        "OO"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_oo.png",
+          "alt": "Imagem do Carregamento do Spring Boot",
+          "titulo": "Imagem do Carregamento do Spring Boot",
+          "descricao": "Tela de carramento do spring boot com visualização as pastas e organização"
+        }
+      ]
+    },
+    {
+      "titulo": "Ibank",
+      "numero": 14,
+      "descricao": "Projeto prático de um sistema bancário digital desenvolvido em Java, como parte do bootcamp da Digital Innovation One (DIO). O iBank simula funcionalidades essenciais de um banco, como abertura de contas, depósitos, saques e transferências, com foco na aplicação dos pilares da Programação Orientada a Objetos (POO).",
+      "siteprojeto1": "https://github.com/WendelTytan/DIO_Banco-IBank",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/dio_ibank.png",
+      "competencies": [
+        "Java",
+        "Spring Boot",
+        "Maven",
+        "JPA",
+        "Persistencia de dados",
+        "Junit",
+        "Swagger"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_ibank.png",
+          "alt": "Menu",
+          "titulo": "Menu",
+          "descricao": "Visualização do Menu estilo CMD padronizado"
+        }
+      ]
+    },
+    {
+      "titulo": "Controle de Fluxo",
+      "numero": 15,
+      "descricao": "Desenvolvi um programa para validar parâmetros de entrada e controlar o fluxo de execução com laços e condicionais. Destaque para a criação de uma exceção customizada para tratamento de erros.",
+      "siteprojeto1": "https://github.com/WendelTytan/Dio-Controle_de_Fluxo",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/dio_fluxo.png",
+      "competencies": [
+        "Java"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_fluxo.png",
+          "alt": "Menu",
+          "titulo": "Menu",
+          "descricao": "Demonstração do Menu e Output"
+        }
+      ]
+    },
+    {
+      "titulo": "Conta de Banco",
+      "numero": 16,
+      "descricao": "Criei uma aplicação de console em Java que simula o processo de abertura de uma conta bancária. O programa coleta dados do usuário (agência, conta, nome) via terminal, processa essas informações e exibe uma mensagem de confirmação formatada. Este projeto reforçou minhas habilidades em manipulação de entrada e saída de dados e na utilização de tipos de dados primitivos em Java.",
+      "siteprojeto1": "https://github.com/WendelTytan/DIO_Conta-Banco",
+      "siteAlt1": "Repositório no GitHub",
+      "foto": "./src/images/projectThumb/dio_banco.png",
+      "competencies": [
+        "Java"
+      ],
+      "media": [
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_banco.png",
+          "alt": "Output",
+          "titulo": "Output",
+          "descricao": "Demonstração do Menu e Output"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_banco_tela.png",
+          "alt": "Output",
+          "titulo": "Output",
+          "descricao": "Demonstração do Menu e Output"
+        },
+        {
+          "type": "image",
+          "src": "./src/images/projectThumb/dio_banco_all.png",
+          "alt": "Visualização de parte do Codigo e organização",
+          "titulo": "Visualização de parte do Codigo e organização",
+          "descricao": "Visualiação geral do Codigo e Organização"
+        },
+        {
+          "type": "video",
+          "src": "./src/images/projectThumb/dio_banco.webm",
+          "alt": "Demonstração do Codigo",
+          "titulo": "Demonstração do Codigo",
+          "descricao": "Visualização Geral do Codigo em Execução"
+        }
       ]
     }
   ]

@@ -2,27 +2,30 @@
   "formations": [
     {
       "id": 1,
-      "nome": "Ciência da Computação",
+      "nome": "Computer Science",
       "instituicao": "Gran Faculdade",
       "inicio": 2023,
       "fim": "Presente",
-      "descricao": "Cursando Bacharelado em Ciência da Computação pela GRANGRAN (jul/2023 - dez/2029), atualmente no quarto período. Desenvolvendo habilidades em programação, engenharia de software, sistemas operacionais e arquitetura de computadores, com foco na construção de soluções tecnológicas inovadoras."
+      "descricao": "Studying Bachelor's Degree in Computer Science at GRAN College, currently in the 4th Period. Developing skills in programming, software engineering, operating systems and computer architecture, with a focus on building innovative technological solutions.",
+      "media": []
     },
     {
       "id": 2,
-      "nome": "Redes de Computadores",
+      "nome": "Computer Networks",
       "instituicao": "Ceep - José Figueiredo Barreto",
       "inicio": 2023,
       "fim": 2024,
-      "descricao": "Técnico em Redes de Computadores pelo CEEP - José Figueiredo Barreto (jun/2023 - dez/2024), desenvolvendo habilidades em infraestrutura de TI, segurança digital, manutenção de hardware e redes, além de competências em relações interpessoais e normas trabalhistas."
+      "descricao": "Computer Network Technician from CEEP - José Figueiredo Barreto, developed skills in IT infrastructure, digital security, hardware and network maintenance, as well as skills in interpersonal relationships and labor standards.",
+      "media": []
     },
     {
       "id": 3,
-      "nome": "Manutenção e Suporte em Informática",
+      "nome": "IT Maintenance and Support",
       "instituicao": "IFS - Instituto Federal de Sergipe",
       "inicio": 2019,
       "fim": 2020,
-      "descricao": "Técnico em Manutenção e Suporte em Informática pelo renomado Instituto Federal de Sergipe – IFS (jun/2019 - dez/2020). Formação com foco em hardware, redes e suporte técnico,"
+      "descricao": "Technician in Maintenance and Computer Support from the renowned Federal Institute of Sergipe – IFS. Training focused on hardware, networking and technical support",
+      "media": []
     }
   ]
 }

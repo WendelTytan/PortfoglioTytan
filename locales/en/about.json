@@ -3,14 +3,18 @@
     {
       "foto": "./src/images/ima2.jpg",
       "alt": "Wendel Tytan",
-      "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
-      "p2": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "p1": "Computer Science student with technical training in Computer Maintenance and Support, passionate about technology and development of intelligent solutions. I have knowledge in assembly and maintenance of computers, networks, operating systems and technical support. I also work as a programmer, with experience in languages such as JavaScript, Python and HTML/CSS, as well as notions in databases and web development. I constantly seek to improve my skills and I am always open to new challenges, focusing on professional growth and contribution to innovative projects in the IT area.",
+      "p2": "Enthusiast of Information Technology and Computer Maintenance, knowledge in structured cabling, Computer Network and CCTV, Programming, as well as knowledge and projects in Arduino",
       "competencies": [
-        "React",
-        "TypeScript",
-        "Node.js",
-        "Tailwind"
-      ]
+        "Java",
+        "JavaScript",
+        "Html",
+        "Tailwind",
+        "CSS",
+        "Python",
+        "Arduino"
+      ],
+      "media": []
     }
   ]
 }

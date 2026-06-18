@@ -3,17 +3,166 @@
     {
       "mais_1": "Hobbies",
       "mais_2": "Música",
-      "linspotify": "https://open.spotify.com/embed/playlist/435WA3QGR9pD02EgQgG3qS",
+      "spotify": "Spotify",
+      "spotifyico": "https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg",
+      "linspotify": "https://open.spotify.com/user/21opfjiynxba42qgirrrugrnq",
+      "spotifyplaylist1": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4k3YGY?utm_source=generator&theme=0",
+      "spotifyplaylist2": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4kqg4q?utm_source=generator&theme=0",
+      "spotifyplaylist3": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO3qlMd1?utm_source=generator&theme=0",
       "soundcloud": "Soundcloud",
-      "linsoundcloud": "https://soundcloud.com/seu-usuario",
-      "hobbies": [
-        "Futebol",
-        "Xadrez"
-      ],
-      "links": {
-        "Futebol": "www.futebol.com",
-        "Xadrez": "www.xadrez.com"
-      }
+      "soundcloudico": "https://cdn.simpleicons.org/soundcloud",
+      "linsoundcloud": "https://soundcloud.com/wendel-tytan",
+      "lastfm": "LastFM",
+      "lastfmico": "https://cdn.simpleicons.org/lastdotfm",
+      "linlastfm": "https://www.last.fm/user/wendeltytan",
+      "mypst": "https://mypst.com.br/rank/WendelTytan",
+      "mypstcard": "https://mypst.com.br/media/card/a/WendelTytan.png",
+      "mypstalt": "Meu card do MyPSt",
+      "exophase": "https://www.exophase.com/user/Tytan/",
+      "exocard": "https://card.exophase.com/2/0/294134.png?1747457300",
+      "exoalt": "Exophase",
+      "revil": " https://game.capcom.com/residentevil/en/p2386206.html ",
+      "revilcard": "./src/images/revilcard.png",
+      "revilalt": "Card Embaixador Resident Evil",
+      "media": []
+    }
+  ],
+  "games": [
+    {
+      "favico": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Playstation_logo_colour.svg",
+      "alt": "PlayStation",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://mypst.com.br/rank/WendelTytan",
+      "favico": "https://mypst.com.br/favicon.ico",
+      "alt": "MyPst",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://www.exophase.com/user/Tytan/",
+      "favico": "https://www.exophase.com/assets/zeal/_icons/favicon.ico",
+      "alt": "Exophase",
+      "nome": "Tytan",
+      "media": []
+    },
+    {
+      "lingames": "https://steamcommunity.com/id/tytanaesir/",
+      "favico": "https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg",
+      "alt": "Steam",
+      "nome": 149579333,
+      "media": []
+    },
+    {
+      "favico": "https://cdn.brandfetch.io/idjxHPThVp/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B",
+      "alt": "Epic Games",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://www.xbox.com/pt-BR/play/user/WendelTytan",
+      "favico": "https://img.icons8.com/?size=100&id=wlFMPtzt97an&format=png&color=000000",
+      "alt": "Xbox",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://retroachievements.org/user/Tytan",
+      "favico": "./src/images/etc/faviconRetroARC.png",
+      "alt": "Retro Achievements",
+      "nome": "Tytan",
+      "media": []
+    },
+    {
+      "lingames": "https://backloggd.com/u/WendelTytan/",
+      "favico": "https://cdn2.steamgriddb.com/icon/1e81d9ddb81fa08481c942a7f794300e/32/128x128.png",
+      "alt": "Backloggd",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://letterboxd.com/WendelTytan/",
+      "favico": "https://cdn.brandfetch.io/idtkicjyxW/w/960/h/960/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
+      "alt": "Letterboxd",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://www.serializd.com/user/WendelTytan/profile",
+      "favico": "https://serializd.com/favicon.ico",
+      "alt": "Serializd",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://www.albumoftheyear.org/user/wendeltytan/",
+      "favico": "http://www.google.com/s2/favicons?domain=https://www.albumoftheyear.org/",
+      "alt": "Album of the Year",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://musicboard.app/wendeltytan",
+      "favico": "https://cdn.brandfetch.io/idkk0uF0-8/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
+      "alt": "Musicboard",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://myanimelist.net/profile/WendelTytan",
+      "favico": "https://cdn.brandfetch.io/idi7gXxt9X/w/225/h/225/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
+      "alt": "MyAnimeList",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://www.ligamagic.com.br/?view=dks%2Fdecks&filtro_nome_deck=jogador%3Dwendetytan&tipo=3",
+      "favico": "https://ligamagic.com.br/favicon.ico",
+      "alt": "LigaMagic",
+      "nome": "LigaMagic",
+      "media": []
+    },
+    {
+      "favico": "https://cdn.brandfetch.io/idM8Hlme1a/w/400/h/400/theme/dark/icon.png?c=1dxbfHSJFAPEGdCLU4o5B",
+      "alt": "Discord",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://www.twitch.tv/wendeltytan",
+      "favico": "https://cdn.brandfetch.io/idIwZCwD2f/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B",
+      "alt": "Twitch",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://www.youtube.com/@WendelTytan",
+      "favico": "https://cdn.brandfetch.io/idVfYwcuQz/theme/dark/symbol.svg?c=1dxbfHSJFAPEGdCLU4o5B",
+      "alt": "YouTube",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "favico": "https://img.icons8.com/?size=100&id=V1Ja402KSwyz&format=png&color=000000",
+      "alt": "League of Legends",
+      "nome": "Wendel Tytan#BR1",
+      "media": []
+    },
+    {
+      "lingames": "https://www.skoob.com.br/perfil/wendeltytan",
+      "favico": "./src/images/etc/faviconSkoob.png",
+      "alt": "Skoob",
+      "nome": "WendelTytan",
+      "media": []
+    },
+    {
+      "lingames": "https://goodreads.com/wendeltytan",
+      "favico": "https://cdn.brandfetch.io/id7HnX7848/w/400/h/400/theme/dark/icon.jpeg?c=1dxbfHSJFAPEGdCLU4o5B",
+      "alt": "Goodreads",
+      "nome": "Wendel Tytan",
+      "media": []
     }
   ]
 }

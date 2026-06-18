@@ -1,36 +1,40 @@
 {
   "experience": [
     {
-      "id": 2,
+      "id": 1,
       "funcao": "Monitor de laboratório de informática",
       "empresa": "IFS - Instituto Federal de Sergipe",
       "inicio": 2019,
       "fim": 2019,
-      "descricao": "Serviço como Monitor Temporário em Lógica de Programação"
+      "descricao": "Atuação como monitor acadêmico na disciplina de Lógica de Programação, auxiliando alunos no desenvolvimento de raciocínio lógico e na resolução de exercícios práticos em linguagem de programação. Responsável por prestar suporte técnico e pedagógico em ambiente de laboratório, esclarecer dúvidas conceituais e práticas sobre algoritmos, fluxogramas e estruturas de controle, além de colaborar com o professor na organização das atividades e no acompanhamento do progresso dos estudantes.",
+      "media": []
     },
     {
-      "id": 3,
+      "id": 2,
       "funcao": "Telemarketing",
       "empresa": "AlmavivA do Brasil",
       "inicio": 2016,
       "fim": 2018,
-      "descricao": "Atendimento ao Cliente via telemarketing, com suporte técnico e vendas"
+      "descricao": "Atendimento ao cliente via telefone, com foco em suporte técnico para serviços de internet, incluindo identificação e resolução de problemas de conexão, configuração de modens e roteadores, além de suporte básico para serviços de telefone e TV. Responsável por prestar um atendimento claro, ágil e eficiente, seguindo procedimentos técnicos e padrões de qualidade da empresa. Atuação voltada à satisfação do cliente e à solução de demandas de forma empática e assertiva.",
+      "media": []
     },
     {
-      "id": 4,
+      "id": 3,
       "funcao": "Vendedor",
       "empresa": "InfoMC Tecnologia",
       "inicio": 2015,
       "fim": 2015,
-      "descricao": "Contario Temporário para vendedor em Geral, com atendimento por telefone, redes sociais, pregão eletrônico, orçamento e compra de equipamentos e atendimento ao cliente"
+      "descricao": "Atuação temporária em loja de tecnologia e informática, com atendimento a clientes presenciais e também via telefone, redes sociais e plataformas digitais. Responsável por vendas de equipamentos e periféricos, elaboração de orçamentos, participação em pregões eletrônicos, cotações e processos de compra. Prestação de suporte técnico básico, orientação sobre produtos, organização do ponto de venda e acompanhamento pós-venda. Foco em atendimento ágil, consultivo e orientado à satisfação do cliente.",
+      "media": []
     },
     {
-      "id": 5,
+      "id": 4,
       "funcao": "Operador de Vídeo-Monitor",
       "empresa": "Central 24 Horas",
       "inicio": 2010,
       "fim": 2012,
-      "descricao": "Trabalho com função para a secretária de segurança publica com o objetivo de monitoramento das ruas com direção objetiva identificar e impedir crimes "
+      "descricao": "Responsável pelo monitoramento de imagens em tempo real por meio de sistemas de videovigilância, com foco na prevenção e identificação de atividades suspeitas ou práticas criminosas em vias públicas. Atuação estratégica em apoio às forças de segurança, contribuindo para a tomada de decisões rápidas e eficazes. Trabalho realizado com atenção contínua, registro de ocorrências relevantes e comunicação direta com equipes operacionais para prevenção de delitos e promoção da segurança pública.",
+      "media": []
     }
   ]
 }

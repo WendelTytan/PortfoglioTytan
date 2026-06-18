@@ -1,7 +1,15 @@
 {
   "texto": [
     {
-      "placeholder": "Buscar projetos...",
+      "placeholderprojetos": "Buscar projetos...",
+      "placeholdercursos": "Buscar cursos...",
+      "selectall": "Selecionar Todos",
+      "clearall": "Limpar Seleção",
+      "filter_type": "Filtrar por Tipo",
+      "filter_comp": "Filtar por Competência",
+      "filter_int": "Instituição",
+      "person_filter": "Filtros Personalizados",
+      "abrir_filtros": "Abrir painel de filtros",
       "inicio": "Início",
       "sobre": "Sobre",
       "formacao": "Formação",
@@ -26,18 +34,24 @@
       "ouprojetos_1": "Meus Outros",
       "ouprojetos_2": "Projetos",
       "contato_1": "Entre em",
-      "contato_2": "Contato"
+      "contato_2": "Contato",
+      "techProjects": "Tecnologias Utilizadas",
+      "linkProject": "Links do Projeto",
+      "badges": "Certificações & Badges",
+      "media": []
     }
   ],
   "comp": [
     {
-      "contagem": "Contagem de Competências:"
+      "contagem": "Contagem de Competências:",
+      "media": []
     }
   ],
   "resum": [
     {
       "resumo": "Resumo dos Tipos de Cursos:",
-      "res_cur": "curso(s)"
+      "res_cur": "curso(s)",
+      "media": []
     }
   ]
 }

@@ -1,0 +1,172 @@
+{
+  "badges": [
+    {
+      "id": 1,
+      "imagem": "./src/images/badges/Alura - Badge Alura-Oracle-Ifood One.png",
+      "titulo": "Alura - Alura-Oracle-Ifood One - Badge",
+      "media": []
+    },
+    {
+      "id": 2,
+      "imagem": "./src/images/badges/Alura - badge literalura.png",
+      "titulo": "Alura - Literalura - Badge",
+      "media": []
+    },
+    {
+      "id": 3,
+      "imagem": "./src/images/badges/Alura - Badge-Conversor.png",
+      "titulo": "Alura - Currency Converter - Badge",
+      "media": []
+    },
+    {
+      "id": 4,
+      "imagem": "./src/images/badges/Alura - Badge-Spring.png",
+      "titulo": "Alura - Spring - Badge",
+      "media": []
+    },
+    {
+      "id": 5,
+      "imagem": "./src/images/badges/Cisco - Endpoint Security - Badge.png",
+      "titulo": "Cisco - Endpoint Security - Badge",
+      "media": []
+    },
+    {
+      "id": 6,
+      "imagem": "./src/images/badges/DIO - Claro - Java com Spring Boot.webp",
+      "titulo": "DIO - Claro - Java with Spring Boot",
+      "media": []
+    },
+    {
+      "id": 7,
+      "imagem": "./src/images/badges/DIO - Criando um Banco Digital com Java e Orientação a Objetos.webp",
+      "titulo": "DIO - Creating a Digital Bank with Java and Object Orientation",
+      "media": []
+    },
+    {
+      "id": 8,
+      "imagem": "./src/images/badges/DIO - Criando uma API REST Documentada com Spring Web e Swagger.webp",
+      "titulo": "DIO - Creating a Documented REST API with Spring Web and Swagger",
+      "media": []
+    },
+    {
+      "id": 9,
+      "imagem": "./src/images/badges/DIO - Gerenciamento de Dependências e Build em Java com Maven.webp",
+      "titulo": "DIO - Dependency Management and Build in Java with Maven",
+      "media": []
+    },
+    {
+      "id": 10,
+      "imagem": "./src/images/badges/DIO - Introdução a Spring Framework com Spring Boot.webp",
+      "titulo": "DIO - Introduction to Spring Framework with Spring Boot",
+      "media": []
+    },
+    {
+      "id": 11,
+      "imagem": "./src/images/badges/DIO - Modelando o iPhone com UML Funções de Musicas, Chamadas e Internet.webp",
+      "titulo": "DIO - Modeling the iPhone with UML Music, Calls, and Internet Functions",
+      "media": []
+    },
+    {
+      "id": 12,
+      "imagem": "./src/images/badges/DIO - Versionamento de Código com Git e GitHub.webp",
+      "titulo": "DIO - Code Versioning with Git and GitHub",
+      "media": []
+    },
+    {
+      "id": 13,
+      "imagem": "./src/images/badges/Google - Build and Secure Networks in Google Cloud.png",
+      "titulo": "Google - Build and Secure Networks in Google Cloud",
+      "media": []
+    },
+    {
+      "id": 14,
+      "imagem": "./src/images/badges/Google - Digital Transformation with Google Cloud.png",
+      "titulo": "Google - Digital Transformation with Google Cloud",
+      "media": []
+    },
+    {
+      "id": 15,
+      "imagem": "./src/images/badges/Google - Exploring Data Transformation with Google Cloud.png",
+      "titulo": "Google - Exploring Data Transformation with Google Cloud",
+      "media": []
+    },
+    {
+      "id": 16,
+      "imagem": "./src/images/badges/Google - Google Cloud Computing Foundations Cloud Computing Fundamentals.png",
+      "titulo": "Google - Google Cloud Computing Foundations Cloud Computing Fundamentals",
+      "media": []
+    },
+    {
+      "id": 17,
+      "imagem": "./src/images/badges/Google - Google Cloud Computing Foundations Data, ML, and AI in Google Cloud.png",
+      "titulo": "Google - Google Cloud Computing Foundations Data, ML, and AI in Google Cloud",
+      "media": []
+    },
+    {
+      "id": 18,
+      "imagem": "./src/images/badges/Google - Google Cloud Computing Foundations Infrastructure in Google Cloud.png",
+      "titulo": "Google - Google Cloud Computing Foundations Infrastructure in Google Cloud",
+      "media": []
+    },
+    {
+      "id": 19,
+      "imagem": "./src/images/badges/Google - Google Cloud Computing Foundations Networking & Security in Google Cloud.png",
+      "titulo": "Google - Google Cloud Computing Foundations Networking & Security in Google Cloud",
+      "media": []
+    },
+    {
+      "id": 20,
+      "imagem": "./src/images/badges/Google - Implement Load Balancing on Compute Engine.png",
+      "titulo": "Google - Implement Load Balancing on Compute Engine",
+      "media": []
+    },
+    {
+      "id": 21,
+      "imagem": "./src/images/badges/Google - Innovating with Google Cloud Artificial Intelligence.png",
+      "titulo": "Google - Innovating with Google Cloud Artificial Intelligence",
+      "media": []
+    },
+    {
+      "id": 22,
+      "imagem": "./src/images/badges/Google - Modernize Infrastructure and Applications with Google Cloud.png",
+      "titulo": "Google - Modernize Infrastructure and Applications with Google Cloud",
+      "media": []
+    },
+    {
+      "id": 23,
+      "imagem": "./src/images/badges/Google - Prepare Data for ML APIs on Google Cloud.png",
+      "titulo": "Google - Prepare Data for ML APIs on Google Cloud",
+      "media": []
+    },
+    {
+      "id": 24,
+      "imagem": "./src/images/badges/Google - Scaling with Google Cloud Operations.png",
+      "titulo": "Google - Scaling with Google Cloud Operations",
+      "media": []
+    },
+    {
+      "id": 25,
+      "imagem": "./src/images/badges/Google - Set Up an App Dev Environment on Google Cloud.png",
+      "titulo": "Google - Set Up an App Dev Environment on Google Cloud",
+      "media": []
+    },
+    {
+      "id": 26,
+      "imagem": "./src/images/badges/Google - Trust and Security with Google Cloud.png",
+      "titulo": "Google - Trust and Security with Google Cloud",
+      "media": []
+    },
+    {
+      "id": 27,
+      "imagem": "./src/images/badges/Oracle - Badge - OCI - OCIF2023CA.png",
+      "titulo": "Oracle - Oracle Cloud Infrastructure Foundations - Badge",
+      "media": []
+    },
+    {
+      "id": 28,
+      "imagem": "./src/images/badges/Oracle - Badge -OCI23AIFCA.png",
+      "titulo": "Oracle - Oracle Cloud Infrastructure IA - Badge",
+      "media": []
+    }
+  ]
+}

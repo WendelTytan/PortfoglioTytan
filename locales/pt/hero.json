@@ -4,9 +4,13 @@
       "part1": "Olá, eu sou ",
       "nome": "Wendel Vinicius Santana Passos",
       "titulo": "Desenvolvedor Full Stack",
-      "lingit": "https://github.com/seu-usuario",
+      "lingit": "https://github.com/WendelTytan",
+      "gitalt": "Github",
       "linln": "https://www.linkedin.com/in/wendel-vinicius-25939b181/",
-      "lininsta": "mailto:seu-email@exemplo.com"
+      "lnalt": "LinkedIn",
+      "lininsta": "mailto:wendelvinicius@outlook.com.br",
+      "inalt": "E-mail",
+      "media": []
     }
   ]
 }

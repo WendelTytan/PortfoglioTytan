@@ -2,13 +2,29 @@
   "contact": [
     {
       "git": "GitHub",
-      "lingit": "https://github.com/seu-usuario",
+      "lingit": "https://github.com/WendelTytan",
       "ln": "LinkedIn",
       "linln": "https://www.linkedin.com/in/wendel-vinicius-25939b181/",
       "email": "Email",
-      "linemail": "mailto:seu-email@exemplo.com",
+      "linemail": "mailto:wendelvinicius@outlook.com.br",
       "etc": "Todos os direitos reservados.",
-      "patreon": "Todos os direitos reservados."
+      "apoiar": "Quer me apoiar?",
+      "patreon": "Patreon",
+      "icopatreon": "./src/images/etc/faviconPatreon.svg",
+      "linkpatreon": "https://patreon.com/WendelTytan?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink",
+      "kofi": "Ko-Fi",
+      "icokofi": "./src/images/etc/faviconKoFi.svg",
+      "linkofi": "https://Ko-fi.com/wendetytan",
+      "coffee": "Buy-Me a Coffee",
+      "icocoffee": "./src/images/etc/faviconBuyMeaCoffee.svg",
+      "lincoffee": "https://www.buymeacoffee.com/WendelTytan",
+      "apoia": "Apoia-SE",
+      "icoapoia": "<svg class=\"w-7 h-7 fill-current\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z\"/>\n    </svg>",
+      "linapoia": "https://apoia.se/wendeltytan",
+      "livepix": "Live Pix",
+      "icopix": "./src/images/etc/faviconLivePix.png",
+      "linpix": "https://livepix.gg/wendeltytan",
+      "media": []
     }
   ]
 }

@@ -2,66 +2,8 @@ import i18next from "./i18n.js";
 
 import { carregarFaixas } from './lastfm-tracks.js';
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   const user = "wendeltytan";
-//   const apiKey = "5baf229838e9ac9f5d35ccdc53d6e444";
-//   const limit = 20;
-
-//   carregarFaixas(user, apiKey, limit);
-// });
-
-
-console.log(window.screen.width, window.screen.height);
-console.log(window.innerWidth, window.innerHeight);
-console.log(document.documentElement.scrollWidth, document.documentElement.scrollHeight);
-
-//para slider dos cursos
 let currentMediaIndex = 0;
 let currentMediaList = [];
-
-// 
-// 
-// 
-
-// 
-// 
-//
-
-  // const sidebar = document.getElementById("sidebar");
-
-  //   sidebar.addEventListener("mouseenter", () => {
-  //     // Calcula a largura do maior texto dentro da sidebar
-  //     const spans = sidebar.querySelectorAll("span");
-  //     let maxWidth = 0;
-
-  //     spans.forEach(span => {
-  //       const width = span.offsetWidth;
-  //       if (width > maxWidth) {
-  //         maxWidth = width;
-  //       }
-  //     });
-
-  //     // Aplica a largura correta
-  //     sidebar.style.width = `${maxWidth + 60}px`; // 60px para os ícones + espaçamento
-  //     spans.forEach(span => span.style.opacity = "1");
-  //   });
-
-  //   sidebar.addEventListener("mouseleave", () => {
-  //     sidebar.style.width = "4rem"; // Volta ao tamanho original
-  //     sidebar.querySelectorAll("span").forEach(span => span.style.opacity = "0");
-  //   });
-
-// 
-// 
-// 
-
-// const darkColors = [
-//   'bg-[#FFEBEE]', 'bg-[#FCE4EC]', 'bg-[#F3E5F5]', 'bg-[#EDE7F6]',
-//   'bg-[#E3F2FD]', 'bg-[#E1F5FE]', 'bg-[#E0F7FA]', 'bg-[#E0F2F1]',
-//   'bg-[#E8F5E9]', 'bg-[#F1F8E9]', 'bg-[#FFFDE7]', 'bg-[#FFF8E1]',
-//   'bg-[#FFF3E0]', 'bg-[#FBE9E7]', 'bg-[#EFEBE9]', 'bg-[#FAFAFA]',
-//   'bg-[#ECEFF1]', 'bg-[#F4F4F4]', 'bg-[#FFDDE1]', 'bg-[#FFE0B2]',
-// ];
 
 const darkColors = [
   'bg-[#b6f0f8]', 'bg-[#f8d49d]', 'bg-[#e0a9af]', 'bg-[#ce9696]',
@@ -100,23 +42,17 @@ const moonIcon = document.getElementById("moonIcon");
 
 function setTheme(theme) {
   if (theme === "dark") {
-    console.log("if")
       document.documentElement.classList.add("dark");
       moonIcon.classList.remove("hidden");
       sunIcon.classList.add("hidden");
-      // localStorage.setItem("theme", "dark");
   } else {
-    console.log("else")
       document.documentElement.classList.remove("dark");
       sunIcon.classList.remove("hidden");
       moonIcon.classList.add("hidden");
-      // localStorage.setItem("theme", "light");
   }
   localStorage.setItem("theme", theme);
   colors = getColorsByTheme(theme);
-  console.log("Cores carregadas:", colors);
   applyColors();
-  // adjustTextColor();
 }
 
 // Inicialização do tema com base no localStorage
@@ -124,8 +60,6 @@ const savedTheme = localStorage.getItem("theme") ||
     (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
 setTheme(savedTheme);
-
-// const colors = getColorsByTheme(theme);
 
 // Alternância de tema ao clicar no botão
 themeToggle.addEventListener("click", () => {
@@ -137,14 +71,9 @@ themeToggle.addEventListener("click", () => {
 
 async function loadTexts() {
   try {
-
-    console.log("Carregando textos no idioma:", i18next.language);
-
     // Carrega novamente as traduções no idioma atual
     i18next.loadNamespaces("etc");
     const etc = i18next.t("etc:texto", { returnObjects: true })[0];
-
-    // console.log("Novo objeto etc:", etc); // Para debugar
     
     document.getElementById("id-do-inicio").textContent = etc.inicio;
     document.getElementById("id-do-sobre").textContent = etc.sobre;
@@ -155,11 +84,6 @@ async function loadTexts() {
     document.getElementById("id-do-mais").textContent = etc.mais;
     document.getElementById("id-do-other").textContent = etc.ouprojetos;
     document.getElementById("id-do-contact").textContent = etc.contato;
-    // document.getElementById("id-do-form").textContent = etc.p1;
-    // document.getElementById("id-do-portfolio").textContent = etc.p1;
-
-    // document.getElementById("idioma").textContent = etc.idioma;
-
   } catch (error) {
     console.error("Error loading Texts:", error);
   }
@@ -170,9 +94,6 @@ async function loadTexts() {
 // Mobile menu toggle
 const mobileMenuButton = document.querySelector('.mobile-menu');
 const sidebar = document.querySelector('.sidebar');
-// 
-// 
-// 
 
 mobileMenuButton.addEventListener('click', () => {
   sidebar.classList.toggle('open');
@@ -189,7 +110,6 @@ const highlightActiveSection = () => {
     const sectionId = current.getAttribute('id');
     const sidebarItem = document.querySelector(`.sidebar-item[data-section="${sectionId}"]`);
     
-    // Only try to add/remove class if the sidebar item exists
     if (sidebarItem) {
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
         sidebarItem.classList.add('active');
@@ -207,25 +127,12 @@ window.addEventListener('scroll', highlightActiveSection);
 
 // Load and render Hero atualizada para o i18next Atualizado
 async function loadHero() {
-  try {
-    console.log("Carregando hero...");
-    
+  try {    
     await i18next.loadNamespaces("hero");
     const hero = i18next.t("hero:hero", { returnObjects: true });
     
     const heroContainer = document.querySelector("#home .hero_hero");
-    console.log("Elemento encontrado?", heroContainer);
     
-    if (!heroContainer) {
-      console.error("Elemento #home .hero_hero não encontrado!");
-      return;
-    }
-
-    if (!Array.isArray(hero)) {
-      console.error("Hero data is not an array:", hero);
-      return;
-    }
-
     heroContainer.innerHTML = hero
       .map(
         (her) => `
@@ -258,35 +165,15 @@ async function loadHero() {
 
 // Load and render About atualizada para o i18next Atualizado
 async function loadAbout() {
-  try {
-    console.log("Carregando about...");
-    
+  try {    
     await i18next.loadNamespaces("about");
     const about = i18next.t("about:about", { returnObjects: true });
 
     await i18next.loadNamespaces("etc");
-    const etc = i18next.t("etc:texto", { returnObjects: true })[0];    
+    const etc = i18next.t("etc:texto", { returnObjects: true })[0];
     
-    // if (!aboutContainer) {
-    //   console.error("Elemento #about .about_about não encontrado!");
-    //   return;
-    // }
-    
-    if (!Array.isArray(about)) {
-      console.error("About data is not an array:", about);
-      return;
-    }
-    
-    
-    // Seleciona o container principal da seção de about
     const aboutSection = document.getElementById("about");
     
-    if (!aboutSection) {
-      console.error("Elemento #about não encontrado!");
-      return;
-    }
-    
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     aboutSection.innerHTML = `
       <div class="container mx-auto padding_box">
         <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light">
@@ -298,7 +185,6 @@ async function loadAbout() {
     `;
     
     const aboutContainer = document.querySelector("#about .about_about");
-    console.log("Elemento encontrado?", aboutContainer);
     
     aboutContainer.innerHTML = about.map((abo) => {
     const aboutHtml = abo.competencies.map(aboutcomp =>
@@ -334,34 +220,16 @@ async function loadAbout() {
 
 // Load and render Formations atualizada para o i18next Atualizado
 async function loadFormations() {
-  try {
-    console.log("Carregando formações...");
-    
+  try {    
     await i18next.loadNamespaces("formations");
     const formations = i18next.t("formations:formations", { returnObjects: true });
 
     await i18next.loadNamespaces("etc");
     const etc = i18next.t("etc:texto", { returnObjects: true })[0];
-    
-    // if (!formationsContainer) {
-    //   console.error("Elemento #formations .space-y-8 não encontrado!");
-    //   return;
-    // }
-    
-    if (!Array.isArray(formations)) {
-      console.error("Formations data is not an array:", formations);
-      return;
-    }
 
     // Seleciona o container principal da seção de formações
     const formationsSection = document.getElementById("formation");
     
-    if (!formationsSection) {
-      console.error("Elemento #formation não encontrado!");
-      return;
-    }
-    
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     formationsSection.innerHTML = `
         <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light">
@@ -373,7 +241,6 @@ async function loadFormations() {
     `;
     
     const formationsContainer = document.querySelector("#formation .space-y-8");
-    console.log("Elemento encontrado?", formationsContainer);
     
     formationsContainer.innerHTML = formations
       .map(
@@ -395,35 +262,16 @@ async function loadFormations() {
 
 // Load and render Experiences atualizada para o i18next Atualizado
 async function loadExperiences() {
-  try {
-    console.log("Carregando experience...");
-    
+  try {    
     await i18next.loadNamespaces("experience");
     const experience = i18next.t("experience:experience", { returnObjects: true });
 
     await i18next.loadNamespaces("etc");
     const etc = i18next.t("etc:texto", { returnObjects: true })[0];
-    
-    
-    // if (!experienceContainer) {
-      //   console.error("Elemento #experience .space-y-8 não encontrado!");
-      //   return;
-      // }
-      
-      if (!Array.isArray(experience)) {
-        console.error("Experience data is not an array:", experience);
-        return;
-      }
 
     // Seleciona o container principal da seção de Experienca
     const experienceSection = document.getElementById("experience");
     
-    if (!experienceSection) {
-      console.error("Elemento #experience não encontrado!");
-      return;
-    }
-    
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     experienceSection.innerHTML = `
         <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light">
@@ -435,7 +283,6 @@ async function loadExperiences() {
     `;
 
     const experienceContainer = document.querySelector("#experience .space-y-8");
-    console.log("Elemento encontrado?", experienceContainer);
       
     experienceContainer.innerHTML = experience
       .map(
@@ -452,22 +299,6 @@ async function loadExperiences() {
     console.error("Error loading Experience:", error);
   }
 }
-
-// Detectando o tema
-// const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-// Escolhendo as cores conforme o tema
-// const colors = isDarkMode ? darkColors : lightColors;
-
-  // // Colors for competencies
-  // const colors = [
-  //   'bg-[#8B5CF6]', 'bg-[#D946EF]', 'bg-[#F97316]', 'bg-[#0EA5E9]',
-  //   'bg-[#F2FCE2]', 'bg-[#FEF7CD]', 'bg-[#FEC6A1]', 'bg-[#E5DEFF]',
-  //   'bg-[#FFDEE2]', 'bg-[#FDE1D3]', 'bg-[#D3E4FD]', 'bg-[#1EAEDB]',
-  //   'bg-[#33C3F0]', 'bg-[#9b87f5]', 'bg-[#ea384c]', 'bg-[#0FA0CE]'
-  // ];
-
-  // Criando objeto para contar os tipos de curso
 
 // 1. Primeiro, modifique a função setupSearchFilter para aceitar um callback de atualização
 function setupSearchFilter(options) {
@@ -564,9 +395,7 @@ function updateResumo(visibleCounts) {
 
 // Load and render Courses atualizada para o i18next Atualizado
 async function loadCourses() {
-  try {
-    console.log("Carregando courses...");
-    
+  try {    
     await i18next.loadNamespaces("courses");
     const courses = i18next.t("courses:courses", { returnObjects: true });
 
@@ -576,30 +405,19 @@ async function loadCourses() {
     await i18next.loadNamespaces("badges");
     const badges = i18next.t("badges:badges", { returnObjects: true }); 
     
-    // if (!coursesContainer) {
-      //   console.error("Elemento #courses .grid não encontrado!");
-      //   return;
-      // }
-      
-      if (!Array.isArray(courses)) {
-        console.error("Courses data is not an array:", courses);
-        return;
+    const competencyCount = {};
+    const competencyColorMap = {};
+    let colorIndex = 0;
+    
+    courses.forEach(course => {
+    course.competencies.forEach(comp => {
+      competencyCount[comp] = (competencyCount[comp] || 0) + 1;
+      if (!competencyColorMap[comp]) {
+        competencyColorMap[comp] = colors[colorIndex % colors.length];
+        colorIndex++;
       }
-      
-      const competencyCount = {};
-      const competencyColorMap = {};
-      let colorIndex = 0;
-      
-      courses.forEach(course => {
-      course.competencies.forEach(comp => {
-        competencyCount[comp] = (competencyCount[comp] || 0) + 1;
-        if (!competencyColorMap[comp]) {
-          competencyColorMap[comp] = colors[colorIndex % colors.length];
-          colorIndex++;
-        }
-      });
+    });
 
-    //
     if (course.tipo) {
       if (!courseTypeCount[course.tipo]) {
         courseTypeCount[course.tipo] = 0;
@@ -611,13 +429,7 @@ async function loadCourses() {
 
     // Seleciona o container principal da seção de cursos
     const coursesSection = document.getElementById("courses");
-
-    if (!coursesSection) {
-      console.error("Elemento #courses não encontrado!");
-      return;
-    }
     
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     coursesSection.innerHTML = `
         <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light">
@@ -680,14 +492,13 @@ async function loadCourses() {
               </div>
             </div>
           </div>
-    `;//absolute inset-y-0 right-3 flex items-cente
+    `;
 
     const coursesContainer = document.querySelector("#courses .grid");
-    console.log("Elemento encontrado?", coursesContainer);
 
     coursesContainer.innerHTML = courses
       .map(
-        (cor) => { //mix-blend-difference era para ser bom
+        (cor) => {
           const competenciesHtml = cor.competencies.map(comp => 
             `<span class="dynamic-text dynamic-color inline-block px-3 py-1 rounded-full text-sm ${competencyColorMap[comp]} m-1">${comp}</span>`
           ).join('');
@@ -709,14 +520,9 @@ async function loadCourses() {
           ;
         })
       .join("");
-
-      // Load and render Resumo atualizada para o i18next
-
-      console.log("Carregando resum etc...");
     
-      //await i18next.loadNamespaces("etc");
       const resum = i18next.t("etc:resum", { returnObjects: true });
-     
+
       const resumHtml = resum
         .map((res) => {
           const typeSummaryHtml = Object.entries(courseTypeCount)
@@ -744,25 +550,20 @@ async function loadCourses() {
       coursesContainer.innerHTML += resumHtml;
 
       // Load and render Competecias atualizada para o i18next
-
-      console.log("Carregando compe etc...");
     
-      //await i18next.loadNamespaces("etc");
       const compe = i18next.t("etc:comp", { returnObjects: true }); 
-      //const compe = i18next.t("etc:comp", { returnObjects: true })[0]; //usado caso eu n'a oqueira iterar pelo json e pegar e converter em array e pegar algum em especifico com resum.*nome da coluna* ex> resum.text1 
       
-      const compeContainer = document.querySelector("#courses .cont_comp"); //
-      console.log("Elemento encontrado?", compeContainer);
+      const compeContainer = document.querySelector("#courses .cont_comp");
 
       compeContainer.innerHTML = compe
       .map(
         (cont) => {
           const competencyCountHtml = Object.entries(competencyCount)
           .map(([comp, count]) => {
-            const colorClass = competencyColorMap[comp]; //não gostei do mix bled difference, parece meio turvo
+            const colorClass = competencyColorMap[comp];
             return `<span class="dynamic-text dynamic-color inline-block m-1 px-4 py-2 rounded-lg ${colorClass}">${comp}: ${count}</span>`;
           })
-          .join(''); //bg-[#1A1F2C]
+          .join('');
 
           return `
             <div class="cont_comp mt-8 text-center">
@@ -775,10 +576,7 @@ async function loadCourses() {
           `;
       })
       .join("");
-      coursesContainer.insertAdjacentElement('afterend', compeContainer); //acho que não precisa, já que a div está criada no html
-
-      // await i18next.loadNamespaces("badges");
-      // const badges = i18next.t("badges:badges", { returnObjects: true });
+      coursesContainer.insertAdjacentElement('afterend', compeContainer);
 
       const container = document.getElementById("badge-carousel");
 
@@ -830,7 +628,6 @@ async function loadCourses() {
         }
       });    
       
-      // 3. Modifique a chamada em loadCourses
       setupSearchFilter({
         searchInputId: 'course-search',
         cardsContainerSelector: '#courses',
@@ -854,8 +651,6 @@ async function loadCourses() {
 // Load and render Projects atualizada para o i18next Atualizado
 async function loadProjects() {
   try {
-    console.log("Carregando projects...");
-
     // --- CARREGAMENTO I18NEXT ---
     await i18next.loadNamespaces("projects");
     const projects = i18next.t("projects:projects", { returnObjects: true });
@@ -863,17 +658,8 @@ async function loadProjects() {
     await i18next.loadNamespaces("etc");
     const etc = i18next.t("etc:texto", { returnObjects: true })[0];
 
-    if (!Array.isArray(projects)) {
-      console.error("Projects data is not an array:", projects);
-      return;
-    }
-
     // --- ELEMENTOS PRINCIPAIS ---
     const projectsSection = document.getElementById("projects");
-    if (!projectsSection) {
-      console.error("Elemento #projects não encontrado!");
-      return;
-    }
 
     // Elementos do Modal de Mídia (Fullscreen)
     const modal = document.getElementById("media-modal");
@@ -882,8 +668,6 @@ async function loadProjects() {
     const modalDescription = document.getElementById("modal-description");
     const closeModalBtn = modal.querySelector(".fecharModal");
     
-    // (NOVO) Elementos de Navegação do Modal
-    // Se não existirem no HTML, criamos via JS para garantir
     let btnPrev = document.getElementById("modal-prev");
     let btnNext = document.getElementById("modal-next");
     
@@ -1030,7 +814,6 @@ async function loadProjects() {
       
       const grid = divOculta.querySelector("#media-grid");
       renderGallery(project.media, grid);
-      // renderGallery(project.media, grid, project);
 
       // Exibe divOculta
       divOculta.classList.add("ativa");
@@ -1056,13 +839,8 @@ async function loadProjects() {
       }
     });
 
-    // Função auxiliar para renderizar links (apenas para organizar, use o seu HTML original se preferir)
+    // Função auxiliar para renderizar links
     function renderProjectLinks(project) {
-        // Coloque aqui o HTML dos SVGs dos links que você tinha no original
-        // Estou retornando string vazia pra focar na galeria, mas copie seus SVGs de volta aqui
-        /*
-          title="${project.siteAlt1}" é o tootip antigo
-        */
         let html = '';
         if (project.siteprojeto1) html += `
                     <a href="${project.siteprojeto1}" target="_blank" class="icons tooltip" data-tooltip="${project.siteAlt1}">
@@ -1117,7 +895,6 @@ async function loadProjects() {
     //  FUNÇÃO RENDER GALLERY (Com estilos Restaurados)
     // =========================================================
     function renderGallery(mediaData, grid) {
-      // function renderGallery(mediaData, grid, project) {
       if (!grid || !Array.isArray(mediaData)) return;
       grid.innerHTML = '';
       
@@ -1173,7 +950,6 @@ async function loadProjects() {
               mediaType = 'youtube';
             }
           } else if (src.includes("instagram.com")) {
-            // RESTAURADO: Estrutura do card do Instagram
             const isReel = src.includes("reel");
             mediaHtml = `<div class="instagram-card"> <blockquote class="instagram-media" data-instgrm-permalink="${src}" data-instgrm-version="14" style="margin:0 auto;"></blockquote> </div>`;
             mediaTypeTag = `<span class="inverseGlow texto-suave fundo-light media-type">${isReel ? 'IG REEL' : 'IG'}</span>`;
@@ -1248,8 +1024,6 @@ async function loadProjects() {
         });
       }
 
-      // 4. Renderize os cards nos containers apropriados, se houver  
-      // é aqui onde está renderizando os cards nos containers criados acima
       if (categorizedData.other.length > 0) 
         { 
           createAndAppendCards(categorizedData.other, otherContainer); 
@@ -1283,69 +1057,55 @@ async function loadProjects() {
     //  ATUALIZAR CONTEÚDO DO MODAL (Com estilos Restaurados)
     // =========================================================
     function updateModalContent() {
-       if (!currentMediaList || currentMediaList.length === 0) return;
-       
-       const item = currentMediaList[currentMediaIndex];
-       const src = item.src?.trim();
+      if (!currentMediaList || currentMediaList.length === 0) return;
+      
+      const item = currentMediaList[currentMediaIndex];
+      const src = item.src?.trim();
 
       //  const cardType = card.querySelector(".relative").dataset.type;
       // nesta função tem uns cardType que estão comentados, pois eles são do antigo codigo
-      // o atual funciona, mas sei lá, vai que eu quero usar o outro
+      // o  atual funciona, mas sei lá, vai que eu quero usar o outro
 
-       mediaContainer.innerHTML = ''; 
-       modalTitle.textContent = item.titulo || '';
-       modalDescription.textContent = item.descricao || '';
+      mediaContainer.innerHTML = ''; 
+      modalTitle.textContent = item.titulo || '';
+      modalDescription.textContent = item.descricao || '';
 
-       //Classes e estruturas do Modal
-       if (src.includes("youtube.com") || src.includes("youtu.be")) {
-        // if (cardType === "youtube") {
-         const videoIdMatch = src.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([^?&#]+)/);
-         const videoId = videoIdMatch ? videoIdMatch[1] : null;
-         if (videoId) {
-           // Container responsivo com a classe .youtube
-           const responsiveContainer = document.createElement('div');
-           responsiveContainer.className = 'modal-media-container youtube';
-           responsiveContainer.innerHTML = `
-             <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0"
-               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-               allowfullscreen
-               title="${item.titulo || 'YouTube video'}">
-             </iframe>`;
-            //  title="${card.querySelector(".relative").dataset.mediaTitle || 'YouTube video'}">
-           mediaContainer.appendChild(responsiveContainer);
-         }
-       } 
-       else if (src.includes("instagram.com")) {
-        // else if (cardType === "instagram") {
-         // Container com a classe .instagram e .instagram-reel/post
-         const instagramContainer = document.createElement('div');
-         instagramContainer.className = 'modal-media-container instagram';
-         if (src.includes("reel")) instagramContainer.classList.add('instagram-reel');
-         else instagramContainer.classList.add('instagram-post');
+      //Classes e estruturas do Modal
+      if (src.includes("youtube.com") || src.includes("youtu.be")) {
+        const videoIdMatch = src.match(/(?:youtu\.be\/|v=|embed\/|shorts\/)([^?&#]+)/);
+        const videoId = videoIdMatch ? videoIdMatch[1] : null;
+        if (videoId) {
+          // Container responsivo com a classe .youtube
+          const responsiveContainer = document.createElement('div');
+          responsiveContainer.className = 'modal-media-container youtube';
+          responsiveContainer.innerHTML = `
+            <iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              title="${item.titulo || 'YouTube video'}">
+            </iframe>`;
+          mediaContainer.appendChild(responsiveContainer);
+        }
+      } 
+      else if (src.includes("instagram.com")) {
+        const instagramContainer = document.createElement('div');
+        instagramContainer.className = 'modal-media-container instagram';
+        if (src.includes("reel")) instagramContainer.classList.add('instagram-reel');
+        else instagramContainer.classList.add('instagram-post');
 
-         instagramContainer.innerHTML = `<blockquote class="instagram-media" data-instgrm-permalink="${src}" data-instgrm-version="14"></blockquote>`;
-         mediaContainer.appendChild(instagramContainer);
-         
-         if (window.instgrm) window.instgrm.Embeds.process();
-
-      // if (!window.instgrm) {
-      //   const script = document.createElement('script');
-      //   script.src = "//www.instagram.com/embed.js";
-      //   script.async = true;
-      //   script.onload = () => window.instgrm?.Embeds?.process();
-      //   document.body.appendChild(script);
-      // } else {
-      //   window.instgrm.Embeds.process();
-      // }
-       } 
-       else if (item.type === 'video') {
-         // Vídeo nativo
-         mediaContainer.innerHTML = `<video controls autoplay loop><source src="${src}" type="video/mp4"></video>`;
-       } 
-       else {
-         // Imagem
-         mediaContainer.innerHTML = `<img src="${src}" alt="${item.alt || ''}">`;
-       }
+        instagramContainer.innerHTML = `<blockquote class="instagram-media" data-instgrm-permalink="${src}" data-instgrm-version="14"></blockquote>`;
+        mediaContainer.appendChild(instagramContainer);
+        
+        if (window.instgrm) window.instgrm.Embeds.process();
+      } 
+      else if (item.type === 'video') {
+        // Vídeo nativo
+        mediaContainer.innerHTML = `<video controls autoplay loop><source src="${src}" type="video/mp4"></video>`;
+      } 
+      else {
+        // Imagem
+        mediaContainer.innerHTML = `<img src="${src}" alt="${item.alt || ''}">`;
+      }
     }
 
     // Função Navegar
@@ -1423,9 +1183,7 @@ async function loadProjects() {
 
 // Load and render More atualizada para o i18next Atualizado
 async function loadMore() {
-  try {
-    console.log("Carregando more...");
-    
+  try {    
     await i18next.loadNamespaces("more");
     const more = i18next.t("more:more", { returnObjects: true });
 
@@ -1433,27 +1191,11 @@ async function loadMore() {
     const games = i18next.t("more:games", { returnObjects: true });
 
     await i18next.loadNamespaces("etc");
-    const etc = i18next.t("etc:texto", { returnObjects: true })[0];    
-    
-    // if (!moreContainer) {
-    //   console.error("Elemento #more-about .more_about não encontrado!");
-    //   return;
-    // }
-    
-    if (!Array.isArray(more)) {
-      console.error("More data is not an array:", more);
-      return;
-    }
+    const etc = i18next.t("etc:texto", { returnObjects: true })[0];
 
     // Seleciona o container principal da seção de more
     const moreSection = document.getElementById("more-about");
-
-    if (!moreSection) {
-      console.error("Elemento #more-about não encontrado!");
-      return;
-    }
     
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     moreSection.innerHTML = `
       <div class="container mx-auto padding_box">
         <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light">
@@ -1465,7 +1207,6 @@ async function loadMore() {
     `;
 
     const moreContainer = document.querySelector("#more-about .more_about");
-    console.log("Elemento encontrado?", moreContainer);
     
     moreContainer.innerHTML = more
     .map((mor) => {
@@ -1606,34 +1347,16 @@ async function loadMore() {
 
 // Load and render Projects atualizada para o i18next Atualizado
 async function loadTabletopProjects() {
-  try {
-    console.log("Carregando table top projects...");
-    
+  try {    
     await i18next.loadNamespaces("tabletop-projects");
     const tableprojects = i18next.t("tabletop-projects:projects", { returnObjects: true });
 
     await i18next.loadNamespaces("etc");
     const etc = i18next.t("etc:texto", { returnObjects: true })[0];
-    
-    // if (!tableprojectsContainer) {
-    //   console.error("Elemento #tabletop-projects .grid não encontrado!");
-    //   return;
-    // }
-    
-    if (!Array.isArray(tableprojects)) {
-      console.error("Projects data is not an array:", tableprojects);
-      return;
-    }
 
     // Seleciona o container principal da seção de formações
     const tabletopSection = document.getElementById("tabletop-projects");
-
-    if (!tabletopSection) {
-      console.error("Elemento #tabletop-projects não encontrado!");
-      return;
-    }
     
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     tabletopSection.innerHTML = `
         <div class="container mx-auto padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light-inv">
@@ -1645,10 +1368,9 @@ async function loadTabletopProjects() {
     `;
       
     const tableprojectsContainer = document.querySelector("#tabletop-projects .grid");
-    console.log("Elemento encontrado?", tableprojectsContainer);
 
     tableprojectsContainer.innerHTML = tableprojects
-      .map( //bg-[#1A1F2C]
+      .map(
         (project) => `
           <a href="${project.siteprojeto}" class="block project-card rounded-lg overflow-hidden fundo-light">
             <img src="${project.foto}" alt="${project.nome}" class="w-full h-48 object-cover" />
@@ -1673,33 +1395,15 @@ async function loadTabletopProjects() {
 // Load and render Contact atualizada para o i18next Atualizado
 async function loadContact() {
   try {
-    console.log("Carregando contato...");
-    
     await i18next.loadNamespaces("contact");
     const contact = i18next.t("contact:contact", { returnObjects: true });
 
     await i18next.loadNamespaces("etc");
     const etc = i18next.t("etc:texto", { returnObjects: true })[0];    
-    
-    // if (!contactContainer) {
-    //   console.error("Elemento #contact .footer_contact não encontrado!");
-    //   return;
-    // }
-      
-    if (!Array.isArray(contact)) {
-      console.error("Contact data is not an array:", contact);
-      return;
-    }
 
     // Seleciona o container principal da seção de contato
     const contactSection = document.getElementById("contact");
     
-    if (!contactSection) {
-      console.error("Elemento #contact não encontrado!");
-      return;
-    }
-    
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     contactSection.innerHTML = `
         <div class="container mx-auto">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light">
@@ -1711,7 +1415,6 @@ async function loadContact() {
     `;
 
     const contactContainer = document.querySelector("#contact .footer_contact");
-    console.log("Elemento encontrado?", contactContainer);
       
     contactContainer.innerHTML = contact
       .map(
@@ -1837,18 +1540,6 @@ function updateIframe() {
     updates = 15;
   }
 
-  // console.table({
-  // innerWidth: window.innerWidth,
-  // clientWidth: document.documentElement.clientWidth,
-  // visualViewport: window.visualViewport?.width,
-  // screenWidth: screen.width,
-  // dpr: window.devicePixelRatio
-  // });
-
-  console.error("iframe", window.visualViewport?.width);
-  console.error("iframe", document.documentElement.clientWidth);
-
-
   iframe.width = width;
   iframe.height = height;
   iframe.src = `https://goodreads.com/widgets/user_update_widget?height=${height}&num_updates=${updates}&user=190298199&width=${width}`;
@@ -1897,19 +1588,7 @@ window.addEventListener("resize", () => {
 
 // Load all data when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  // loadHero();
-  // loadAbout();
-  // loadMore();
-  // loadContact();
-  // loadExperiences();
-  // loadCourses();
-  // loadProjects();
-  // loadTabletopProjects();
-  // loadComp();
-  // Initial highlight check
   highlightActiveSection();
-
-  // carregarFaixas();
 
   const overlay = document.getElementById("intro-overlay");
   const btnEntrar = document.getElementById("btn-entrar");
@@ -1972,9 +1651,6 @@ document.getElementById("language-selector").addEventListener("change", async (e
 
   // Salva o idioma no localStorage
   localStorage.setItem("lang", newLang);
-
-  console.log("Idioma alterado para:", newLang);
-
 });
 
 i18next.on("languageChanged", async () => {
@@ -2012,22 +1688,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   
     // Atualiza o seletor de idioma com o valor correto
     document.getElementById("language-selector").value = i18nextLang;
-
-  // await loadFormations();
-  // await loadHero();
-  // await loadAbout();
-  // await loadMore();
-  // await loadContact();
-  // await loadExperiences();
-  // await loadCourses()
-  /*.then(() => colora())*/;
-  // await loadProjects();
-  // await loadTabletopProjects();
-  // await loadTexts();
-
-  // await carregarFaixas();
   updateLastFM();
   await updateIframe();
 });
-
-/////////////////////////////////

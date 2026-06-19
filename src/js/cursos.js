@@ -1,9 +1,5 @@
 import i18next from "./i18n.js";
 
-console.log(window.screen.width, window.screen.height);
-console.log(window.innerWidth, window.innerHeight);
-console.log(document.documentElement.scrollWidth, document.documentElement.scrollHeight);
-
 const darkColors = [
   'bg-[#b6f0f8]', 'bg-[#f8d49d]', 'bg-[#e0a9af]', 'bg-[#ce9696]',
   'bg-[#ebc1f1]', 'bg-[#ffcfd6]', 'bg-[#b2e7e5]', 'bg-[#c4f5c8]',
@@ -41,13 +37,11 @@ const moonIcon = document.getElementById("moonIcon");
 
 function setTheme(theme) {
   if (theme === "dark") {
-    console.log("if")
       document.documentElement.classList.add("dark");
       moonIcon.classList.remove("hidden");
       sunIcon.classList.add("hidden");
       // localStorage.setItem("theme", "dark");
   } else {
-    console.log("else")
       document.documentElement.classList.remove("dark");
       sunIcon.classList.remove("hidden");
       moonIcon.classList.add("hidden");
@@ -55,7 +49,6 @@ function setTheme(theme) {
   }
   localStorage.setItem("theme", theme);
   colors = getColorsByTheme(theme);
-  console.log("Cores carregadas:", colors);
   applyColors();
   // adjustTextColor();
 }
@@ -65,8 +58,6 @@ const savedTheme = localStorage.getItem("theme") ||
     (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
 
 setTheme(savedTheme);
-
-// const colors = getColorsByTheme(theme);
 
 // Alternância de tema ao clicar no botão
 themeToggle.addEventListener("click", () => {
@@ -78,14 +69,9 @@ themeToggle.addEventListener("click", () => {
 
 async function loadTexts() {
   try {
-
-    console.log("Carregando textos no idioma:", i18next.language);
-
     // Carrega novamente as traduções no idioma atual
     i18next.loadNamespaces("etc");
     const etc = i18next.t("etc:texto", { returnObjects: true })[0];
-
-    // console.log("Novo objeto etc:", etc); // Para debugar
     
     document.getElementById("id-do-inicio").textContent = etc.inicio;
     document.getElementById("id-do-sobre").textContent = etc.sobre;
@@ -96,11 +82,6 @@ async function loadTexts() {
     document.getElementById("id-do-mais").textContent = etc.mais;
     document.getElementById("id-do-other").textContent = etc.ouprojetos;
     document.getElementById("id-do-contact").textContent = etc.contato;
-    // document.getElementById("id-do-form").textContent = etc.p1;
-    // document.getElementById("id-do-portfolio").textContent = etc.p1;
-
-    // document.getElementById("idioma").textContent = etc.idioma;
-
   } catch (error) {
     console.error("Error loading Texts:", error);
   }
@@ -111,9 +92,6 @@ async function loadTexts() {
 // Mobile menu toggle
 const mobileMenuButton = document.querySelector('.mobile-menu');
 const sidebar = document.querySelector('.sidebar');
-// 
-// 
-// 
 
 mobileMenuButton.addEventListener('click', () => {
   sidebar.classList.toggle('open');
@@ -143,8 +121,6 @@ const highlightActiveSection = () => {
 
 window.addEventListener('scroll', highlightActiveSection);
 
-// 1. Primeiro, modifique a função setupSearchFilter para aceitar um callback de atualização
-// 1. Primeiro, modifique a função setupSearchFilter para aceitar um callback de atualização
 function setupSearchFilter(options) {
   const { 
     searchInputId, 
@@ -203,7 +179,6 @@ function setupSearchFilter(options) {
   });
 }
 
-// 2. Crie uma função para atualizar o resumo
 function updateResumo(visibleCounts) {
   const resumContainer = document.querySelector('.resum_resum');
   if (!resumContainer) return;
@@ -239,12 +214,7 @@ function updateResumo(visibleCounts) {
 
 // Load and render Courses atualizada para o i18next Atualizado
 async function loadCourses() {
-  try {
-    console.log("Carregando courses...");
-
-    // --- MURAL DE BADGES (NOVO CÓDIGO AQUI) ---
-    console.log("Carregando badges...");
-    
+  try {    
     await i18next.loadNamespaces("courses");
     const courses = i18next.t("courses:courses", { returnObjects: true });
 
@@ -253,29 +223,11 @@ async function loadCourses() {
 
     await i18next.loadNamespaces("badges");
     const badges = i18next.t("badges:badges", { returnObjects: true });
-    
-    // if (!coursesContainer) {
-      //   console.error("Elemento #courses .grid não encontrado!");
-      //   return;
-      // }
-      
-      if (!Array.isArray(courses)) {
-        console.error("Courses data is not an array:", courses);
-        return;
-      }
-
-      // Para teste imediato com o JSON que você forneceu:
-      // const badgesData = [
-      //     { "id": 1, "imagem": "./src/images/badges/Alura - Badge Alura-Oracle-Ifood One.png", "titulo": "Alura - Alura-Oracle-Ifood One - Badge" },
-      //     // ... (o restante do seu array de badges) ...
-      // ];
-
-
   
-      const competencyCount = {};
-      const competencyColorMap = {};
-      const instituicaoCount = {};
-      let colorIndex = 0;
+    const competencyCount = {};
+    const competencyColorMap = {};
+    const instituicaoCount = {};
+    let colorIndex = 0;
       
     courses.forEach(course => {
       course.competencies.forEach(comp => {
@@ -301,13 +253,7 @@ async function loadCourses() {
 
     // Seleciona o container principal da seção de cursos
     const coursesSection = document.getElementById("courses");
-
-    if (!coursesSection) {
-      console.error("Elemento #courses não encontrado!");
-      return;
-    }
     
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     coursesSection.innerHTML = `
         <div class="container mx-auto px-6 padding_box">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light">
@@ -404,11 +350,10 @@ async function loadCourses() {
     `;
 
     const coursesContainer = document.querySelector("#courses .grid");
-    console.log("Elemento encontrado?", coursesContainer);
 
     coursesContainer.innerHTML = courses
       .map(
-        (cor) => { //mix-blend-difference era para ser bom
+        (cor) => {
           const competenciesHtml = cor.competencies.map(comp => 
             `<span class="dynamic-text dynamic-color inline-block px-3 py-1 rounded-full text-sm ${competencyColorMap[comp]} m-1">${comp}</span>`
           ).join('');
@@ -436,10 +381,6 @@ async function loadCourses() {
       .join("");
 
       // Load and render Resumo atualizada para o i18next
-
-      console.log("Carregando resum etc...");
-    
-      //await i18next.loadNamespaces("etc");
       const resum = i18next.t("etc:resum", { returnObjects: true });
       
       const resumHtml = resum
@@ -468,35 +409,23 @@ async function loadCourses() {
 
       coursesContainer.innerHTML += resumHtml;
 
-
-      // 
-      // 
       setupFilterCheckboxes();
       updateResumoWithFilters(courseTypeCount, [], [], courses.length);
-      // 
-      // 
-
 
       // Load and render Competecias atualizada para o i18next
-
-      console.log("Carregando compe etc...");
-    
-      //await i18next.loadNamespaces("etc");
       const compe = i18next.t("etc:comp", { returnObjects: true }); 
-      //const compe = i18next.t("etc:comp", { returnObjects: true })[0]; //usado caso eu n'a oqueira iterar pelo json e pegar e converter em array e pegar algum em especifico com resum.*nome da coluna* ex> resum.text1 
       
-      const compeContainer = document.querySelector("#courses .cont_comp"); //
-      console.log("Elemento encontrado?", compeContainer);
+      const compeContainer = document.querySelector("#courses .cont_comp");
 
       compeContainer.innerHTML = compe
       .map(
         (cont) => {
           const competencyCountHtml = Object.entries(competencyCount)
           .map(([comp, count]) => {
-            const colorClass = competencyColorMap[comp]; //não gostei do mix bled difference, parece meio turvo
+            const colorClass = competencyColorMap[comp];
             return `<span class="dynamic-text dynamic-color inline-block m-1 px-4 py-2 rounded-lg ${colorClass}">${comp}: ${count}</span>`;
           })
-          .join(''); //bg-[#1A1F2C]
+          .join('');
 
           return `
             <div class="cont_comp mt-8 text-center">
@@ -509,7 +438,7 @@ async function loadCourses() {
           `;
       })
       .join("");
-      coursesContainer.insertAdjacentElement('afterend', compeContainer); //acho que não precisa, já que a div está criada no html
+      coursesContainer.insertAdjacentElement('afterend', compeContainer);
 
       // 2. Criar o container do Mural
       const badgesSection = document.createElement('div');
@@ -521,7 +450,6 @@ async function loadCourses() {
         const badgesGridHtml = badges.map(badge => {
         // Substitui o ".src/" (ou "./src/") inicial por "../../src/"
         const caminhoCorrigido = badge.imagem.replace(/^\.?\/?src/, '../../src');
-        //fundo-light
         return `
             <div class="badge-item flex flex-col items-center justify-start rounded-xl transition-transform hover:scale-105 hover:border-white/30 group cursor-pointer" title="${badge.titulo}">
                 <div class="badges-ico w-24 h-24 md:w-32 md:h-32 flex items-center justify-center mb-3 shrink-0">
@@ -612,14 +540,6 @@ function setupFilterCheckboxes() {
       return;
     }
 
-    // const selectedTipos = Array.from(tipoCheckboxes)
-    //   .filter(cb => cb.checked)
-    //   .map(cb => cb.value.toLowerCase());
-    
-    // const selectedComps = Array.from(compCheckboxes)
-    //   .filter(cb => cb.checked)
-    //   .map(cb => cb.value.toLowerCase());
-
     const cards = document.querySelectorAll('#courses .grid .card:not(.resum_resum)');
     const filteredCounts = {};
     let totalFiltered = 0;
@@ -650,10 +570,6 @@ function setupFilterCheckboxes() {
     if (filtersInitialized || selectedTipos.length > 0 || selectedComps.length > 0) {
       updateResumoWithFilters(filteredCounts, selectedTipos, selectedComps, totalFiltered);
     }
-
-    console.log('selectedTipos:', selectedTipos); 
-    console.log('selectedComps:', selectedComps);
-
   }
 
   // Configura event listeners com a flag de inicialização
@@ -714,10 +630,6 @@ function setupFilterCheckboxes() {
 
   // Inicializa o sistema de filtros
   initialize();
-
-  console.log('Tipos:', tipoCheckboxes.length);
-  console.log('Comps:', compCheckboxes.length);
-
 }
 
 function updateResumoWithFilters(
@@ -728,7 +640,6 @@ function updateResumoWithFilters(
   totalFiltered
 ) 
 {
-  console.log('Atualizando resumo com:', {filteredCounts, selectedTypes, selectedComps, totalFiltered});
   const resumContainer = document.querySelector('.resum_resum');
   if (!resumContainer) return;
   
@@ -766,24 +677,6 @@ function updateResumoWithFilters(
     `;
     return;
   }
-
-  // Cria o cabeçalho do resumo com filtros ativos
-  // let filtersHeader = '';
-  // if (selectedTypes.length > 0 || selectedComps.length > 0) {
-  //   filtersHeader = `
-  //     <div class="mb-4 p-3 rounded-lg fundo-suave">
-  //       <h4 class="font-semibold texto-high mb-2">Filtros Ativos:</h4>
-  //       ${selectedTypes.length > 0 ? `
-  //         <p class="text-sm"><span class="font-medium">Tipos:</span> ${selectedTypes.join(', ')}</p>
-  //       ` : ''}
-  //       ${selectedComps.length > 0 ? `
-  //         <p class="text-sm"><span class="font-medium">Competências:</span> ${selectedComps.map(comp => comp.charAt(0).toUpperCase() + comp.slice(1)).join(', ')}</p>
-  //       ` : ''}
-  //       <p class="text-sm mt-2"><span class="font-medium">Total:</span> ${totalFiltered} cursos</p>
-  //     </div>
-  //   `;
-
-  // }
   
   // Cria o resumo por tipo para os filtros ativos
   const typeSummaryHtml = Object.entries(filteredCounts)
@@ -811,34 +704,16 @@ function updateResumoWithFilters(
 
 // Load and render Contact atualizada para o i18next Atualizado
 async function loadContact() {
-  try {
-    console.log("Carregando contato...");
-    
+  try {    
     await i18next.loadNamespaces("contact");
     const contact = i18next.t("contact:contact", { returnObjects: true });
 
     await i18next.loadNamespaces("etc");
     const etc = i18next.t("etc:texto", { returnObjects: true })[0];    
-    
-    // if (!contactContainer) {
-    //   console.error("Elemento #contact .footer_contact não encontrado!");
-    //   return;
-    // }
-      
-    if (!Array.isArray(contact)) {
-      console.error("Contact data is not an array:", contact);
-      return;
-    }
 
     // Seleciona o container principal da seção de contato
     const contactSection = document.getElementById("contact");
     
-    if (!contactSection) {
-      console.error("Elemento #contact não encontrado!");
-      return;
-    }
-    
-    // Define o HTML inicial com o cabeçalho (para garantir que seja inserido apenas uma vez)
     contactSection.innerHTML = `
         <div class="container mx-auto px-6">
           <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center texto-light">
@@ -850,7 +725,6 @@ async function loadContact() {
     `;
 
     const contactContainer = document.querySelector("#contact .footer_contact");
-    console.log("Elemento encontrado?", contactContainer);
       
     contactContainer.innerHTML = contact
       .map(
@@ -887,16 +761,6 @@ async function loadContact() {
 
 // Load all data when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-  // loadHero();
-  // loadAbout();
-  // loadMore();
-  // loadContact();
-  // loadExperiences();
-  // loadCourses();
-  // loadProjects();
-  // loadTabletopProjects();
-  // loadComp();
-  // Initial highlight check
   highlightActiveSection();
 });
 
@@ -915,25 +779,14 @@ document.getElementById("language-selector").addEventListener("change", async (e
 
   // Salva o idioma no localStorage
   localStorage.setItem("lang", newLang);
-
-  console.log("Idioma alterado para:", newLang);
-
 });
 
 i18next.on("languageChanged", async () => {
   await i18next.loadNamespaces([
     "contact","courses", "etc"
   ]);
-
-  // await loadFormations();
-  // await loadHero();
-  // await loadAbout();
-  // await loadMore();
   await loadContact();
-  // await loadExperiences();
   await loadCourses();
-  // await loadProjects();
-  // await loadTabletopProjects();
   await loadTexts();
 });
 
@@ -953,18 +806,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   
     // Atualiza o seletor de idioma com o valor correto
     document.getElementById("language-selector").value = i18nextLang;
-
-  // await loadFormations();
-  // await loadHero();
-  // await loadAbout();
-  // await loadMore();
-  // await loadContact();
-  // await loadExperiences();
-  // await loadCourses()
-  /*.then(() => colora())*/;
-  // await loadProjects();
-  // await loadTabletopProjects();
-  // await loadTexts();
 });
-
-/////////////////////////////////

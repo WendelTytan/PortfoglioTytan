@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wendel Tytan</title>
-    <link rel="icon" href="../../src/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="../../src/images/favicon.ico" type="image/x-icon">
 
     <meta name="description" content="Curriculo & Portfólio Tytan moderno e vibrante feito com Tailwind e JavaScript.">
     <meta name="keywords" content="curriculo, portfólio, web design, Tailwind CSS, desenvolvedor web">
@@ -25,7 +25,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" onerror="this.onerror=null;this.href='./src/styles/libs/swiper.css'">
 
     <link rel="stylesheet" href="../../src/styles/output.css">
-    <!-- <link rel="stylesheet" href="../../src/styles/main.css"> -->
   </head>
   <body>
 
@@ -43,8 +42,8 @@
     <nav id="sidebar" class="sidebar fixed h-full 
                 cor-prin z-40 courses-endpoint-sidebar
                 flex flex-col justify-between transition-all duration-300 ease-in-out overflow-hidden group">
-      <div class="side_bar flex flex-col"> <!-- w-16 hover:w-48  space-y-4 hover:w-50 quando passa do 48 dá erro-->
-        <a href="../../index.html#home" class="sidebar-item sidebar-icons texto-light" data-section="home"> <!--flex items-center space-x-4 px-4 py-2 group-hover:justify-start transition-all duration-300-->
+      <div class="side_bar flex flex-col">
+        <a href="../../index.html#home" class="sidebar-item sidebar-icons texto-light" data-section="home">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
             <polyline points="9 22 9 12 15 12 15 22"/>
@@ -134,15 +133,11 @@
           </button>
         </a>
     
-        <!-- <label id="idioma" for="language-selector">🌍 Idioma:</label> -->
         <div class="custom-select">
-          <!-- <a class="sidebar-item border border-gray-300 dark:border-gray-700 rounded-lg escuro-theme claro-theme"> -->
-            <select id="language-selector" class="sidebar-item border-r-2 texto-light border rounded-lg cor-prin escuro-cont escuro-outro outro-theme bd-idioma">
-              <option value="pt">PT</option>
-              <option value="en">EN</option>
-            </select>
-            
-          <!-- </a> -->
+          <select id="language-selector" class="sidebar-item border-r-2 texto-light border rounded-lg cor-prin escuro-cont escuro-outro outro-theme bd-idioma">
+            <option value="pt">PT</option>
+            <option value="en">EN</option>
+          </select>
         </div>
       </div>
       
@@ -150,10 +145,6 @@
       
     </nav>
 
-      <!--  -->
-      <!--  -->
-      <!--  -->
-      <!--  -->
     <!-- Main Content with padding for sidebar -->
     <div class="pl-[4.5rem] md:pl-[4.5rem] courses-endpoint-big">
 
@@ -182,7 +173,7 @@
             <!-- Courses will be loaded here by JavaScript -->
             <div class="resum_resum">
             </div>
-          </div> <!-- teste -->
+          </div>
           <div class="cont_comp">
             <div class="inline-block padding_box py-3 rounded-lg">
               <p class="text-lg mb-2">Contagem de Competências:</p>
@@ -202,8 +193,6 @@
           <!-- Botões de navegação -->
           <div class="nav-btn prev-btn transColors">&#10094;</div>
           <div class="nav-btn next-btn transColors">&#10095;</div>
-          <!-- <div class="swiper-button-prev"></div> -->
-          <!-- <div class="nav-btn prev-btn" id="modal-prev">&#10094;</div> -->
         </div>
       </section>
 
@@ -244,8 +233,6 @@
     <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js" onerror="document.write('<script src=\'../../src/js/libs/i18nextdetector.js\'><\/script>')"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" onerror="document.write('<script src=\'../../src/js/libs/swiper.js\'><\/script>')"></script>
-
-    <!-- <script src="../../src/js/libs/swiper.js"></script> -->
 
     <script defer src="../../src/js/cursos.js" type="module"></script>
   </body>

@@ -1,6 +1,9 @@
 ﻿const hostname = window.location.hostname;
 const pathname = window.location.pathname;
 
+// só serve para o git hub pages, para que o i18next consiga encontrar os arquivos de tradução
+// para que funcione normalmente no vercel precisa ser o codigo anterior padrão do i18 next
+
 let basePath = '/';
 
 // Se NÃO for localhost, extrai o nome do repositório automaticamente da URL

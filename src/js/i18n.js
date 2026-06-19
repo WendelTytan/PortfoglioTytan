@@ -1,15 +1,11 @@
 ﻿const hostname = window.location.hostname;
 const pathname = window.location.pathname;
 
-// só serve para o git hub pages, para que o i18next consiga encontrar os arquivos de tradução
-// para que funcione normalmente no vercel precisa ser o codigo anterior padrão do i18 next
-
+// O padrão correto para a grande maioria dos servidores (Localhost, Vercel, etc.)
 let basePath = '/';
 
-// Se NÃO for localhost, extrai o nome do repositório automaticamente da URL
-if (hostname !== 'localhost' && hostname !== '127.0.0.1') {
-    // pathname.split('/') divide a URL "/PortfoglioTytan/endpoints..." em partes
-    // O índice [1] pega exatamente a palavra "PortfoglioTytan"
+// Aplica a "gambiarra" de subpasta APENAS se o domínio for o do GitHub Pages
+if (hostname.includes('github.io')) {
     const repoName = pathname.split('/')[1]; 
     basePath = `/${repoName}/`;
 }

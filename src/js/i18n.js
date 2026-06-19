@@ -6,7 +6,7 @@
     fallbackLng: "pt",
     debug: true,
     backend: {
-        loadPath: "/locales/{{lng}}/{{ns}}.json" //"/locales/{{lng}}/{{ns}}.json" 
+        loadPath: "./locales/{{lng}}/{{ns}}.json" //"/locales/{{lng}}/{{ns}}.json" 
                                                 // tirei a primeira barra
     },
     ns: [

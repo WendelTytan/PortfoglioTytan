@@ -1,4 +1,17 @@
-﻿i18next
+﻿const hostname = window.location.hostname;
+const pathname = window.location.pathname;
+
+let basePath = '/';
+
+// Se NÃO for localhost, extrai o nome do repositório automaticamente da URL
+if (hostname !== 'localhost' && hostname !== '127.0.0.1') {
+    // pathname.split('/') divide a URL "/PortfoglioTytan/endpoints..." em partes
+    // O índice [1] pega exatamente a palavra "PortfoglioTytan"
+    const repoName = pathname.split('/')[1]; 
+    basePath = `/${repoName}/`;
+}
+
+i18next
 .use(i18nextHttpBackend)
 .use(i18nextBrowserLanguageDetector)
 .init({
@@ -6,8 +19,7 @@
     fallbackLng: "pt",
     debug: true,
     backend: {
-        loadPath: "../locales/{{lng}}/{{ns}}.json" //"/locales/{{lng}}/{{ns}}.json" 
-                                                // tirei a primeira barra
+        loadPath: `${basePath}locales/{{lng}}/{{ns}}.json` 
     },
     ns: [
         "about","contact","courses","experience",

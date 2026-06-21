@@ -478,7 +478,7 @@ async function loadCourses() {
           </div>
         </div>
 
-        <div class="badge-section">
+        <div class="badge-section padding_swiper">
             <div class="swiper badge-swiper">
               <div class="swiper-wrapper" id="badge-carousel">
                 <!-- Slides -->

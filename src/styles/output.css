@@ -2623,6 +2623,9 @@
     .padding_box {
       padding-right: 1.5rem;
     }
+    .padding_swiper {
+      padding-right: 1.5rem;
+    }
     #courses .grid {
       padding-left: 0;
     }
@@ -2683,6 +2686,9 @@
       min-height: 16.25rem;
     }
     .padding_box {
+      padding-right: 1.5rem;
+    }
+    .padding_swiper {
       padding-right: 1.5rem;
     }
     #courses .grid {
@@ -2784,6 +2790,9 @@
       min-height: 16.25rem;
     }
     .padding_box {
+      padding-right: 1.5rem;
+    }
+    .padding_swiper {
       padding-right: 1.5rem;
     }
     #courses .grid {
